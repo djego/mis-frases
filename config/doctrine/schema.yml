@@ -1,0 +1,53 @@
+connection: doctrine
+detect_relations: true
+options:
+  type: INNODB
+  collate: utf8_spanish_ci
+  charset: utf8
+###################################  
+
+mfCategory:
+  tableName: mf_category
+  actAs:
+    Sluggable:
+      fields: [name]
+  columns:
+    id:   ~
+    name:
+      type: string(200)
+      notnull: true
+
+mfPhrase:
+  tableName: mf_phrase
+  columns:
+    id:   ~
+    content:
+      type: string(250)
+      notnull: true
+    category_id:
+      type: integer
+      notnull: true
+    user_id:
+      type: integer
+      notnull: true
+    visits:
+      type: integer
+      notnull: true
+      default: true
+    comments:
+      type: integer
+      notnull: true
+      default: true
+    created_at: ~
+    updated_at: ~
+  relations:
+    Category:
+      class: mfCategory
+      foreignAlias: Phrases
+      local: category_id
+      foreign: id
+    User:
+      class: sfGuardUser
+      foreignAlias: Phrases
+      local: user_id
+      foreign: id
