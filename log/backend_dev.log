@@ -1,0 +1,388 @@
+Jul 25 22:34:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 25 22:34:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 25 22:34:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'phrase',  'action' => 'index',)
+jul 25 22:34:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:34:31 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+jul 25 22:34:31 symfony [info] {sfBasicSecurityFilter} Action "phrase/index" requires authentication, forwarding to "sfGuardAuth/signin"
+jul 25 22:34:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:34:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jul 25 22:34:31 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+jul 25 22:34:31 symfony [info] {sfPHPView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+jul 25 22:34:31 symfony [info] {sfPartialView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+jul 25 22:34:31 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:34:31 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:34:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+jul 25 22:34:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jul 25 22:34:31 symfony [info] {sfWebDebugLogger} Configuration 1189.23 ms (14)
+jul 25 22:34:31 symfony [info] {sfWebDebugLogger} Factories 852.42 ms (1)
+jul 25 22:34:31 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 65.43 ms (1)
+jul 25 22:34:31 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 659.58 ms (1)
+jul 25 22:34:31 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 46.91 ms (1)
+jul 25 22:34:31 symfony [info] {sfWebResponse} Send content (35111 o)
+Jul 25 22:38:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 25 22:38:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 25 22:38:51 symfony [info] {sfPatternRouting} Match route "mf_comment" (/comment.:sf_format) for /comment with parameters array (  'module' => 'comment',  'action' => 'index',  'sf_format' => 'html',)
+jul 25 22:38:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:38:52 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+jul 25 22:38:52 symfony [info] {sfBasicSecurityFilter} Action "comment/index" requires authentication, forwarding to "sfGuardAuth/signin"
+jul 25 22:38:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:38:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jul 25 22:38:52 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+jul 25 22:38:52 symfony [info] {sfPHPView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+jul 25 22:38:52 symfony [info] {sfPartialView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+jul 25 22:38:52 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:38:52 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:38:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+jul 25 22:38:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jul 25 22:38:52 symfony [info] {sfWebDebugLogger} Configuration 52.44 ms (15)
+jul 25 22:38:52 symfony [info] {sfWebDebugLogger} Factories 15.94 ms (1)
+jul 25 22:38:52 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 3.79 ms (1)
+jul 25 22:38:52 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 10.92 ms (1)
+jul 25 22:38:52 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 3.69 ms (1)
+jul 25 22:38:52 symfony [info] {sfWebResponse} Send content (35690 o)
+Jul 25 22:38:52 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 25 22:38:52 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 25 22:38:52 symfony [info] {sfPatternRouting} Match route "sf_guard_user" (/user.:sf_format) for /user with parameters array (  'module' => 'user',  'action' => 'index',  'sf_format' => 'html',)
+jul 25 22:38:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:38:52 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+jul 25 22:38:52 symfony [info] {sfBasicSecurityFilter} Action "user/index" requires authentication, forwarding to "sfGuardAuth/signin"
+jul 25 22:38:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:38:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jul 25 22:38:52 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+jul 25 22:38:52 symfony [info] {sfPHPView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+jul 25 22:38:52 symfony [info] {sfPartialView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+jul 25 22:38:53 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:38:53 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:38:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+jul 25 22:38:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jul 25 22:38:53 symfony [info] {sfWebDebugLogger} Configuration 77.44 ms (15)
+jul 25 22:38:53 symfony [info] {sfWebDebugLogger} Factories 16.64 ms (1)
+jul 25 22:38:53 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 4.49 ms (1)
+jul 25 22:38:53 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 8.94 ms (1)
+jul 25 22:38:53 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 3.12 ms (1)
+jul 25 22:38:53 symfony [info] {sfWebResponse} Send content (35666 o)
+Jul 25 22:38:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 25 22:38:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 25 22:38:53 symfony [info] {sfPatternRouting} Match route "mf_category" (/category.:sf_format) for /category with parameters array (  'module' => 'category',  'action' => 'index',  'sf_format' => 'html',)
+jul 25 22:38:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:38:53 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+jul 25 22:38:53 symfony [info] {sfBasicSecurityFilter} Action "category/index" requires authentication, forwarding to "sfGuardAuth/signin"
+jul 25 22:38:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:38:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jul 25 22:38:53 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+jul 25 22:38:53 symfony [info] {sfPHPView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+jul 25 22:38:53 symfony [info] {sfPartialView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+jul 25 22:38:53 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:38:53 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:38:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+jul 25 22:38:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jul 25 22:38:53 symfony [info] {sfWebDebugLogger} Configuration 46.51 ms (15)
+jul 25 22:38:53 symfony [info] {sfWebDebugLogger} Factories 10.60 ms (1)
+jul 25 22:38:53 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 2.87 ms (1)
+jul 25 22:38:53 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 9.27 ms (1)
+jul 25 22:38:53 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 3.22 ms (1)
+jul 25 22:38:53 symfony [info] {sfWebResponse} Send content (35705 o)
+Jul 25 22:38:54 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 25 22:38:54 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 25 22:38:54 symfony [info] {sfPatternRouting} Match route "mf_phrase" (/phrase.:sf_format) for /phrase with parameters array (  'module' => 'phrase',  'action' => 'index',  'sf_format' => 'html',)
+jul 25 22:38:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:38:54 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+jul 25 22:38:54 symfony [info] {sfBasicSecurityFilter} Action "phrase/index" requires authentication, forwarding to "sfGuardAuth/signin"
+jul 25 22:38:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:38:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jul 25 22:38:54 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+jul 25 22:38:54 symfony [info] {sfPHPView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+jul 25 22:38:54 symfony [info] {sfPartialView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+jul 25 22:38:54 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:38:54 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:38:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+jul 25 22:38:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jul 25 22:38:54 symfony [info] {sfWebDebugLogger} Configuration 2.22 ms (14)
+jul 25 22:38:54 symfony [info] {sfWebDebugLogger} Factories 23.44 ms (1)
+jul 25 22:38:54 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 3.25 ms (1)
+jul 25 22:38:54 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 10.06 ms (1)
+jul 25 22:38:54 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 3.49 ms (1)
+jul 25 22:38:54 symfony [info] {sfWebResponse} Send content (35684 o)
+Jul 25 22:38:55 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 25 22:38:55 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 25 22:38:55 symfony [info] {sfPatternRouting} Match route "mf_comment" (/comment.:sf_format) for /comment with parameters array (  'module' => 'comment',  'action' => 'index',  'sf_format' => 'html',)
+jul 25 22:38:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:38:55 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+jul 25 22:38:55 symfony [info] {sfBasicSecurityFilter} Action "comment/index" requires authentication, forwarding to "sfGuardAuth/signin"
+jul 25 22:38:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:38:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jul 25 22:38:55 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+jul 25 22:38:55 symfony [info] {sfPHPView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+jul 25 22:38:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+jul 25 22:38:55 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:38:55 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:38:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+jul 25 22:38:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jul 25 22:38:55 symfony [info] {sfWebDebugLogger} Configuration 2.16 ms (14)
+jul 25 22:38:55 symfony [info] {sfWebDebugLogger} Factories 14.71 ms (1)
+jul 25 22:38:55 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 3.32 ms (1)
+jul 25 22:38:55 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 10.08 ms (1)
+jul 25 22:38:55 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 3.50 ms (1)
+jul 25 22:38:55 symfony [info] {sfWebResponse} Send content (35694 o)
+Jul 25 22:38:56 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 25 22:38:56 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 25 22:38:56 symfony [info] {sfPatternRouting} Match route "mf_phrase" (/phrase.:sf_format) for /phrase with parameters array (  'module' => 'phrase',  'action' => 'index',  'sf_format' => 'html',)
+jul 25 22:38:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:38:56 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+jul 25 22:38:56 symfony [info] {sfBasicSecurityFilter} Action "phrase/index" requires authentication, forwarding to "sfGuardAuth/signin"
+jul 25 22:38:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:38:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jul 25 22:38:56 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+jul 25 22:38:56 symfony [info] {sfPHPView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+jul 25 22:38:56 symfony [info] {sfPartialView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+jul 25 22:38:56 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:38:56 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:38:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+jul 25 22:38:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jul 25 22:38:56 symfony [info] {sfWebDebugLogger} Configuration 2.26 ms (14)
+jul 25 22:38:56 symfony [info] {sfWebDebugLogger} Factories 15.72 ms (1)
+jul 25 22:38:56 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 3.29 ms (1)
+jul 25 22:38:56 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 9.78 ms (1)
+jul 25 22:38:56 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 3.52 ms (1)
+jul 25 22:38:56 symfony [info] {sfWebResponse} Send content (35682 o)
+Jul 25 22:44:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 25 22:44:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 25 22:44:04 symfony [info] {sfPatternRouting} Match route "mf_phrase" (/phrase.:sf_format) for /phrase with parameters array (  'module' => 'phrase',  'action' => 'index',  'sf_format' => 'html',)
+jul 25 22:44:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:44:04 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+jul 25 22:44:04 symfony [info] {sfBasicSecurityFilter} Action "phrase/index" requires authentication, forwarding to "sfGuardAuth/signin"
+jul 25 22:44:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:44:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jul 25 22:44:04 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+jul 25 22:44:04 symfony [info] {sfPHPView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+jul 25 22:44:04 symfony [info] {sfPartialView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+jul 25 22:44:04 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:44:04 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:44:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+jul 25 22:44:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jul 25 22:44:04 symfony [info] {sfWebDebugLogger} Configuration 196.03 ms (14)
+jul 25 22:44:04 symfony [info] {sfWebDebugLogger} Factories 98.22 ms (1)
+jul 25 22:44:04 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 3.60 ms (1)
+jul 25 22:44:04 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 14.53 ms (1)
+jul 25 22:44:04 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 3.57 ms (1)
+jul 25 22:44:04 symfony [info] {sfWebResponse} Send content (35634 o)
+Jul 25 22:44:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 25 22:44:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 25 22:44:06 symfony [info] {sfPatternRouting} Match route "mf_phrase" (/phrase.:sf_format) for /phrase with parameters array (  'module' => 'phrase',  'action' => 'index',  'sf_format' => 'html',)
+jul 25 22:44:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:44:06 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+jul 25 22:44:06 symfony [info] {sfBasicSecurityFilter} Action "phrase/index" requires authentication, forwarding to "sfGuardAuth/signin"
+jul 25 22:44:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:44:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jul 25 22:44:06 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+jul 25 22:44:06 symfony [info] {sfPHPView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+jul 25 22:44:06 symfony [info] {sfPartialView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+jul 25 22:44:06 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:44:06 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:44:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+jul 25 22:44:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jul 25 22:44:06 symfony [info] {sfWebDebugLogger} Configuration 2.31 ms (14)
+jul 25 22:44:06 symfony [info] {sfWebDebugLogger} Factories 17.39 ms (1)
+jul 25 22:44:06 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 3.56 ms (1)
+jul 25 22:44:06 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 11.18 ms (1)
+jul 25 22:44:06 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 4.03 ms (1)
+jul 25 22:44:06 symfony [info] {sfWebResponse} Send content (35631 o)
+Jul 25 22:44:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 25 22:44:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 25 22:44:06 symfony [info] {sfPatternRouting} Match route "mf_phrase" (/phrase.:sf_format) for /phrase with parameters array (  'module' => 'phrase',  'action' => 'index',  'sf_format' => 'html',)
+jul 25 22:44:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:44:06 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+jul 25 22:44:06 symfony [info] {sfBasicSecurityFilter} Action "phrase/index" requires authentication, forwarding to "sfGuardAuth/signin"
+jul 25 22:44:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jul 25 22:44:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jul 25 22:44:06 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+jul 25 22:44:06 symfony [info] {sfPHPView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+jul 25 22:44:06 symfony [info] {sfPartialView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+jul 25 22:44:06 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:44:06 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+jul 25 22:44:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+jul 25 22:44:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jul 25 22:44:06 symfony [info] {sfWebDebugLogger} Configuration 2.38 ms (14)
+jul 25 22:44:06 symfony [info] {sfWebDebugLogger} Factories 17.52 ms (1)
+jul 25 22:44:06 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 3.52 ms (1)
+jul 25 22:44:06 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 12.24 ms (1)
+jul 25 22:44:06 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 3.62 ms (1)
+jul 25 22:44:06 symfony [info] {sfWebResponse} Send content (35631 o)
+Jul 26 00:02:15 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 26 00:02:15 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 26 00:02:15 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'phrase',  'action' => 'index',)
+Jul 26 00:02:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 00:02:15 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jul 26 00:02:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 00:02:15 symfony [info] {phraseActions} Call "phraseActions->executeIndex()"
+Jul 26 00:02:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 00:02:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM mf_phrase m - ()
+Jul 26 00:02:15 symfony [info] {sfPHPView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/indexSuccess.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_assets.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_flashes.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list_header.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.name AS m__name, m.created_at AS m__created_at, m.updated_at AS m__updated_at, m.slug AS m__slug FROM mf_category m - ()
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s - ()
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list_batch_actions.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list_actions.php"
+Jul 26 00:02:15 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list_footer.php"
+Jul 26 00:02:15 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+Jul 26 00:02:15 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+Jul 26 00:02:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Jul 26 00:02:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 00:02:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Configuration 191.75 ms (11)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Factories 99.84 ms (1)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Action "phrase/index" 94.81 ms (1)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (5)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} View "Success" for "phrase/index" 89.82 ms (1)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Partial "phrase/_assets" 0.69 ms (1)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Partial "phrase/_flashes" 0.72 ms (1)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_header" 0.62 ms (1)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Partial "phrase/_filters" 49.29 ms (1)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Partial "phrase/_filters_field" 34.90 ms (7)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Partial "phrase/_list" 0.95 ms (1)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_batch_actions" 1.39 ms (1)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_actions" 1.01 ms (1)
+Jul 26 00:02:15 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_footer" 0.63 ms (1)
+Jul 26 00:02:15 symfony [info] {sfWebResponse} Send content (92196 o)
+Jul 26 00:02:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 26 00:02:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 26 00:02:21 symfony [info] {sfPatternRouting} Match route "sf_guard_signout" (/guard/logout) for /guard/logout with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signout',)
+Jul 26 00:02:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 00:02:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 00:02:21 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignout()"
+Jul 26 00:02:21 symfony [info] {myUser} User is not authenticated
+Jul 26 00:02:21 symfony [info] {sfFrontWebController} Redirect to "http://localhost/mis-frases/web/backend_dev.php/"
+Jul 26 00:02:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jul 26 00:02:21 symfony [info] {sfWebResponse} Send header "Location: http://localhost/mis-frases/web/backend_dev.php/"
+Jul 26 00:02:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 00:02:21 symfony [info] {sfWebResponse} Send cookie "sfRemember": ""
+Jul 26 00:02:21 symfony [info] {sfWebDebugLogger} Configuration 9.74 ms (9)
+Jul 26 00:02:21 symfony [info] {sfWebDebugLogger} Factories 12.41 ms (1)
+Jul 26 00:02:21 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signout" 4.00 ms (1)
+Jul 26 00:02:21 symfony [info] {sfWebResponse} Send content (119 o)
+Jul 26 00:02:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 26 00:02:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 26 00:02:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'phrase',  'action' => 'index',)
+Jul 26 00:02:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 00:02:21 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jul 26 00:02:21 symfony [info] {sfBasicSecurityFilter} Action "phrase/index" requires authentication, forwarding to "sfGuardAuth/signin"
+Jul 26 00:02:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 00:02:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 00:02:21 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Jul 26 00:02:21 symfony [info] {sfPHPView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+Jul 26 00:02:21 symfony [info] {sfPartialView} Render "/var/www/mis-frases/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/_signin_form.php"
+Jul 26 00:02:21 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+Jul 26 00:02:21 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+Jul 26 00:02:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Jul 26 00:02:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 00:02:21 symfony [info] {sfWebDebugLogger} Configuration 6.87 ms (15)
+Jul 26 00:02:21 symfony [info] {sfWebDebugLogger} Factories 12.12 ms (1)
+Jul 26 00:02:21 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 2.72 ms (1)
+Jul 26 00:02:21 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 13.35 ms (1)
+Jul 26 00:02:21 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 2.77 ms (1)
+Jul 26 00:02:21 symfony [info] {sfWebResponse} Send content (35578 o)
+Jul 26 00:02:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 26 00:02:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 26 00:02:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'phrase',  'action' => 'index',)
+Jul 26 00:02:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 00:02:39 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jul 26 00:02:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 00:02:39 symfony [info] {phraseActions} Call "phraseActions->executeIndex()"
+Jul 26 00:02:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 00:02:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM mf_phrase m - ()
+Jul 26 00:02:39 symfony [info] {sfPHPView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/indexSuccess.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_assets.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_flashes.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list_header.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.name AS m__name, m.created_at AS m__created_at, m.updated_at AS m__updated_at, m.slug AS m__slug FROM mf_category m - ()
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s - ()
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list_batch_actions.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list_actions.php"
+Jul 26 00:02:39 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list_footer.php"
+Jul 26 00:02:39 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+Jul 26 00:02:39 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+Jul 26 00:02:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Jul 26 00:02:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 00:02:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Configuration 1.80 ms (11)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Factories 11.98 ms (1)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Action "phrase/index" 19.61 ms (1)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (5)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} View "Success" for "phrase/index" 72.69 ms (1)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Partial "phrase/_assets" 0.87 ms (1)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Partial "phrase/_flashes" 0.88 ms (1)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_header" 0.76 ms (1)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Partial "phrase/_filters" 45.63 ms (1)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Partial "phrase/_filters_field" 36.57 ms (7)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Partial "phrase/_list" 1.29 ms (1)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_batch_actions" 1.97 ms (1)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_actions" 1.03 ms (1)
+Jul 26 00:02:39 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_footer" 0.83 ms (1)
+Jul 26 00:02:39 symfony [info] {sfWebResponse} Send content (92356 o)
+Jul 26 00:28:22 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jul 26 00:28:22 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jul 26 00:28:22 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'phrase',  'action' => 'index',)
+Jul 26 00:28:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 00:28:22 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Jul 26 00:28:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 00:28:22 symfony [info] {phraseActions} Call "phraseActions->executeIndex()"
+Jul 26 00:28:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 00:28:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM mf_phrase m - ()
+Jul 26 00:28:22 symfony [info] {sfPHPView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/indexSuccess.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_assets.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_flashes.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list_header.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:28:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.name AS m__name, m.created_at AS m__created_at, m.updated_at AS m__updated_at, m.slug AS m__slug FROM mf_category m - ()
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:28:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s - ()
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_filters_field.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list_batch_actions.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list_actions.php"
+Jul 26 00:28:22 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoPhrase/templates/_list_footer.php"
+Jul 26 00:28:22 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+Jul 26 00:28:22 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+Jul 26 00:28:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+Jul 26 00:28:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 00:28:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Configuration 217.63 ms (11)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Factories 117.39 ms (1)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Action "phrase/index" 17.41 ms (1)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (5)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} View "Success" for "phrase/index" 74.07 ms (1)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Partial "phrase/_assets" 0.84 ms (1)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Partial "phrase/_flashes" 0.89 ms (1)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_header" 0.82 ms (1)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Partial "phrase/_filters" 46.97 ms (1)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Partial "phrase/_filters_field" 38.53 ms (7)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Partial "phrase/_list" 0.99 ms (1)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_batch_actions" 1.42 ms (1)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_actions" 1.01 ms (1)
+Jul 26 00:28:22 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_footer" 0.70 ms (1)
+Jul 26 00:28:22 symfony [info] {sfWebResponse} Send content (92305 o)

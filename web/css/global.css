@@ -1,0 +1,51 @@
+body{
+  background: none repeat scroll 0 0 #FFFFFF;
+  color: #333333;
+  direction: ltr;
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  unicode-bidi: embed;
+}
+
+table{
+  width: auto;
+}
+
+th{
+  text-align: left;
+  color: #333;
+}
+
+table, td, tr, th{
+  border: 1px solid #B4BBCD;
+  background: #F0F0F0;
+  padding: 4px;
+}
+
+input, textarea, .inputtext, .inputpassword, select {
+    border: 1px solid #BDC7D8;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+    padding: 3px;
+}
+
+textarea{
+  width: 300px;
+}
+
+h1{
+
+}
+
+a{
+  color: #3B5998;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}

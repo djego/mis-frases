@@ -9,18 +9,16 @@ options:
 mfCategory:
   tableName: mf_category
   actAs:
+    Timestampable: ~ 
     Sluggable:
       fields: [name]
   columns:
-    id:   ~
-    name:
-      type: string(200)
-      notnull: true
+    name: { type: string(255), notnull: true, unique: true }
 
 mfPhrase:
   tableName: mf_phrase
+  actAs: { Timestampable: ~ }
   columns:
-    id:   ~
     content:
       type: string(250)
       notnull: true
@@ -38,8 +36,6 @@ mfPhrase:
       type: integer
       notnull: true
       default: true
-    created_at: ~
-    updated_at: ~
   relations:
     Category:
       class: mfCategory
@@ -51,3 +47,21 @@ mfPhrase:
       foreignAlias: Phrases
       local: user_id
       foreign: id
+      
+      
+mfComment:
+  tableName: mf_comment
+  actAs: { Timestampable: ~ }
+  columns:
+    comment:
+      type: string(5000)
+      notnull: true
+    user_id:
+      type: integer
+      notnull: true
+    phrase_id:
+      type: integer
+      notnull: true
+  relations:
+    sfGuardUser: { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: Comments } 
+    mfPhrase: { onDelete: CASCADE, local: phrase_id, foreign: id, foreignAlias: Comments } 

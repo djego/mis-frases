@@ -1,0 +1,7 @@
+all:
+  s_css: http://www.mis-frases.local/css/
+  s_js:  http://www.mis-frases.local/js/
+  s_img: http://www.mis-frases.local/images/
+  
+  time_out:  1800
+  cookie_domain: mis-frases.local
