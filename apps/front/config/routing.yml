@@ -2,6 +2,15 @@
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
 # default rules
+
+
+login:
+  url: /iniciar-sesion
+  param: { module: signin, action: signin }
+  
+
+logout:
+
 homepage:
   url:   /
   param: { module: home, action: index }

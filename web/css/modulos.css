@@ -1,0 +1,420 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:left;
+	font-size: 13px;
+	background-color:#eae8da;
+}
+
+
+#link-color a{
+	color:#0066CC;
+}
+#link-color a:hover{
+	color:#003366;
+}
+#ul-link-color{
+	list-style:url(images/icon/icon-ul.png);
+	padding-left:50px;
+}
+#ul-link-color a{
+	color:#0066CC;
+}
+#ul-link-color a:hover{
+	color:#0066CC;
+}
+/*----------------------------*/
+
+.login{
+	margin:0 auto;
+	padding:10px;
+	width:260px;
+	height:130px;
+	color:#666666;
+	text-align:justify;
+	background-color:#f4f3ec;
+}
+.login-acceso1{
+	margin:10px 0 0 0;
+        color: #333333;
+        height: 30px;
+        text-align: left;
+        width: 260px;
+}
+.login-acceso2{
+        width: 260px;
+	height:30px;
+	color:#333333;
+        text-align: left;
+}
+.login-tx{
+	padding:25px;
+	text-align:justify;
+}
+.login-tx2{
+	padding:10px;
+	text-align:center;
+}
+.login a{
+	color:#0066CC;
+}
+.login a:hover{
+	color:#003366;
+}
+
+/*----------------------------*/
+.novedades-cont{
+	float:left;
+	width:735px;
+	height:100%;
+	background-color:#FFFFFF;
+}
+.novedades{
+	float:left;
+	margin:20px 0 0 13px;
+	padding:10px;
+	width:699px;
+	height:auto;
+	color:#666666;
+	text-align:justify;
+	background-color:#f4f3ec;
+	border:1px;
+	border-style:solid;
+	border-color:#FF6600;
+}
+.novedades-caja1{
+	float:left;
+	padding:10px;
+}
+.novedades-caja2{
+	float:left;
+	padding:10px;
+	width:546px;
+	height:44px;
+}
+.novedades-caja3{
+	float:right;
+	padding:10px;
+}
+.novedades-caja4{
+	float:left;
+	margin:10px 0px 10px 0px;
+	width:735px;
+	text-align:center;
+}
+
+
+/* panel-usuarios */
+.panel-usuarios-pag-cont{
+	float:left;
+	width:740px;
+	height:100%;
+	background-color:#FFFFFF;
+}
+.panel-usuarios-cont{
+	float:left;
+	width:235px;
+	margin:20px 0 10px 10px;
+}
+.panel-usuarios-color-01{
+	width:236px;
+	height:30px;
+	padding-bottom:5px;
+	background-image:url(images/modulo-usuarios-01.jpg);
+	background-repeat:no-repeat;
+	background-color:#eae8da;
+}
+.panel-usuarios-color-02{
+	width:236px;
+	height:30px;
+	padding-bottom:5px;
+	background-image:url(images/modulo-usuarios-02.jpg);
+	background-repeat:no-repeat;
+	background-color:#eae8da;
+}
+.panel-usuarios-color-03{
+	width:236px;
+	height:30px;
+	padding-bottom:5px;
+	background-image:url(images/modulo-usuarios-03.jpg);
+	background-repeat:no-repeat;
+	background-color:#eae8da;
+}
+.panel-usuarios-color-04{
+	width:236px;
+	height:30px;
+	padding-bottom:5px;
+	background-image:url(images/modulo-usuarios-04.jpg);
+	background-repeat:no-repeat;
+	background-color:#eae8da;
+}
+.panel-usuarios-color-05{
+	width:236px;
+	height:30px;
+	padding-bottom:5px;
+	background-image:url(images/modulo-usuarios-05.jpg);
+	background-repeat:no-repeat;
+	background-color:#eae8da;
+}
+.panel-usuarios-color-06{
+	width:236px;
+	height:30px;
+	padding-bottom:5px;
+	background-image:url(images/modulo-usuarios-06.jpg);
+	background-repeat:no-repeat;
+	background-color:#eae8da;
+}
+.panel-usuarios-color-07{
+	width:236px;
+	height:30px;
+	padding-bottom:5px;
+	background-image:url(images/modulo-usuarios-07.jpg);
+	background-repeat:no-repeat;
+	background-color:#eae8da;
+}
+/* icono */
+.panel-usuarios-icon{
+	float:left;
+	width:20px;
+	height:17px;
+	padding-left:10px;
+	padding-top:5px;
+}
+/* titulo panel */
+.panel-usuarios-icon-tx{
+	float:left;
+	width:236px;
+	height:17px;
+	margin-top:7px;
+	text-align:center;
+	font-size:12px;
+	color:#FFF;
+	font-weight:600;
+}
+.panel-usuarios-02{
+	float:left;
+	width:236px;
+	/*height:198px;*/
+	background-color:#eae8da;
+}
+/* caja usuarios */
+.panel-usuarios-02-caja-cont{
+	float:left;
+	width:220px;
+	height:44px;
+	margin:0 0 5px 7px;
+	background-color:#fffdee;
+}
+.panel-usuarios-02-caja-01{
+	float:left;
+	width:44px;
+	height:44px;
+}
+.panel-usuarios-02-caja-02{
+	float:left;
+	padding:10px 10px 0 10px;
+	/*width:135px;*/
+	height:34px;
+}
+/* caja usuarios */
+
+.panel-usuarios-03{
+	float:left;
+	width:236px;
+	height:16px;
+	background-image:url(images/modulo-usuarios-03.png);
+	background-repeat:no-repeat;
+}
+
+/* FIN panel usuarios */
+
+/* panel-libro de frases del mes */
+.panel-libro-cont{
+	float:right;
+	margin-right:20px;
+	width:236px;
+	height:100%;
+	background-image:url(images/icon/libro-mis-frases-fondo.png);
+	background-repeat:no-repeat;
+}
+.panel-libro-01{
+	float:left;
+	width:220px;
+	height:44px;
+	margin:0 0 5px 7px;
+}
+.panel-libro-02{
+	float:left;
+	width:44px;
+	height:44px;
+}
+.panel-libro-03{
+	float:left;
+	padding:10px 10px 0 10px;
+	/*width:135px;*/
+	height:34px;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* usuario */
+
+.usuario-cont{
+	width:480px;
+	height:450px;
+	margin:0 auto;
+	padding:40px 0 0 0;
+}
+.usuario-titulo{
+	width:460px;
+	height:30px;
+	padding:12px 0 0 20px;
+	margin-bottom:20px;
+	background-image:url(images/icon/usuario-titulo.png);
+	background-repeat:no-repeat;
+	color:#004364;
+	font-size:16px;
+}
+.usuario-caja01-cont{
+	float:left;
+	width:100px;
+	height:100px;
+	margin:10px;
+}
+.usuario-caja01-img{
+	width:45px;
+	height:45px;
+	margin:0 auto;
+}
+.usuario-caja01-tx{
+	width:100px;
+	margin:10px 0 0 0;
+	text-align:center;
+}
+
+/* panel de usuario */
+
+.usuarios-panel-datos-cont{
+	float:left;
+	width:230px;
+	margin:40px 0 10px 0px;
+}
+.usuarios-panel-datos-color-03{
+	width:236px;
+	height:30px;
+	padding-bottom:5px;
+	background-image:url(images/modulo-usuarios-03.jpg);
+	background-repeat:no-repeat;
+	background-color:#eae8da;
+}
+/* caja sobre usuario */
+.usuarios-panel-datos-caja-cont{
+	float:left;
+	width:220px;
+	/*height:44px;*/
+	margin:0 0 5px 7px;
+	background-color:#fffdee;
+}
+.usuarios-panel-datos-caja-01{
+	float:left;
+	width:80px;
+	height:80px;
+}
+.usuarios-panel-datos-caja-02{
+	float:left;
+	padding:10px 0 0 10px;
+	/*width:135px;*/
+	/*height:34px;*/
+}
+/* FIN caja sobre usuario */
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* caja menu2 usuario */
+
+.usuarios-menu2-cont{
+	float:left;
+	width:220px;
+	/*height:44px;*/
+	margin:0 0 5px 7px;
+	background-color:#fffdee;
+}
+.usuarios-menu2-caja-01{
+	float:left;
+	width:45px;
+	height:45px;
+}
+.usuarios-menu2-caja-02{
+	float:left;
+	width:160px;
+	padding:15px 0 0 10px;
+	/*width:135px;*/
+	/*height:34px;*/
+}
+
+#usuarios-menu2 li{ 
+   float:left; 
+} 
+#usuarios-menu2 li a{
+	display:block;
+	color:#0066CC;
+	width:215px; 
+   background-color:#f5f7f9; 
+   padding:5px; 
+   margin:5px 0 0 5px;
+   text-align:left; 
+   border-right: #a5a7aa solid 1px; 
+   border-bottom: #a5a7aa solid 1px;
+	
+}
+#usuarios-menu2 li a:hover{
+	color:#003366;
+	background-color:#DDD2A6;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* FIN caja menu2 usuario */
+
+/*-------------------------------------*/
+
+/* usuario libro de frases */
+
+.usuario-libro-frases-pag-cont{
+	width:480px;
+	height:550px;
+	margin:0 auto;
+	padding:40px 0 0 0;
+}
+.usuario-libro-frases-cont{
+	float:left;
+	width:220px;
+	/*height:100px;*/
+	margin:10px;
+}
+.usuario-libro-frases-01{
+	width:220px;
+	height:45px;
+	padding:14px 0 0 0;
+	text-align:center;
+	font-weight:bold;
+	color:#653C34;
+	background-image:url(images/usuario-libro-frases-f.png);
+	background-repeat:no-repeat;
+}
+.usuario-libro-frases-02{
+	width:210px;
+	padding:5px;
+}
+#usuario-libro-frases ul li{
+	padding:2px;
+	float:left;
+}
+
+/* FIN usuario libro de frases */
+
+/* FIN panel de usuario */
+
+/* FIN usuario */
