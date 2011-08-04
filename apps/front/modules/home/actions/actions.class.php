@@ -17,6 +17,17 @@ class homeActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+    $this->lst_phrase = Doctrine::getTable('mfPhrase')->createQuery()->orderBy('created_at')->limit(10)->execute();
+  }
+  
+  public function executeCategory(sfWebRequest $request)
+  {
+    $this->lst_category =  Doctrine::getTable('mfCategory')->findAll();
+  }
+  
+  public function executeCategoryList(sfWebRequest $request)
+  {
     
   }
 }
+

@@ -3,14 +3,35 @@
 
 # default rules
 
+## PANEL ### 
+new_phrase:
+  url: /nueva-frase
+  param: { module: panel, action: createPhrase }
+### FIN PANEL ###
+
+
+
+category_list:
+  url: /categoria/:slug
+  param: { module: home, action: categoryList }
+category:
+  url: /categorias
+  param: { module: home, action: category }
+
 
 login:
   url: /iniciar-sesion
   param: { module: signin, action: signin }
   
-
 logout:
-
+  url: /cerrar-sesion
+  param: { module: signin, action: signout }
+  
+  
+register:
+  url: /registro
+  param: { module: sfGuardRegister, action: index }
+  
 homepage:
   url:   /
   param: { module: home, action: index }

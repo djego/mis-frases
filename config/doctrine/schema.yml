@@ -19,8 +19,10 @@ mfPhrase:
   tableName: mf_phrase
   actAs: { Timestampable: ~ }
   columns:
+    title:
+      type: string(100)
     content:
-      type: string(250)
+      type: string(50000)
       notnull: true
     category_id:
       type: integer
@@ -31,11 +33,11 @@ mfPhrase:
     visits:
       type: integer
       notnull: true
-      default: true
+      default: 0
     comments:
       type: integer
       notnull: true
-      default: true
+      default: 0
   relations:
     Category:
       class: mfCategory
@@ -63,5 +65,5 @@ mfComment:
       type: integer
       notnull: true
   relations:
-    sfGuardUser: { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: Comments } 
-    mfPhrase: { onDelete: CASCADE, local: phrase_id, foreign: id, foreignAlias: Comments } 
+    sfGuardUser: { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: MfComments } 
+    mfPhrase: { onDelete: CASCADE, local: phrase_id, foreign: id, foreignAlias: MfComments } 

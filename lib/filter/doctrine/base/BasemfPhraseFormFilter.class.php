@@ -13,6 +13,7 @@ abstract class BasemfPhraseFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
+      'title'       => new sfWidgetFormFilterInput(),
       'content'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'category_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Category'), 'add_empty' => true)),
       'user_id'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'add_empty' => true)),
@@ -23,6 +24,7 @@ abstract class BasemfPhraseFormFilter extends BaseFormFilterDoctrine
     ));
 
     $this->setValidators(array(
+      'title'       => new sfValidatorPass(array('required' => false)),
       'content'     => new sfValidatorPass(array('required' => false)),
       'category_id' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Category'), 'column' => 'id')),
       'user_id'     => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('User'), 'column' => 'id')),
@@ -50,6 +52,7 @@ abstract class BasemfPhraseFormFilter extends BaseFormFilterDoctrine
   {
     return array(
       'id'          => 'Number',
+      'title'       => 'Text',
       'content'     => 'Text',
       'category_id' => 'ForeignKey',
       'user_id'     => 'ForeignKey',

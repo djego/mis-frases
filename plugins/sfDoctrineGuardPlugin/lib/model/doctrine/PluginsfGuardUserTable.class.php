@@ -27,7 +27,15 @@ abstract class PluginsfGuardUserTable extends Doctrine_Table
 
     return $query->fetchOne();
   }
+  public function retrieveByUsernameBackend($username, $isActive = true)
+  {
+    $query = Doctrine_Core::getTable('sfGuardUser')->createQuery('u')
+      ->where('u.username = ?', $username)
+      ->addWhere('u.is_active = ?', $isActive)
+      ->addWhere('u.is_super_admin =?',true);
 
+    return $query->fetchOne();
+  }
   /**
    * Retrieves a sfGuardUser object by username or email_address and is_active flag.
    *

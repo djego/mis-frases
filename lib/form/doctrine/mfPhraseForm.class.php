@@ -12,5 +12,8 @@ class mfPhraseForm extends BasemfPhraseForm
 {
   public function configure()
   {
+    unset(
+            $this['updated_at'], $this['created_at']
+    );
   }
 }

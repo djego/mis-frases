@@ -19,7 +19,7 @@ html, body {
 	color:#003366;
 }
 #ul-link-color{
-	list-style:url(images/icon/icon-ul.png);
+	list-style:url(/images/icon/icon-ul.png);
 	padding-left:50px;
 }
 #ul-link-color a{
@@ -125,7 +125,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(images/modulo-usuarios-01.jpg);
+	background-image:url(/images/modulo-usuarios-01.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -133,7 +133,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(images/modulo-usuarios-02.jpg);
+	background-image:url(/images/modulo-usuarios-02.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -141,7 +141,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(images/modulo-usuarios-03.jpg);
+	background-image:url(/images/modulo-usuarios-03.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -149,7 +149,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(images/modulo-usuarios-04.jpg);
+	background-image:url(/images/modulo-usuarios-04.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -157,7 +157,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(images/modulo-usuarios-05.jpg);
+	background-image:url(/images/modulo-usuarios-05.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -165,7 +165,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(images/modulo-usuarios-06.jpg);
+	background-image:url(/images/modulo-usuarios-06.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -173,7 +173,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(images/modulo-usuarios-07.jpg);
+	background-image:url(/images/modulo-usuarios-07.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -227,7 +227,7 @@ html, body {
 	float:left;
 	width:236px;
 	height:16px;
-	background-image:url(images/modulo-usuarios-03.png);
+	background-image:url(/images/modulo-usuarios-03.png);
 	background-repeat:no-repeat;
 }
 
@@ -239,7 +239,7 @@ html, body {
 	margin-right:20px;
 	width:236px;
 	height:100%;
-	background-image:url(images/icon/libro-mis-frases-fondo.png);
+	background-image:url(/images/icon/libro-mis-frases-fondo.png);
 	background-repeat:no-repeat;
 }
 .panel-libro-01{
@@ -273,7 +273,7 @@ html, body {
 	height:30px;
 	padding:12px 0 0 20px;
 	margin-bottom:20px;
-	background-image:url(images/icon/usuario-titulo.png);
+	background-image:url(/images/icon/usuario-titulo.png);
 	background-repeat:no-repeat;
 	color:#004364;
 	font-size:16px;
@@ -306,7 +306,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(images/modulo-usuarios-03.jpg);
+	background-image:url(/images/modulo-usuarios-03.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -401,7 +401,7 @@ html, body {
 	text-align:center;
 	font-weight:bold;
 	color:#653C34;
-	background-image:url(images/usuario-libro-frases-f.png);
+	background-image:url(/images/usuario-libro-frases-f.png);
 	background-repeat:no-repeat;
 }
 .usuario-libro-frases-02{

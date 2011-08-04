@@ -35,7 +35,7 @@
           <li style="float: right">
             <?php if($sf_user->getGuardUser()): ?>
             <span><?php echo $sf_user->getGuardUser()->getEmailAddress(); ?></span>
-            <a href="guard/logout">Cerrar</a>
+            <a href="<?php echo url_for('logout_back')?>">Cerrar</a>
             <?php endif; ?>
           </li>
         </ul>

@@ -16,7 +16,8 @@ abstract class BasemfPhraseForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'          => new sfWidgetFormInputHidden(),
-      'content'     => new sfWidgetFormInputText(),
+      'title'       => new sfWidgetFormInputText(),
+      'content'     => new sfWidgetFormTextarea(),
       'category_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Category'), 'add_empty' => false)),
       'user_id'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('User'), 'add_empty' => false)),
       'visits'      => new sfWidgetFormInputText(),
@@ -27,7 +28,8 @@ abstract class BasemfPhraseForm extends BaseFormDoctrine
 
     $this->setValidators(array(
       'id'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'content'     => new sfValidatorString(array('max_length' => 250)),
+      'title'       => new sfValidatorString(array('max_length' => 100, 'required' => false)),
+      'content'     => new sfValidatorString(array('max_length' => 50000)),
       'category_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Category'))),
       'user_id'     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('User'))),
       'visits'      => new sfValidatorInteger(array('required' => false)),

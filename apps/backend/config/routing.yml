@@ -1,3 +1,13 @@
+
+
+login_back:
+  url:   /ingresar-admin
+  param: { module: sfGuardAuth, action: signin }  
+
+logout_back:
+  url:   /salir-admin
+  param: { module: sfGuardAuth, action: signout }  
+
 sf_guard_user:
   class: sfDoctrineRouteCollection
   options:
