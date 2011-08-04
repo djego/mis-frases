@@ -5512,3 +5512,272 @@ ago 04 01:06:24 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_batch_ac
 ago 04 01:06:24 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_actions" 1.06 ms (1)
 ago 04 01:06:24 symfony [info] {sfWebDebugLogger} Partial "phrase/_list_footer" 0.82 ms (1)
 ago 04 01:06:24 symfony [info] {sfWebResponse} Send content (123684 o)
+Aug 04 01:35:55 symfony [info] {sfPatternRouting} Match route "sf_guard_user" (/user.:sf_format) for /user with parameters array (  'module' => 'user',  'action' => 'index',  'sf_format' => 'html',)
+ago 04 01:35:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+ago 04 01:35:55 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+ago 04 01:35:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+ago 04 01:35:55 symfony [info] {userActions} Call "userActions->executeIndex()"
+ago 04 01:35:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+ago 04 01:35:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM sf_guard_user s - ()
+ago 04 01:35:55 symfony [info] {sfPHPView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/indexSuccess.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_assets.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_flashes.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_header.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_group s - ()
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_permission s - ()
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_th_tabular.php"
+ago 04 01:35:55 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:35:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s LIMIT 20 - ()
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_batch_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_actions.php"
+ago 04 01:35:55 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_footer.php"
+ago 04 01:35:55 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+ago 04 01:35:55 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+ago 04 01:35:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+ago 04 01:35:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+ago 04 01:35:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Configuration 316.61 ms (11)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Factories 148.11 ms (1)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Action "user/index" 16.61 ms (1)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (6)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 205.50 ms (1)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_assets" 0.85 ms (1)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_flashes" 0.89 ms (1)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_list_header" 0.76 ms (1)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_filters" 75.25 ms (1)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_filters_field" 55.92 ms (14)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_list" 106.63 ms (1)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_list_th_tabular" 6.60 ms (1)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_list_td_batch_actions" 7.54 ms (8)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_list_td_tabular" 53.97 ms (8)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_list_field_boolean" 14.91 ms (16)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_list_td_actions" 25.61 ms (8)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_list_batch_actions" 1.54 ms (1)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_list_actions" 1.11 ms (1)
+ago 04 01:35:55 symfony [info] {sfWebDebugLogger} Partial "user/_list_footer" 0.80 ms (1)
+ago 04 01:35:55 symfony [info] {sfWebResponse} Send content (205683 o)
+Aug 04 01:35:58 symfony [info] {sfPatternRouting} Match route "mf_comment" (/comment.:sf_format) for /comment with parameters array (  'module' => 'comment',  'action' => 'index',  'sf_format' => 'html',)
+ago 04 01:35:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+ago 04 01:35:58 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+ago 04 01:35:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+ago 04 01:35:58 symfony [info] {commentActions} Call "commentActions->executeIndex()"
+ago 04 01:35:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+ago 04 01:35:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM mf_comment m - ()
+ago 04 01:35:58 symfony [info] {sfPHPView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/indexSuccess.php"
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_assets.php"
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_flashes.php"
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_list_header.php"
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_filters.php"
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_filters_field.php"
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_filters_field.php"
+ago 04 01:35:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s - ()
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_filters_field.php"
+ago 04 01:35:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_filters_field.php"
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_filters_field.php"
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_list.php"
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_list_batch_actions.php"
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_list_actions.php"
+ago 04 01:35:58 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoComment/templates/_list_footer.php"
+ago 04 01:35:58 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+ago 04 01:35:58 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+ago 04 01:35:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+ago 04 01:35:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+ago 04 01:35:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Configuration 46.96 ms (12)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Factories 22.36 ms (1)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Action "comment/index" 17.64 ms (1)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (5)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} View "Success" for "comment/index" 77.00 ms (1)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Partial "comment/_assets" 0.81 ms (1)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Partial "comment/_flashes" 0.86 ms (1)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Partial "comment/_list_header" 0.74 ms (1)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Partial "comment/_filters" 52.43 ms (1)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Partial "comment/_filters_field" 43.58 ms (5)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Partial "comment/_list" 1.25 ms (1)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Partial "comment/_list_batch_actions" 1.58 ms (1)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Partial "comment/_list_actions" 1.08 ms (1)
+ago 04 01:35:58 symfony [info] {sfWebDebugLogger} Partial "comment/_list_footer" 0.85 ms (1)
+ago 04 01:35:58 symfony [info] {sfWebResponse} Send content (81738 o)
+Aug 04 01:35:59 symfony [info] {sfPatternRouting} Match route "sf_guard_user" (/user.:sf_format) for /user with parameters array (  'module' => 'user',  'action' => 'index',  'sf_format' => 'html',)
+ago 04 01:35:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+ago 04 01:35:59 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+ago 04 01:35:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+ago 04 01:35:59 symfony [info] {userActions} Call "userActions->executeIndex()"
+ago 04 01:35:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+ago 04 01:35:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM sf_guard_user s - ()
+ago 04 01:35:59 symfony [info] {sfPHPView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/indexSuccess.php"
+ago 04 01:35:59 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_assets.php"
+ago 04 01:35:59 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_flashes.php"
+ago 04 01:35:59 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_header.php"
+ago 04 01:35:59 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters.php"
+ago 04 01:35:59 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:35:59 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_group s - ()
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_filters_field.php"
+ago 04 01:36:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_permission s - ()
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_th_tabular.php"
+ago 04 01:36:00 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Set slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {main} Get slot "sf_admin.current_header"
+ago 04 01:36:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s LIMIT 20 - ()
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_batch_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_tabular.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_field_boolean.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_td_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_batch_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_actions.php"
+ago 04 01:36:00 symfony [info] {sfPartialView} Render "/var/www/mis-frases/cache/backend/dev/modules/autoUser/templates/_list_footer.php"
+ago 04 01:36:00 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/backend/templates/layout.php"
+ago 04 01:36:00 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/backend/templates/layout.php"
+ago 04 01:36:00 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (1)
+ago 04 01:36:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+ago 04 01:36:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Configuration 1.88 ms (11)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Factories 13.93 ms (1)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Action "user/index" 23.41 ms (1)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (6)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 244.78 ms (1)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_assets" 1.63 ms (1)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_flashes" 0.88 ms (1)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_list_header" 0.74 ms (1)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_filters" 84.73 ms (1)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_filters_field" 70.06 ms (14)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_list" 121.83 ms (1)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_list_th_tabular" 6.95 ms (1)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_list_td_batch_actions" 7.94 ms (8)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_list_td_tabular" 70.56 ms (8)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_list_field_boolean" 16.34 ms (16)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_list_td_actions" 22.44 ms (8)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_list_batch_actions" 8.49 ms (1)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_list_actions" 1.97 ms (1)
+ago 04 01:36:00 symfony [info] {sfWebDebugLogger} Partial "user/_list_footer" 0.83 ms (1)
+ago 04 01:36:00 symfony [info] {sfWebResponse} Send content (205681 o)
