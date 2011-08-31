@@ -5,3 +5,10 @@ all:
   
   time_out:  1800
   cookie_domain: mis-frases.local
+  recaptcha:
+    active:     true
+    publickey:  "6LcXQMcSAAAAAAXbu94zeIISl4YrTM9hOCixnbU2"
+    privatekey: "6LcXQMcSAAAAAPVM0kLQTNvPfaM8G7yBqFhT3CTh"
+  mailhide:
+    publickey:  "6LcXQMcSAAAAAAXbu94zeIISl4YrTM9hOCixnbU2"
+    privatekey: "6LcXQMcSAAAAAPVM0kLQTNvPfaM8G7yBqFhT3CTh"

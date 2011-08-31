@@ -42,7 +42,7 @@ class sfValidatorSchemaReCaptcha extends sfValidatorSchema
     {
       throw new InvalidArgumentException('You must pass an array parameter to the clean() method');
     }
-
+    
     sfProjectConfiguration::getActive()->loadHelpers('recaptcha');
 
     $challengeValue = $values[$this->getOption('challenge_field')];

@@ -10,7 +10,7 @@
  *
  * @author diegohome
  */
-class registerForm extends BaseForm {
+class registerForm extends reCaptchaForm {
 
   //put your code here
 
@@ -55,9 +55,7 @@ class registerForm extends BaseForm {
     
     if (sfConfig::get('app_recaptcha_active', false)) {
       $this->setWidget('response', new sfWidgetFormInput());
-      $this->validatorSchema->setPostValidator(
-              new sfValidatorSchemaReCaptcha('challenge', 'response')
-      );
+
       $this->validatorSchema->setOption('allow_extra_fields', true);
       $this->validatorSchema->setOption('filter_extra_fields', false);
     }
@@ -74,9 +72,11 @@ class registerForm extends BaseForm {
                         'password', '==', 're-password',
                         array('throw_global_error' => true),
                         array('invalid' => 'Contraseña no coincide')
-                )
+                ),
+        new sfValidatorSchemaReCaptcha('challenge', 'response')
             )));
 
+    
 
 
 

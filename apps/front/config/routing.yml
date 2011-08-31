@@ -7,10 +7,22 @@
 new_phrase:
   url: /nueva-frase
   param: { module: panel, action: createPhrase }
+panel:
+  url: /panel
+  param: { module: panel, action: index }
+user_book_ph:
+  url: /usuario-libro-frases.html
+  param: { module: panel, action: userBookPhrase }
 ### FIN PANEL ###
 
 
-
+users_list:
+  url: /nuestros-usuarios.html
+  param: { module: home, action: users }
+news:
+  url: /novedades.html
+  param: { module: home, action: news }
+  
 category_list:
   url: /categoria/:slug
   param: { module: home, action: categoryList }

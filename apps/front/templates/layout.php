@@ -99,8 +99,8 @@
             	<li><a href="<?php echo url_for('homepage'); ?>">Inicio</a></li>
     			<li><a href="<?php echo url_for('new_phrase')?>">Publicar una frase</a></li>
         		<li><a href="<?php echo url_for('category') ?>">Categoria de frases</a></li>
-        		<li><a href="novedades.html">Novedades</a></li>
-        		<li><a href="usuarios.html">Nuestros usuarios</a></li>
+        		<li><a href="<?php echo url_for('news') ?>">Novedades</a></li>
+        		<li><a href="<?php echo url_for('users_list') ?>">Nuestros usuarios</a></li>
         		<li><a href="http://frases-citas.euroresidentes.com/" 
                 target="_blank">Blog de mis frases</a></li>
     		</ul>

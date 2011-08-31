@@ -180,3 +180,20 @@ sfGuardForgotPassword:
       foreignType: one
       foreignAlias: ForgotPassword
       onDelete: CASCADE
+      
+      
+sfGuardUserProfile:
+  actAs: [Timestampable]
+  columns:
+    user_id:
+      type: integer
+      notnull: true
+    gender: string(1)
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      type: one
+      foreignType: one
+      foreignAlias: Profile
+      onDelete: CASCADE

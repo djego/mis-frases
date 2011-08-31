@@ -38,7 +38,7 @@ class signinActions extends sfActions {
 
 
         $signinUrl = sfConfig::get('app_sf_guard_plugin_success_signin_url', $user->getReferer($request->getReferer()));
-        return $this->redirect('' != $signinUrl ? $signinUrl : '@homepage');
+        return $this->redirect('' != $signinUrl ? $signinUrl : '@panel');
       } 
     }else {
       if ($request->isXmlHttpRequest()) {
