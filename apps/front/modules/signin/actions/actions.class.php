@@ -19,6 +19,7 @@ class signinActions extends sfActions {
     $this->form = new sfGuardFormSignin();
 
     if ($request->isMethod('post')) {
+     
       $val_form = $request->getParameter('signin');
 
       $this->form->bind($val_form);
@@ -38,6 +39,7 @@ class signinActions extends sfActions {
 
 
         $signinUrl = sfConfig::get('app_sf_guard_plugin_success_signin_url', $user->getReferer($request->getReferer()));
+//        echo $signinUrl;die();
         return $this->redirect('' != $signinUrl ? $signinUrl : '@panel');
       } 
     }else {

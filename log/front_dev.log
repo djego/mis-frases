@@ -22610,3 +22610,972 @@ Aug 30 10:52:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Fou
 Aug 30 10:52:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
 Aug 30 10:52:24 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (5)
 Aug 30 10:52:24 symfony [info] {sfWebDebugLogger} Factories 514.48 ms (1)
+Aug 31 10:42:37 symfony [info] {sfPatternRouting} Match route "user_book_ph" (/usuario-libro-frases.html) for /usuario-libro-frases.html with parameters array (  'module' => 'panel',  'action' => 'userBookPhrase',)
+Aug 31 10:42:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:42:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:42:38 symfony [info] {panelActions} Call "panelActions->executeUserBookPhrase()"
+Aug 31 10:42:38 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/panel/templates/userBookPhraseSuccess.php"
+Aug 31 10:42:38 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:42:38 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:42:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:42:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:42:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 31 10:42:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:38 symfony [info] {sfWebDebugLogger} Configuration 362.82 ms (9)
+Aug 31 10:42:38 symfony [info] {sfWebDebugLogger} Factories 383.05 ms (1)
+Aug 31 10:42:38 symfony [info] {sfWebDebugLogger} Action "panel/userBookPhrase" 0.12 ms (1)
+Aug 31 10:42:38 symfony [info] {sfWebDebugLogger} View "Success" for "panel/userBookPhrase" 616.27 ms (1)
+Aug 31 10:42:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Aug 31 10:42:38 symfony [info] {sfWebResponse} Send content (46270 o)
+Aug 31 10:42:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:42:39 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/like-icon.png with parameters array (  'module' => 'images',  'action' => 'icon',  'like-icon.png' => true,)
+Aug 31 10:42:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:42:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/coment.png with parameters array (  'module' => 'images',  'action' => 'icon',  'coment.png' => true,)
+Aug 31 10:42:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/estad.png with parameters array (  'module' => 'images',  'action' => 'icon',  'estad.png' => true,)
+Aug 31 10:42:39 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (5)
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Factories 27.80 ms (1)
+Aug 31 10:42:39 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:39 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/clock-frame.png with parameters array (  'module' => 'images',  'action' => 'icon',  'clock-frame.png' => true,)
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (5)
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Factories 160.38 ms (1)
+Aug 31 10:42:39 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:39 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (5)
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Factories 222.05 ms (1)
+Aug 31 10:42:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/heart.png with parameters array (  'module' => 'images',  'action' => 'icon',  'heart.png' => true,)
+Aug 31 10:42:39 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:39 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/star.png with parameters array (  'module' => 'images',  'action' => 'icon',  'star.png' => true,)
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (5)
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Factories 286.05 ms (1)
+Aug 31 10:42:39 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:42:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/calico-poeta2.png with parameters array (  'module' => 'images',  'action' => 'icon',  'calico-poeta2.png' => true,)
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Configuration 0.89 ms (5)
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Factories 350.83 ms (1)
+Aug 31 10:42:39 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:39 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/usuario-libro.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'usuario-libro.jpg' => true,)
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Configuration 4.11 ms (5)
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Factories 169.52 ms (1)
+Aug 31 10:42:39 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:39 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/usuario-contacto.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'usuario-contacto.jpg' => true,)
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (5)
+Aug 31 10:42:39 symfony [info] {sfWebDebugLogger} Factories 489.71 ms (1)
+Aug 31 10:42:40 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/usuario-frases-enviadas.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'usuario-frases-enviadas.jpg' => true,)
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 186.70 ms (1)
+Aug 31 10:42:40 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/usuario-comentarios.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'usuario-comentarios.jpg' => true,)
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 2.15 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 449.25 ms (1)
+Aug 31 10:42:40 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/usuario-imagenes.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'usuario-imagenes.jpg' => true,)
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 198.89 ms (1)
+Aug 31 10:42:40 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/usuario-frases-favoritas.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'usuario-frases-favoritas.jpg' => true,)
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 468.25 ms (1)
+Aug 31 10:42:40 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/usuario-mis-amigos.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'usuario-mis-amigos.jpg' => true,)
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 0.86 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 52.52 ms (1)
+Aug 31 10:42:40 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 379.91 ms (1)
+Aug 31 10:42:40 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 602.26 ms (1)
+Aug 31 10:42:40 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/usuario-mis-escritos.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'usuario-mis-escritos.jpg' => true,)
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 394.91 ms (1)
+Aug 31 10:42:40 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/usuario-mejores-momentos.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'usuario-mejores-momentos.jpg' => true,)
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 531.18 ms (1)
+Aug 31 10:42:40 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/usuario-mejores-nicks.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'usuario-mejores-nicks.jpg' => true,)
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 401.04 ms (1)
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/favicon.ico" (/).
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 376.31 ms (1)
+Aug 31 10:42:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/usuario-consejero.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'usuario-consejero.jpg' => true,)
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/favicon.png" (/).
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 346.92 ms (1)
+Aug 31 10:42:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/usuario-mail.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'usuario-mail.jpg' => true,)
+Aug 31 10:42:40 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:40 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Aug 31 10:42:40 symfony [info] {sfWebDebugLogger} Factories 351.72 ms (1)
+Aug 31 10:42:41 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:41 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:41 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Aug 31 10:42:41 symfony [info] {sfWebDebugLogger} Factories 334.17 ms (1)
+Aug 31 10:42:41 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:41 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:41 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Aug 31 10:42:41 symfony [info] {sfWebDebugLogger} Factories 325.41 ms (1)
+Aug 31 10:42:41 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:41 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:41 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Aug 31 10:42:41 symfony [info] {sfWebDebugLogger} Factories 306.08 ms (1)
+Aug 31 10:42:41 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:42:41 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:42:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:42:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:42:41 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (5)
+Aug 31 10:42:41 symfony [info] {sfWebDebugLogger} Factories 305.82 ms (1)
+Aug 31 10:43:03 symfony [info] {sfPatternRouting} Match route "new_phrase" (/nueva-frase) for /nueva-frase with parameters array (  'module' => 'panel',  'action' => 'createPhrase',)
+Aug 31 10:43:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:03 symfony [info] {panelActions} Call "panelActions->executeCreatePhrase()"
+Aug 31 10:43:03 symfony [info] {panelActions} Forward to action "signin/signin"
+Aug 31 10:43:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:03 symfony [info] {signinActions} Call "signinActions->executeSignin()"
+Aug 31 10:43:03 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/signin/templates/signinSuccess.php"
+Aug 31 10:43:03 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:03 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:43:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Aug 31 10:43:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:03 symfony [info] {sfWebDebugLogger} Configuration 32.35 ms (13)
+Aug 31 10:43:03 symfony [info] {sfWebDebugLogger} Factories 9.55 ms (1)
+Aug 31 10:43:03 symfony [info] {sfWebDebugLogger} Action "panel/createPhrase" 75.70 ms (1)
+Aug 31 10:43:03 symfony [info] {sfWebDebugLogger} Action "signin/signin" 3.33 ms (1)
+Aug 31 10:43:03 symfony [info] {sfWebDebugLogger} View "Success" for "signin/signin" 42.62 ms (1)
+Aug 31 10:43:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Aug 31 10:43:03 symfony [info] {sfWebResponse} Send content (45445 o)
+Aug 31 10:43:03 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:43:03 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:43:03 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:03 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:03 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (5)
+Aug 31 10:43:03 symfony [info] {sfWebDebugLogger} Factories 18.87 ms (1)
+Aug 31 10:43:03 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:43:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:03 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (5)
+Aug 31 10:43:03 symfony [info] {sfWebDebugLogger} Factories 73.57 ms (1)
+Aug 31 10:43:03 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:03 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:03 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (5)
+Aug 31 10:43:03 symfony [info] {sfWebDebugLogger} Factories 135.80 ms (1)
+Aug 31 10:43:06 symfony [info] {sfPatternRouting} Match route "new_phrase" (/nueva-frase) for /nueva-frase with parameters array (  'module' => 'panel',  'action' => 'createPhrase',)
+Aug 31 10:43:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:06 symfony [info] {panelActions} Call "panelActions->executeCreatePhrase()"
+Aug 31 10:43:06 symfony [info] {panelActions} Forward to action "signin/signin"
+Aug 31 10:43:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:06 symfony [info] {signinActions} Call "signinActions->executeSignin()"
+Aug 31 10:43:06 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/signin/templates/signinSuccess.php"
+Aug 31 10:43:06 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:06 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:43:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Aug 31 10:43:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:06 symfony [info] {sfWebDebugLogger} Configuration 1.88 ms (12)
+Aug 31 10:43:06 symfony [info] {sfWebDebugLogger} Factories 6.70 ms (1)
+Aug 31 10:43:06 symfony [info] {sfWebDebugLogger} Action "panel/createPhrase" 23.04 ms (1)
+Aug 31 10:43:06 symfony [info] {sfWebDebugLogger} Action "signin/signin" 2.75 ms (1)
+Aug 31 10:43:06 symfony [info] {sfWebDebugLogger} View "Success" for "signin/signin" 17.47 ms (1)
+Aug 31 10:43:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Aug 31 10:43:06 symfony [info] {sfWebResponse} Send content (45627 o)
+Aug 31 10:43:06 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:43:06 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:06 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:43:06 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:06 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (5)
+Aug 31 10:43:06 symfony [info] {sfWebDebugLogger} Factories 13.51 ms (1)
+Aug 31 10:43:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:43:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:06 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (5)
+Aug 31 10:43:06 symfony [info] {sfWebDebugLogger} Factories 78.27 ms (1)
+Aug 31 10:43:06 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:06 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:06 symfony [info] {sfWebDebugLogger} Configuration 0.86 ms (5)
+Aug 31 10:43:06 symfony [info] {sfWebDebugLogger} Factories 146.75 ms (1)
+Aug 31 10:43:07 symfony [info] {sfPatternRouting} Match route "new_phrase" (/nueva-frase) for /nueva-frase with parameters array (  'module' => 'panel',  'action' => 'createPhrase',)
+Aug 31 10:43:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:07 symfony [info] {panelActions} Call "panelActions->executeCreatePhrase()"
+Aug 31 10:43:07 symfony [info] {panelActions} Forward to action "signin/signin"
+Aug 31 10:43:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:07 symfony [info] {signinActions} Call "signinActions->executeSignin()"
+Aug 31 10:43:07 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/signin/templates/signinSuccess.php"
+Aug 31 10:43:07 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:07 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:43:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Aug 31 10:43:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:07 symfony [info] {sfWebDebugLogger} Configuration 1.91 ms (12)
+Aug 31 10:43:07 symfony [info] {sfWebDebugLogger} Factories 6.50 ms (1)
+Aug 31 10:43:07 symfony [info] {sfWebDebugLogger} Action "panel/createPhrase" 21.97 ms (1)
+Aug 31 10:43:07 symfony [info] {sfWebDebugLogger} Action "signin/signin" 2.75 ms (1)
+Aug 31 10:43:07 symfony [info] {sfWebDebugLogger} View "Success" for "signin/signin" 16.74 ms (1)
+Aug 31 10:43:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Aug 31 10:43:07 symfony [info] {sfWebResponse} Send content (45627 o)
+Aug 31 10:43:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:43:07 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:07 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:43:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:07 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (5)
+Aug 31 10:43:07 symfony [info] {sfWebDebugLogger} Factories 9.09 ms (1)
+Aug 31 10:43:07 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:07 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:07 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 10:43:07 symfony [info] {sfWebDebugLogger} Factories 69.58 ms (1)
+Aug 31 10:43:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:43:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:07 symfony [info] {sfWebDebugLogger} Configuration 9.22 ms (5)
+Aug 31 10:43:07 symfony [info] {sfWebDebugLogger} Factories 137.36 ms (1)
+Aug 31 10:43:09 symfony [info] {sfPatternRouting} Match route "new_phrase" (/nueva-frase) for /nueva-frase with parameters array (  'module' => 'panel',  'action' => 'createPhrase',)
+Aug 31 10:43:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:09 symfony [info] {panelActions} Call "panelActions->executeCreatePhrase()"
+Aug 31 10:43:09 symfony [info] {panelActions} Forward to action "signin/signin"
+Aug 31 10:43:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:09 symfony [info] {signinActions} Call "signinActions->executeSignin()"
+Aug 31 10:43:09 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/signin/templates/signinSuccess.php"
+Aug 31 10:43:09 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:09 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:43:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Aug 31 10:43:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:09 symfony [info] {sfWebDebugLogger} Configuration 2.23 ms (12)
+Aug 31 10:43:09 symfony [info] {sfWebDebugLogger} Factories 6.82 ms (1)
+Aug 31 10:43:09 symfony [info] {sfWebDebugLogger} Action "panel/createPhrase" 23.24 ms (1)
+Aug 31 10:43:09 symfony [info] {sfWebDebugLogger} Action "signin/signin" 2.80 ms (1)
+Aug 31 10:43:09 symfony [info] {sfWebDebugLogger} View "Success" for "signin/signin" 17.61 ms (1)
+Aug 31 10:43:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Aug 31 10:43:09 symfony [info] {sfWebResponse} Send content (45627 o)
+Aug 31 10:43:09 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:43:09 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:09 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:09 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:43:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:09 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 10:43:09 symfony [info] {sfWebDebugLogger} Factories 16.04 ms (1)
+Aug 31 10:43:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:43:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:09 symfony [info] {sfWebDebugLogger} Configuration 11.56 ms (5)
+Aug 31 10:43:09 symfony [info] {sfWebDebugLogger} Factories 76.69 ms (1)
+Aug 31 10:43:09 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:09 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:09 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (5)
+Aug 31 10:43:09 symfony [info] {sfWebDebugLogger} Factories 140.50 ms (1)
+Aug 31 10:43:10 symfony [info] {sfPatternRouting} Match route "users_list" (/nuestros-usuarios.html) for /nuestros-usuarios.html with parameters array (  'module' => 'home',  'action' => 'users',)
+Aug 31 10:43:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:10 symfony [info] {homeActions} Call "homeActions->executeUsers()"
+Aug 31 10:43:10 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/home/templates/usersSuccess.php"
+Aug 31 10:43:10 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:10 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:43:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 31 10:43:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:10 symfony [info] {sfWebDebugLogger} Configuration 39.58 ms (10)
+Aug 31 10:43:10 symfony [info] {sfWebDebugLogger} Factories 7.24 ms (1)
+Aug 31 10:43:10 symfony [info] {sfWebDebugLogger} Action "home/users" 0.18 ms (1)
+Aug 31 10:43:10 symfony [info] {sfWebDebugLogger} View "Success" for "home/users" 82.80 ms (1)
+Aug 31 10:43:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Aug 31 10:43:10 symfony [info] {sfWebResponse} Send content (69592 o)
+Aug 31 10:43:11 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:43:11 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:11 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:11 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 10:43:11 symfony [info] {sfWebDebugLogger} Factories 7.32 ms (1)
+Aug 31 10:43:11 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:43:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:43:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:11 symfony [info] {sfWebDebugLogger} Configuration 8.73 ms (5)
+Aug 31 10:43:11 symfony [info] {sfWebDebugLogger} Factories 58.24 ms (1)
+Aug 31 10:43:11 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:11 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:11 symfony [info] {sfWebDebugLogger} Configuration 3.76 ms (5)
+Aug 31 10:43:11 symfony [info] {sfWebDebugLogger} Factories 105.43 ms (1)
+Aug 31 10:43:17 symfony [info] {sfPatternRouting} Match route "new_phrase" (/nueva-frase) for /nueva-frase with parameters array (  'module' => 'panel',  'action' => 'createPhrase',)
+Aug 31 10:43:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:17 symfony [info] {panelActions} Call "panelActions->executeCreatePhrase()"
+Aug 31 10:43:17 symfony [info] {panelActions} Forward to action "signin/signin"
+Aug 31 10:43:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:17 symfony [info] {signinActions} Call "signinActions->executeSignin()"
+Aug 31 10:43:17 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/signin/templates/signinSuccess.php"
+Aug 31 10:43:17 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:17 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:43:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Aug 31 10:43:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:17 symfony [info] {sfWebDebugLogger} Configuration 2.00 ms (12)
+Aug 31 10:43:17 symfony [info] {sfWebDebugLogger} Factories 7.14 ms (1)
+Aug 31 10:43:17 symfony [info] {sfWebDebugLogger} Action "panel/createPhrase" 23.36 ms (1)
+Aug 31 10:43:17 symfony [info] {sfWebDebugLogger} Action "signin/signin" 2.90 ms (1)
+Aug 31 10:43:17 symfony [info] {sfWebDebugLogger} View "Success" for "signin/signin" 17.54 ms (1)
+Aug 31 10:43:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Aug 31 10:43:17 symfony [info] {sfWebResponse} Send content (45638 o)
+Aug 31 10:43:17 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:43:17 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:43:17 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:17 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:17 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (5)
+Aug 31 10:43:17 symfony [info] {sfWebDebugLogger} Factories 16.02 ms (1)
+Aug 31 10:43:17 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:43:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:17 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (5)
+Aug 31 10:43:17 symfony [info] {sfWebDebugLogger} Factories 74.32 ms (1)
+Aug 31 10:43:17 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:17 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:17 symfony [info] {sfWebDebugLogger} Configuration 9.24 ms (5)
+Aug 31 10:43:17 symfony [info] {sfWebDebugLogger} Factories 124.63 ms (1)
+Aug 31 10:43:27 symfony [info] {sfPatternRouting} Match route "new_phrase" (/nueva-frase) for /nueva-frase with parameters array (  'module' => 'panel',  'action' => 'createPhrase',)
+Aug 31 10:43:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:28 symfony [info] {panelActions} Call "panelActions->executeCreatePhrase()"
+Aug 31 10:43:28 symfony [info] {panelActions} Forward to action "signin/signin"
+Aug 31 10:43:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:28 symfony [info] {signinActions} Call "signinActions->executeSignin()"
+Aug 31 10:43:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (djego, 1)
+Aug 31 10:43:28 symfony [info] {myUser} User is authenticated
+Aug 31 10:43:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (28)
+Aug 31 10:43:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (28)
+Aug 31 10:43:28 symfony [info] {myUser} Add credential(s) ""
+Aug 31 10:43:28 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE sf_guard_user SET last_login = ?, updated_at = ? WHERE id = ? - (2011-08-31 10:43:28, 2011-08-31 10:43:28, 28)
+Aug 31 10:43:28 symfony [info] {sfFrontWebController} Redirect to "http://mis-frases.local/front_dev.php/nueva-frase"
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send header "Location: http://mis-frases.local/front_dev.php/nueva-frase"
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Configuration 1.69 ms (11)
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Factories 6.82 ms (1)
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Action "panel/createPhrase" 195.25 ms (1)
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Action "signin/signin" 193.07 ms (1)
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.24 ms (5)
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send content (120 o)
+Aug 31 10:43:28 symfony [info] {sfPatternRouting} Match route "new_phrase" (/nueva-frase) for /nueva-frase with parameters array (  'module' => 'panel',  'action' => 'createPhrase',)
+Aug 31 10:43:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:28 symfony [info] {panelActions} Call "panelActions->executeCreatePhrase()"
+Aug 31 10:43:28 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/panel/templates/createPhraseSuccess.php"
+Aug 31 10:43:28 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:28 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (28)
+Aug 31 10:43:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Configuration 1.45 ms (9)
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Factories 6.46 ms (1)
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Action "panel/createPhrase" 0.12 ms (1)
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} View "Success" for "panel/createPhrase" 42.48 ms (1)
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send content (41753 o)
+Aug 31 10:43:28 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:43:28 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:43:28 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (5)
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Factories 9.85 ms (1)
+Aug 31 10:43:28 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:28 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Configuration 0.87 ms (5)
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Factories 73.89 ms (1)
+Aug 31 10:43:28 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:28 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 10:43:28 symfony [info] {sfWebDebugLogger} Factories 135.47 ms (1)
+Aug 31 10:43:39 symfony [info] {sfPatternRouting} Match route "logout" (/cerrar-sesion) for /cerrar-sesion with parameters array (  'module' => 'signin',  'action' => 'signout',)
+Aug 31 10:43:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:39 symfony [info] {signinActions} Call "signinActions->executeSignout()"
+Aug 31 10:43:39 symfony [info] {myUser} User is not authenticated
+Aug 31 10:43:39 symfony [info] {sfFrontWebController} Redirect to "http://mis-frases.local/front_dev.php/nueva-frase"
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send header "Location: http://mis-frases.local/front_dev.php/nueva-frase"
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send cookie "sfRemember": ""
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Configuration 1.95 ms (8)
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Factories 7.49 ms (1)
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Action "signin/signout" 1.40 ms (1)
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send content (120 o)
+Aug 31 10:43:39 symfony [info] {sfPatternRouting} Match route "new_phrase" (/nueva-frase) for /nueva-frase with parameters array (  'module' => 'panel',  'action' => 'createPhrase',)
+Aug 31 10:43:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:39 symfony [info] {panelActions} Call "panelActions->executeCreatePhrase()"
+Aug 31 10:43:39 symfony [info] {panelActions} Forward to action "signin/signin"
+Aug 31 10:43:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:39 symfony [info] {signinActions} Call "signinActions->executeSignin()"
+Aug 31 10:43:39 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/signin/templates/signinSuccess.php"
+Aug 31 10:43:39 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:39 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Configuration 2.09 ms (12)
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Factories 6.82 ms (1)
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Action "panel/createPhrase" 24.04 ms (1)
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Action "signin/signin" 2.86 ms (1)
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} View "Success" for "signin/signin" 18.31 ms (1)
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send content (45557 o)
+Aug 31 10:43:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:43:39 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:39 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Factories 7.25 ms (1)
+Aug 31 10:43:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:43:39 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Factories 47.28 ms (1)
+Aug 31 10:43:39 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:39 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Configuration 10.21 ms (5)
+Aug 31 10:43:39 symfony [info] {sfWebDebugLogger} Factories 108.98 ms (1)
+Aug 31 10:43:42 symfony [info] {sfPatternRouting} Match route "login" (/iniciar-sesion) for /iniciar-sesion with parameters array (  'module' => 'signin',  'action' => 'signin',)
+Aug 31 10:43:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:42 symfony [info] {signinActions} Call "signinActions->executeSignin()"
+Aug 31 10:43:42 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/signin/templates/signinSuccess.php"
+Aug 31 10:43:42 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:42 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:43:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Aug 31 10:43:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:42 symfony [info] {sfWebDebugLogger} Configuration 1.47 ms (9)
+Aug 31 10:43:42 symfony [info] {sfWebDebugLogger} Factories 6.56 ms (1)
+Aug 31 10:43:42 symfony [info] {sfWebDebugLogger} Action "signin/signin" 2.74 ms (1)
+Aug 31 10:43:42 symfony [info] {sfWebDebugLogger} View "Success" for "signin/signin" 16.39 ms (1)
+Aug 31 10:43:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Aug 31 10:43:42 symfony [info] {sfWebResponse} Send content (43753 o)
+Aug 31 10:43:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:43:42 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:42 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:43:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:42 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (5)
+Aug 31 10:43:42 symfony [info] {sfWebDebugLogger} Factories 17.47 ms (1)
+Aug 31 10:43:42 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:43:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:42 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Aug 31 10:43:42 symfony [info] {sfWebDebugLogger} Factories 68.71 ms (1)
+Aug 31 10:43:42 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:42 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:42 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (5)
+Aug 31 10:43:42 symfony [info] {sfWebDebugLogger} Factories 132.07 ms (1)
+Aug 31 10:43:47 symfony [info] {sfPatternRouting} Match route "login" (/iniciar-sesion) for /iniciar-sesion with parameters array (  'module' => 'signin',  'action' => 'signin',)
+Aug 31 10:43:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:47 symfony [info] {signinActions} Call "signinActions->executeSignin()"
+Aug 31 10:43:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (djego, 1)
+Aug 31 10:43:47 symfony [info] {myUser} User is authenticated
+Aug 31 10:43:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (28)
+Aug 31 10:43:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (28)
+Aug 31 10:43:47 symfony [info] {myUser} Add credential(s) ""
+Aug 31 10:43:47 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE sf_guard_user SET last_login = ?, updated_at = ? WHERE id = ? - (2011-08-31 10:43:47, 2011-08-31 10:43:47, 28)
+Aug 31 10:43:47 symfony [info] {sfFrontWebController} Redirect to "http://mis-frases.local/front_dev.php/nueva-frase"
+Aug 31 10:43:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 31 10:43:47 symfony [info] {sfWebResponse} Send header "Location: http://mis-frases.local/front_dev.php/nueva-frase"
+Aug 31 10:43:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:47 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (8)
+Aug 31 10:43:47 symfony [info] {sfWebDebugLogger} Factories 6.74 ms (1)
+Aug 31 10:43:47 symfony [info] {sfWebDebugLogger} Action "signin/signin" 71.89 ms (1)
+Aug 31 10:43:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (5)
+Aug 31 10:43:47 symfony [info] {sfWebResponse} Send content (120 o)
+Aug 31 10:43:47 symfony [info] {sfPatternRouting} Match route "new_phrase" (/nueva-frase) for /nueva-frase with parameters array (  'module' => 'panel',  'action' => 'createPhrase',)
+Aug 31 10:43:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:47 symfony [info] {panelActions} Call "panelActions->executeCreatePhrase()"
+Aug 31 10:43:47 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/panel/templates/createPhraseSuccess.php"
+Aug 31 10:43:47 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:47 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (28)
+Aug 31 10:43:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:43:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 31 10:43:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:47 symfony [info] {sfWebDebugLogger} Configuration 2.08 ms (9)
+Aug 31 10:43:47 symfony [info] {sfWebDebugLogger} Factories 8.25 ms (1)
+Aug 31 10:43:47 symfony [info] {sfWebDebugLogger} Action "panel/createPhrase" 0.19 ms (1)
+Aug 31 10:43:47 symfony [info] {sfWebDebugLogger} View "Success" for "panel/createPhrase" 20.58 ms (1)
+Aug 31 10:43:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Aug 31 10:43:48 symfony [info] {sfWebResponse} Send content (41757 o)
+Aug 31 10:43:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:43:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:43:48 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:43:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:48 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (5)
+Aug 31 10:43:48 symfony [info] {sfWebDebugLogger} Factories 15.54 ms (1)
+Aug 31 10:43:48 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:48 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:48 symfony [info] {sfWebDebugLogger} Configuration 0.78 ms (5)
+Aug 31 10:43:48 symfony [info] {sfWebDebugLogger} Factories 64.26 ms (1)
+Aug 31 10:43:48 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:48 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:48 symfony [info] {sfWebDebugLogger} Configuration 6.22 ms (5)
+Aug 31 10:43:48 symfony [info] {sfWebDebugLogger} Factories 121.97 ms (1)
+Aug 31 10:43:54 symfony [info] {sfPatternRouting} Match route "logout" (/cerrar-sesion) for /cerrar-sesion with parameters array (  'module' => 'signin',  'action' => 'signout',)
+Aug 31 10:43:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:54 symfony [info] {signinActions} Call "signinActions->executeSignout()"
+Aug 31 10:43:54 symfony [info] {myUser} User is not authenticated
+Aug 31 10:43:54 symfony [info] {sfFrontWebController} Redirect to "http://mis-frases.local/front_dev.php/nueva-frase"
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send header "Location: http://mis-frases.local/front_dev.php/nueva-frase"
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send cookie "sfRemember": ""
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (8)
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Factories 8.20 ms (1)
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Action "signin/signout" 1.43 ms (1)
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send content (120 o)
+Aug 31 10:43:54 symfony [info] {sfPatternRouting} Match route "new_phrase" (/nueva-frase) for /nueva-frase with parameters array (  'module' => 'panel',  'action' => 'createPhrase',)
+Aug 31 10:43:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:54 symfony [info] {panelActions} Call "panelActions->executeCreatePhrase()"
+Aug 31 10:43:54 symfony [info] {panelActions} Forward to action "signin/signin"
+Aug 31 10:43:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:54 symfony [info] {signinActions} Call "signinActions->executeSignin()"
+Aug 31 10:43:54 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/signin/templates/signinSuccess.php"
+Aug 31 10:43:54 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:54 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Configuration 1.90 ms (12)
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Factories 6.90 ms (1)
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Action "panel/createPhrase" 22.89 ms (1)
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Action "signin/signin" 3.01 ms (1)
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} View "Success" for "signin/signin" 17.05 ms (1)
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send content (45557 o)
+Aug 31 10:43:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:43:54 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:43:54 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Factories 15.86 ms (1)
+Aug 31 10:43:54 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:54 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (5)
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Factories 66.37 ms (1)
+Aug 31 10:43:54 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:54 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Aug 31 10:43:54 symfony [info] {sfWebDebugLogger} Factories 128.63 ms (1)
+Aug 31 10:43:57 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Aug 31 10:43:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:43:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:43:57 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Aug 31 10:43:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:43:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m ORDER BY m.created_at LIMIT 10 - ()
+Aug 31 10:43:57 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/home/templates/indexSuccess.php"
+Aug 31 10:43:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (24)
+Aug 31 10:43:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT m.id AS m__id, m.name AS m__name, m.created_at AS m__created_at, m.updated_at AS m__updated_at, m.slug AS m__slug FROM mf_category m WHERE (m.id = ?) - (7)
+Aug 31 10:43:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (27)
+Aug 31 10:43:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT m.id AS m__id, m.name AS m__name, m.created_at AS m__created_at, m.updated_at AS m__updated_at, m.slug AS m__slug FROM mf_category m WHERE (m.id = ?) - (5)
+Aug 31 10:43:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (25)
+Aug 31 10:43:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT m.id AS m__id, m.name AS m__name, m.created_at AS m__created_at, m.updated_at AS m__updated_at, m.slug AS m__slug FROM mf_category m WHERE (m.id = ?) - (4)
+Aug 31 10:43:58 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:58 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:43:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Configuration 1.64 ms (9)
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Factories 7.19 ms (1)
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Action "home/index" 32.49 ms (1)
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (9)
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 97.87 ms (1)
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send content (64546 o)
+Aug 31 10:43:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:43:58 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:58 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:43:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/star.png with parameters array (  'module' => 'images',  'action' => 'icon',  'star.png' => true,)
+Aug 31 10:43:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/coment.png with parameters array (  'module' => 'images',  'action' => 'icon',  'coment.png' => true,)
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Configuration 2.46 ms (5)
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Factories 8.05 ms (1)
+Aug 31 10:43:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/estad.png with parameters array (  'module' => 'images',  'action' => 'icon',  'estad.png' => true,)
+Aug 31 10:43:58 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:58 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (5)
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Factories 94.64 ms (1)
+Aug 31 10:43:58 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Factories 150.79 ms (1)
+Aug 31 10:43:58 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:58 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Factories 181.95 ms (1)
+Aug 31 10:43:58 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:58 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Factories 236.73 ms (1)
+Aug 31 10:43:58 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:43:58 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:43:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (5)
+Aug 31 10:43:58 symfony [info] {sfWebDebugLogger} Factories 291.50 ms (1)
+Aug 31 10:44:02 symfony [info] {sfPatternRouting} Match route "login" (/iniciar-sesion) for /iniciar-sesion with parameters array (  'module' => 'signin',  'action' => 'signin',)
+Aug 31 10:44:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:44:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:44:02 symfony [info] {signinActions} Call "signinActions->executeSignin()"
+Aug 31 10:44:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:44:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.username = ? AND s.is_active = ?) - (djego, 1)
+Aug 31 10:44:02 symfony [info] {myUser} User is authenticated
+Aug 31 10:44:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (28)
+Aug 31 10:44:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (28)
+Aug 31 10:44:02 symfony [info] {myUser} Add credential(s) ""
+Aug 31 10:44:02 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE sf_guard_user SET last_login = ?, updated_at = ? WHERE id = ? - (2011-08-31 10:44:02, 2011-08-31 10:44:02, 28)
+Aug 31 10:44:02 symfony [info] {sfFrontWebController} Redirect to "http://mis-frases.local/front_dev.php/nueva-frase"
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send header "Location: http://mis-frases.local/front_dev.php/nueva-frase"
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Configuration 1.65 ms (8)
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Factories 7.54 ms (1)
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Action "signin/signin" 69.49 ms (1)
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (5)
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send content (120 o)
+Aug 31 10:44:02 symfony [info] {sfPatternRouting} Match route "new_phrase" (/nueva-frase) for /nueva-frase with parameters array (  'module' => 'panel',  'action' => 'createPhrase',)
+Aug 31 10:44:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:44:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:44:02 symfony [info] {panelActions} Call "panelActions->executeCreatePhrase()"
+Aug 31 10:44:02 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/panel/templates/createPhraseSuccess.php"
+Aug 31 10:44:02 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:44:02 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:44:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:44:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (28)
+Aug 31 10:44:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Configuration 1.42 ms (9)
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Factories 6.43 ms (1)
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Action "panel/createPhrase" 0.12 ms (1)
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} View "Success" for "panel/createPhrase" 19.25 ms (1)
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send content (41743 o)
+Aug 31 10:44:02 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:44:02 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:44:02 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (5)
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Factories 11.53 ms (1)
+Aug 31 10:44:02 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:44:02 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Configuration 0.87 ms (5)
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Factories 66.76 ms (1)
+Aug 31 10:44:02 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:44:02 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:44:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Aug 31 10:44:02 symfony [info] {sfWebDebugLogger} Factories 127.16 ms (1)
+Aug 31 10:44:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Aug 31 10:44:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 10:44:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 10:44:14 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Aug 31 10:44:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 10:44:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m ORDER BY m.created_at LIMIT 10 - ()
+Aug 31 10:44:14 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/home/templates/indexSuccess.php"
+Aug 31 10:44:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (24)
+Aug 31 10:44:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT m.id AS m__id, m.name AS m__name, m.created_at AS m__created_at, m.updated_at AS m__updated_at, m.slug AS m__slug FROM mf_category m WHERE (m.id = ?) - (7)
+Aug 31 10:44:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (27)
+Aug 31 10:44:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT m.id AS m__id, m.name AS m__name, m.created_at AS m__created_at, m.updated_at AS m__updated_at, m.slug AS m__slug FROM mf_category m WHERE (m.id = ?) - (5)
+Aug 31 10:44:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (25)
+Aug 31 10:44:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT m.id AS m__id, m.name AS m__name, m.created_at AS m__created_at, m.updated_at AS m__updated_at, m.slug AS m__slug FROM mf_category m WHERE (m.id = ?) - (4)
+Aug 31 10:44:14 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:44:14 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 10:44:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (28)
+Aug 31 10:44:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 10:44:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 31 10:44:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:44:14 symfony [info] {sfWebDebugLogger} Configuration 1.41 ms (9)
+Aug 31 10:44:14 symfony [info] {sfWebDebugLogger} Factories 6.74 ms (1)
+Aug 31 10:44:14 symfony [info] {sfWebDebugLogger} Action "home/index" 8.66 ms (1)
+Aug 31 10:44:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (10)
+Aug 31 10:44:14 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 42.88 ms (1)
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send content (65898 o)
+Aug 31 10:44:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/male.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'male.jpg' => true,)
+Aug 31 10:44:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/female.jpg with parameters array (  'module' => 'images',  'action' => 'icon',  'female.jpg' => true,)
+Aug 31 10:44:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/estad.png with parameters array (  'module' => 'images',  'action' => 'icon',  'estad.png' => true,)
+Aug 31 10:44:15 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon-usuarios.jpg" (/).
+Aug 31 10:44:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/star.png with parameters array (  'module' => 'images',  'action' => 'icon',  'star.png' => true,)
+Aug 31 10:44:15 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /images/icon/coment.png with parameters array (  'module' => 'images',  'action' => 'icon',  'coment.png' => true,)
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:44:15 symfony [info] {sfWebDebugLogger} Configuration 7.67 ms (5)
+Aug 31 10:44:15 symfony [info] {sfWebDebugLogger} Factories 24.71 ms (1)
+Aug 31 10:44:15 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:44:15 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:44:15 symfony [info] {sfWebDebugLogger} Configuration 8.59 ms (5)
+Aug 31 10:44:15 symfony [info] {sfWebDebugLogger} Factories 81.92 ms (1)
+Aug 31 10:44:15 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:44:15 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:44:15 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (5)
+Aug 31 10:44:15 symfony [info] {sfWebDebugLogger} Factories 135.78 ms (1)
+Aug 31 10:44:15 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:44:15 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:44:15 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 10:44:15 symfony [info] {sfWebDebugLogger} Factories 208.13 ms (1)
+Aug 31 10:44:15 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:44:15 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:44:15 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (5)
+Aug 31 10:44:15 symfony [info] {sfWebDebugLogger} Factories 249.88 ms (1)
+Aug 31 10:44:15 symfony [info] {sfFrontWebController} Action "images/icon" does not exist
+Aug 31 10:44:15 symfony [err] {sfError404Exception} Action "images/icon" does not exist.
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 10:44:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 10:44:15 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 10:44:15 symfony [info] {sfWebDebugLogger} Factories 309.53 ms (1)
+Aug 31 11:10:49 symfony [info] {sfPatternRouting} Match route "category_list" (/categoria/:slug) for /categoria/frases-bonitas with parameters array (  'module' => 'home',  'action' => 'categoryList',  'slug' => 'frases-bonitas',)
+Aug 31 11:10:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 11:10:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 11:10:49 symfony [info] {homeActions} Call "homeActions->executeCategoryList()"
+Aug 31 11:10:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 11:10:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT m.id AS m__id, m.name AS m__name, m.created_at AS m__created_at, m.updated_at AS m__updated_at, m.slug AS m__slug FROM mf_category m WHERE (m.slug = ?) LIMIT 1 - (frases-bonitas)
+Aug 31 11:10:49 symfony [err] {Doctrine_Exception} Couldn't find class mfPharse
+Aug 31 11:10:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 31 11:10:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 11:10:49 symfony [info] {sfWebDebugLogger} Configuration 55.20 ms (10)
+Aug 31 11:10:49 symfony [info] {sfWebDebugLogger} Factories 7.15 ms (1)
+Aug 31 11:10:49 symfony [info] {sfWebDebugLogger} Action "home/categoryList" 144.93 ms (1)
+Aug 31 11:10:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Aug 31 11:11:31 symfony [info] {sfPatternRouting} Match route "category_list" (/categoria/:slug) for /categoria/frases-bonitas with parameters array (  'module' => 'home',  'action' => 'categoryList',  'slug' => 'frases-bonitas',)
+Aug 31 11:11:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 31 11:11:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 31 11:11:31 symfony [info] {homeActions} Call "homeActions->executeCategoryList()"
+Aug 31 11:11:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 31 11:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT m.id AS m__id, m.name AS m__name, m.created_at AS m__created_at, m.updated_at AS m__updated_at, m.slug AS m__slug FROM mf_category m WHERE (m.slug = ?) LIMIT 1 - (frases-bonitas)
+Aug 31 11:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m WHERE (m.category_id = ?) ORDER BY m.created_at - (4)
+Aug 31 11:11:31 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/modules/home/templates/categoryListSuccess.php"
+Aug 31 11:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (25)
+Aug 31 11:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT m.id AS m__id, m.name AS m__name, m.created_at AS m__created_at, m.updated_at AS m__updated_at, m.slug AS m__slug FROM mf_category m WHERE (m.id = ?) - (4)
+Aug 31 11:11:31 symfony [info] {sfPHPView} Decorate content with "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 11:11:31 symfony [info] {sfPHPView} Render "/var/www/mis-frases/apps/front/templates/layout.php"
+Aug 31 11:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (28)
+Aug 31 11:11:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT m.id AS m__id, m.title AS m__title, m.content AS m__content, m.category_id AS m__category_id, m.user_id AS m__user_id, m.visits AS m__visits, m.comments AS m__comments, m.created_at AS m__created_at, m.updated_at AS m__updated_at FROM mf_phrase m - ()
+Aug 31 11:11:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 31 11:11:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} Configuration 1.48 ms (9)
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} Factories 7.06 ms (1)
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} Action "home/categoryList" 17.87 ms (1)
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (7)
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} View "Success" for "home/categoryList" 24.40 ms (1)
+Aug 31 11:11:31 symfony [info] {sfWebResponse} Send content (54429 o)
+Aug 31 11:11:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /categoria/images/icon/female.jpg with parameters array (  'module' => 'categoria',  'action' => 'images',  'icon' => 'female.jpg',)
+Aug 31 11:11:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /categoria/images/icon/male.jpg with parameters array (  'module' => 'categoria',  'action' => 'images',  'icon' => 'male.jpg',)
+Aug 31 11:11:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /categoria/images/icon-usuarios.jpg with parameters array (  'module' => 'categoria',  'action' => 'images',  'icon-usuarios.jpg' => true,)
+Aug 31 11:11:31 symfony [info] {sfFrontWebController} Action "categoria/images" does not exist
+Aug 31 11:11:31 symfony [err] {sfError404Exception} Action "categoria/images" does not exist.
+Aug 31 11:11:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 11:11:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} Factories 25.05 ms (1)
+Aug 31 11:11:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /categoria/images/icon/coment.png with parameters array (  'module' => 'categoria',  'action' => 'images',  'icon' => 'coment.png',)
+Aug 31 11:11:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /categoria/images/icon/star.png with parameters array (  'module' => 'categoria',  'action' => 'images',  'icon' => 'star.png',)
+Aug 31 11:11:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /categoria/images/icon/estad.png with parameters array (  'module' => 'categoria',  'action' => 'images',  'icon' => 'estad.png',)
+Aug 31 11:11:31 symfony [info] {sfFrontWebController} Action "categoria/images" does not exist
+Aug 31 11:11:31 symfony [err] {sfError404Exception} Action "categoria/images" does not exist.
+Aug 31 11:11:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /categoria/images/favicon.png with parameters array (  'module' => 'categoria',  'action' => 'images',  'favicon.png' => true,)
+Aug 31 11:11:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 11:11:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} Factories 100.93 ms (1)
+Aug 31 11:11:31 symfony [info] {sfFrontWebController} Action "categoria/images" does not exist
+Aug 31 11:11:31 symfony [err] {sfError404Exception} Action "categoria/images" does not exist.
+Aug 31 11:11:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /categoria/images/favicon.ico with parameters array (  'module' => 'categoria',  'action' => 'images',  'favicon.ico' => true,)
+Aug 31 11:11:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 11:11:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} Factories 133.73 ms (1)
+Aug 31 11:11:31 symfony [info] {sfFrontWebController} Action "categoria/images" does not exist
+Aug 31 11:11:31 symfony [err] {sfError404Exception} Action "categoria/images" does not exist.
+Aug 31 11:11:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 11:11:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (5)
+Aug 31 11:11:31 symfony [info] {sfWebDebugLogger} Factories 260.66 ms (1)
+Aug 31 11:11:32 symfony [info] {sfFrontWebController} Action "categoria/images" does not exist
+Aug 31 11:11:32 symfony [err] {sfError404Exception} Action "categoria/images" does not exist.
+Aug 31 11:11:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 11:11:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 11:11:32 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Aug 31 11:11:32 symfony [info] {sfWebDebugLogger} Factories 277.29 ms (1)
+Aug 31 11:11:32 symfony [info] {sfFrontWebController} Action "categoria/images" does not exist
+Aug 31 11:11:32 symfony [err] {sfError404Exception} Action "categoria/images" does not exist.
+Aug 31 11:11:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 11:11:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 11:11:32 symfony [info] {sfWebDebugLogger} Configuration 0.86 ms (5)
+Aug 31 11:11:32 symfony [info] {sfWebDebugLogger} Factories 191.78 ms (1)
+Aug 31 11:11:32 symfony [info] {sfFrontWebController} Action "categoria/images" does not exist
+Aug 31 11:11:32 symfony [err] {sfError404Exception} Action "categoria/images" does not exist.
+Aug 31 11:11:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 11:11:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 11:11:32 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 11:11:32 symfony [info] {sfWebDebugLogger} Factories 327.05 ms (1)
+Aug 31 11:11:32 symfony [info] {sfFrontWebController} Action "categoria/images" does not exist
+Aug 31 11:11:32 symfony [err] {sfError404Exception} Action "categoria/images" does not exist.
+Aug 31 11:11:32 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /categoria/images/favicon.png with parameters array (  'module' => 'categoria',  'action' => 'images',  'favicon.png' => true,)
+Aug 31 11:11:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 11:11:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 11:11:32 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Aug 31 11:11:32 symfony [info] {sfWebDebugLogger} Factories 450.03 ms (1)
+Aug 31 11:11:32 symfony [info] {sfFrontWebController} Action "categoria/images" does not exist
+Aug 31 11:11:32 symfony [err] {sfError404Exception} Action "categoria/images" does not exist.
+Aug 31 11:11:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Aug 31 11:11:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 31 11:11:32 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Aug 31 11:11:32 symfony [info] {sfWebDebugLogger} Factories 51.33 ms (1)

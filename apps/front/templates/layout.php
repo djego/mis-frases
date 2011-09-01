@@ -68,7 +68,7 @@
     <?php else: ?>
     <div class="header-caja" id="header-link-color">
     	<div class="header-entrar">
-          Hola <strong><?php echo $sf_user->getGuardUser()->getFirstName(); ?></strong>
+          Hola <strong> <a href="<?php echo url_for('panel')?>"><?php echo $sf_user->getGuardUser()->getFirstName(); ?></a></strong>
         </div>
         <div class="header-registrate">
         <a href="<?php echo url_for('logout') ?>">Cerrar</a></div>

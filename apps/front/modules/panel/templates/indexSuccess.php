@@ -9,7 +9,7 @@
     <div class="usuario-caja01-cont">
       <div class="usuario-caja01-img"><a href="usuario-libro-frases.html"><img border="0" width="45" height="45" src="/images/icon/usuario-libro.jpg"></a></div>
       <div class="usuario-caja01-tx">
-        <a href="usuario-libro-frases.html">Meu livro de frases </a></div>
+        <a href="<?php echo url_for('user_book_ph')?>">Meu livro de frases </a></div>
     </div>
 
     <div class="usuario-caja01-cont">

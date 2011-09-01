@@ -24,6 +24,12 @@ class homeActions extends sfActions {
   }
 
   public function executeCategoryList(sfWebRequest $request) {
+    $rs_category = Doctrine::getTable('mfCategory')->findOneBySlug($request->getParameter('slug'));
+    $this->forward404Unless($rs_category);
+    $this->lst_phrase = Doctrine::getTable('mfPhrase')
+            ->createQuery()
+            ->where('category_id =?',$rs_category->id)
+            ->orderBy('created_at')->execute();
     
   }
 

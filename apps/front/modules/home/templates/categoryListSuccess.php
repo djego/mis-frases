@@ -2,249 +2,72 @@
 
 <div class="body-colum2-centro2">
 
-  <div class="caja-frases-cont">
-    <div class="caja-frases-01">
-      <div class="caja-frases-titulo">Titulo</div>
-      <div class="caja-frases-icon"><img border="0" width="80" height="80" src="images/icon/heart01.png"></div>
-      <div class="caja-frase">"Frase.." </div>
+  <?php foreach ($lst_phrase as $phrase): ?>
+    <div class="caja-frases-cont">
+      <div class="caja-frases-01">
+        <div class="caja-frases-titulo"><?php echo $phrase->title; ?></div>
+        <div class="caja-frases-icon"><img src="/images/icon/calico-poeta.png" width="80" height="80" border="0" /></div>
+        <div class="caja-frase">&quot;<?php echo (strlen($phrase->content) > 160) ? substr($phrase->content, 0, 160) . '...' : $phrase->content; ?>&quot;</div>
 
-    </div>
-    <div class="caja-frases-02">
-      <div class="caja-frase-stat-01">
-        Publicado por <a href="usuario.html">usuario</a> hace 1 hora
       </div>
-      <div class="caja-frase-stat-02">
-        Categoría: <a href="categoria-amor.html">Amor</a><br>
-        Autor: usuario
-      </div>
-      <div class="caja-frase-stat-valoracion">
-        <div>Valoración:</div>
-        <div>
-          <img border="0" width="29" height="27" src="images/icon/star-stat01.png"><img border="0" width="29" height="27" src="images/icon/star-stat01.png"><img border="0" width="29" height="27" src="images/icon/star-stat01.png"><img border="0" width="29" height="27" src="images/icon/star-stat02.png"><img border="0" width="29" height="27" src="images/icon/star-stat02.png"><img border="0" width="29" height="27" src="images/icon/star-stat02.png"></div>
-      </div>
-
-      <div class="caja-frase-stat-coment-cont">
-        <div class="caja-frase-stat-coment01">
-          <img border="0" width="18" height="17" src="images/icon/coment.png">
+      <div class="caja-frases-02">
+        <div class="caja-frase-stat-01">
+          Publicado por <a href="usuario.html"><?php echo $phrase->User->username; ?></a> hace 1 hora
         </div>
-        <div class="caja-frase-stat-coment02">
-            	0 comentarios
+        <div class="caja-frase-stat-02">
+          Categoría: <a href="categoria-amor.html"><?php echo $phrase->Category->name; ?></a><br />
+          Autor: usuario
         </div>
-
-        <div class="caja-frase-stat-visit-cont">
-          <div class="caja-frase-stat-visit01">
-            <img border="0" width="20" height="17" src="images/icon/estad.png">
-          </div>
-          <div class="caja-frase-stat-visit02">
-            	04 visitas
+        <div class="caja-frase-stat-valoracion">
+          <div>Valoración:</div>
+          <div>
+            <img src="/images/icon/star-stat01.png" width="29" height="27" border="0" />
+            <img src="/images/icon/star-stat01.png" width="29" height="27" border="0" />
+            <img src="/images/icon/star-stat01.png" width="29" height="27" border="0" />
+            <img src="/images/icon/star-stat02.png" width="29" height="27" border="0" />
+            <img src="/images/icon/star-stat02.png" width="29" height="27" border="0" />
           </div>
         </div>
 
-      </div>
-
-
-
-      <div class="caja-frase-stat-leer-cont">
-        <div class="caja-frase-stat-leer01">
-          <img border="0" width="18" height="17" src="images/icon/coment02.png">
-        </div>
-        <div class="caja-frase-stat-leer02">
-          <a href="#">Leer y comentar la frase </a></div>
-      </div>
-
-      <div class="caja-frase-stat-leer-cont">
-        <div class="caja-frase-stat-leer01">
-          <img border="0" width="18" height="17" src="images/icon/coment02.png">
-        </div>
-        <div class="caja-frase-stat-leer02">
-          <a href="#">Enviar a un amigo</a></div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="caja-frases-cont">
-    <div class="caja-frases-01">
-      <div class="caja-frases-titulo">Titulo</div>
-      <div class="caja-frases-icon"><img border="0" width="80" height="80" src="images/icon/heart01.png"></div>
-      <div class="caja-frase">"Frase.." </div>
-
-    </div>
-    <div class="caja-frases-02">
-      <div class="caja-frase-stat-01">
-        Publicado por <a href="usuario.html">usuario</a> hace 1 hora
-      </div>
-      <div class="caja-frase-stat-02">
-        Categoría: <a href="categoria-amor.html">Amor</a><br>
-        Autor: usuario
-      </div>
-      <div class="caja-frase-stat-valoracion">
-        <div>Valoración:</div>
-        <div>
-          <img border="0" width="29" height="27" src="images/icon/star-stat01.png"><img border="0" width="29" height="27" src="images/icon/star-stat01.png"><img border="0" width="29" height="27" src="images/icon/star-stat01.png"><img border="0" width="29" height="27" src="images/icon/star-stat02.png"><img border="0" width="29" height="27" src="images/icon/star-stat02.png"><img border="0" width="29" height="27" src="images/icon/star-stat02.png"></div>
-      </div>
-
-      <div class="caja-frase-stat-coment-cont">
-        <div class="caja-frase-stat-coment01">
-          <img border="0" width="18" height="17" src="images/icon/coment.png">
-        </div>
-        <div class="caja-frase-stat-coment02">
-            	0 comentarios
-        </div>
-
-        <div class="caja-frase-stat-visit-cont">
-          <div class="caja-frase-stat-visit01">
-            <img border="0" width="20" height="17" src="images/icon/estad.png">
+        <div class="caja-frase-stat-coment-cont">
+          <div class="caja-frase-stat-coment01">
+            <img src="/images/icon/coment.png" width="18" height="17" border="0" />
           </div>
-          <div class="caja-frase-stat-visit02">
-            	04 visitas
+          <div class="caja-frase-stat-coment02">
+              	0 comentarios
+          </div>
+
+          <div class="caja-frase-stat-visit-cont">
+            <div class="caja-frase-stat-visit01">
+              <img src="/images/icon/estad.png" width="20" height="17" border="0" />
+            </div>
+            <div class="caja-frase-stat-visit02">
+              	04 visitas
+            </div>
           </div>
         </div>
 
-      </div>
-
-
-
-      <div class="caja-frase-stat-leer-cont">
-        <div class="caja-frase-stat-leer01">
-          <img border="0" width="18" height="17" src="images/icon/coment02.png">
-        </div>
-        <div class="caja-frase-stat-leer02">
-          <a href="#">Leer y comentar la frase </a></div>
-      </div>
-
-      <div class="caja-frase-stat-leer-cont">
-        <div class="caja-frase-stat-leer01">
-          <img border="0" width="18" height="17" src="images/icon/coment02.png">
-        </div>
-        <div class="caja-frase-stat-leer02">
-          <a href="#">Enviar a un amigo</a></div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="caja-frases-cont">
-    <div class="caja-frases-01">
-      <div class="caja-frases-titulo">Titulo</div>
-      <div class="caja-frases-icon"><img border="0" width="80" height="80" src="images/icon/heart01.png"></div>
-      <div class="caja-frase">"Frase.." </div>
-
-    </div>
-    <div class="caja-frases-02">
-      <div class="caja-frase-stat-01">
-        Publicado por <a href="usuario.html">usuario</a> hace 1 hora
-      </div>
-      <div class="caja-frase-stat-02">
-        Categoría: <a href="categoria-amor.html">Amor</a><br>
-        Autor: usuario
-      </div>
-      <div class="caja-frase-stat-valoracion">
-        <div>Valoración:</div>
-        <div>
-          <img border="0" width="29" height="27" src="images/icon/star-stat01.png"><img border="0" width="29" height="27" src="images/icon/star-stat01.png"><img border="0" width="29" height="27" src="images/icon/star-stat01.png"><img border="0" width="29" height="27" src="images/icon/star-stat02.png"><img border="0" width="29" height="27" src="images/icon/star-stat02.png"><img border="0" width="29" height="27" src="images/icon/star-stat02.png"></div>
-      </div>
-
-      <div class="caja-frase-stat-coment-cont">
-        <div class="caja-frase-stat-coment01">
-          <img border="0" width="18" height="17" src="images/icon/coment.png">
-        </div>
-        <div class="caja-frase-stat-coment02">
-            	0 comentarios
-        </div>
-
-        <div class="caja-frase-stat-visit-cont">
-          <div class="caja-frase-stat-visit01">
-            <img border="0" width="20" height="17" src="images/icon/estad.png">
+        <div class="caja-frase-stat-leer-cont">
+          <div class="caja-frase-stat-leer01">
+            <img src="/images/icon/coment02.png" width="18" height="17" border="0" />
           </div>
-          <div class="caja-frase-stat-visit02">
-            	04 visitas
+          <div class="caja-frase-stat-leer02">
+            <a href="usuario-leer-comentar-frase.html">Leer y comentar la frase</a></div>
+        </div>
+
+        <div class="caja-frase-stat-leer-cont">
+          <div class="caja-frase-stat-leer01">
+            <img src="/images/icon/coment02.png" width="18" height="17" border="0" />
           </div>
+          <div class="caja-frase-stat-leer02">
+            <a href="usuario-enviar-amigo.html">Enviar a un amigo</a></div>
         </div>
 
       </div>
-
-
-
-      <div class="caja-frase-stat-leer-cont">
-        <div class="caja-frase-stat-leer01">
-          <img border="0" width="18" height="17" src="images/icon/coment02.png">
-        </div>
-        <div class="caja-frase-stat-leer02">
-          <a href="#">Leer y comentar la frase </a></div>
-      </div>
-
-      <div class="caja-frase-stat-leer-cont">
-        <div class="caja-frase-stat-leer01">
-          <img border="0" width="18" height="17" src="images/icon/coment02.png">
-        </div>
-        <div class="caja-frase-stat-leer02">
-          <a href="#">Enviar a un amigo</a></div>
-      </div>
-
     </div>
-  </div>
-
-  <div class="caja-frases-cont">
-    <div class="caja-frases-01">
-      <div class="caja-frases-titulo">Titulo</div>
-      <div class="caja-frases-icon"><img border="0" width="80" height="80" src="images/icon/heart01.png"></div>
-      <div class="caja-frase">"Frase.." </div>
-
-    </div>
-    <div class="caja-frases-02">
-      <div class="caja-frase-stat-01">
-        Publicado por <a href="usuario.html">usuario</a> hace 1 hora
-      </div>
-      <div class="caja-frase-stat-02">
-        Categoría: <a href="categoria-amor.html">Amor</a><br>
-        Autor: usuario
-      </div>
-      <div class="caja-frase-stat-valoracion">
-        <div>Valoración:</div>
-        <div>
-          <img border="0" width="29" height="27" src="images/icon/star-stat01.png"><img border="0" width="29" height="27" src="images/icon/star-stat01.png"><img border="0" width="29" height="27" src="images/icon/star-stat01.png"><img border="0" width="29" height="27" src="images/icon/star-stat02.png"><img border="0" width="29" height="27" src="images/icon/star-stat02.png"><img border="0" width="29" height="27" src="images/icon/star-stat02.png"></div>
-      </div>
-
-      <div class="caja-frase-stat-coment-cont">
-        <div class="caja-frase-stat-coment01">
-          <img border="0" width="18" height="17" src="images/icon/coment.png">
-        </div>
-        <div class="caja-frase-stat-coment02">
-            	0 comentarios
-        </div>
-
-        <div class="caja-frase-stat-visit-cont">
-          <div class="caja-frase-stat-visit01">
-            <img border="0" width="20" height="17" src="images/icon/estad.png">
-          </div>
-          <div class="caja-frase-stat-visit02">
-            	04 visitas
-          </div>
-        </div>
-
-      </div>
+  <?php endforeach; ?>
 
 
-
-      <div class="caja-frase-stat-leer-cont">
-        <div class="caja-frase-stat-leer01">
-          <img border="0" width="18" height="17" src="images/icon/coment02.png">
-        </div>
-        <div class="caja-frase-stat-leer02">
-          <a href="#">Leer y comentar la frase </a></div>
-      </div>
-
-      <div class="caja-frase-stat-leer-cont">
-        <div class="caja-frase-stat-leer01">
-          <img border="0" width="18" height="17" src="images/icon/coment02.png">
-        </div>
-        <div class="caja-frase-stat-leer02">
-          <a href="#">Enviar a un amigo</a></div>
-      </div>
-
-    </div>
-  </div>
 
   <div class="login-tx2">
 		Gracias por participar en la comunidad de frases mas divertida de Internet. 
