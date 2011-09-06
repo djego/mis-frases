@@ -10,6 +10,7 @@ Doctrine_Manager::getInstance()->bindComponent('mfPhrase', 'doctrine');
  * @property string $title
  * @property string $content
  * @property integer $category_id
+ * @property string $author
  * @property integer $user_id
  * @property integer $visits
  * @property integer $comments
@@ -20,6 +21,7 @@ Doctrine_Manager::getInstance()->bindComponent('mfPhrase', 'doctrine');
  * @method string              getTitle()       Returns the current record's "title" value
  * @method string              getContent()     Returns the current record's "content" value
  * @method integer             getCategoryId()  Returns the current record's "category_id" value
+ * @method string              getAuthor()      Returns the current record's "author" value
  * @method integer             getUserId()      Returns the current record's "user_id" value
  * @method integer             getVisits()      Returns the current record's "visits" value
  * @method integer             getComments()    Returns the current record's "comments" value
@@ -29,6 +31,7 @@ Doctrine_Manager::getInstance()->bindComponent('mfPhrase', 'doctrine');
  * @method mfPhrase            setTitle()       Sets the current record's "title" value
  * @method mfPhrase            setContent()     Sets the current record's "content" value
  * @method mfPhrase            setCategoryId()  Sets the current record's "category_id" value
+ * @method mfPhrase            setAuthor()      Sets the current record's "author" value
  * @method mfPhrase            setUserId()      Sets the current record's "user_id" value
  * @method mfPhrase            setVisits()      Sets the current record's "visits" value
  * @method mfPhrase            setComments()    Sets the current record's "comments" value
@@ -46,9 +49,9 @@ abstract class BasemfPhrase extends sfDoctrineRecord
     public function setTableDefinition()
     {
         $this->setTableName('mf_phrase');
-        $this->hasColumn('title', 'string', 100, array(
+        $this->hasColumn('title', 'string', 50000, array(
              'type' => 'string',
-             'length' => 100,
+             'length' => 50000,
              ));
         $this->hasColumn('content', 'string', 50000, array(
              'type' => 'string',
@@ -58,6 +61,10 @@ abstract class BasemfPhrase extends sfDoctrineRecord
         $this->hasColumn('category_id', 'integer', null, array(
              'type' => 'integer',
              'notnull' => true,
+             ));
+        $this->hasColumn('author', 'string', 50000, array(
+             'type' => 'string',
+             'length' => 50000,
              ));
         $this->hasColumn('user_id', 'integer', null, array(
              'type' => 'integer',

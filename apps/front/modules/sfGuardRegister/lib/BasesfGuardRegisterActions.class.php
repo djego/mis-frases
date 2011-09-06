@@ -17,7 +17,6 @@ class BasesfGuardRegisterActions extends sfActions {
         $requestData['response'] = $this->getRequestParameter('recaptcha_response_field');
       }
       $this->form->bind($requestData);
-       print_r($requestData);
       if ($this->form->isValid()) {
 
         $ar_val_user = $this->form->getValues();
@@ -32,12 +31,18 @@ class BasesfGuardRegisterActions extends sfActions {
     // Grabando el usuario
     $dbr_user = new sfGuardUser();
     // asignar puntos por registrarse mediante una invitacion
-
+//    print_r($a_user);die();
+    
     $dbr_user->setFirstName($a_user['first_name']);
     $dbr_user->setLastName($a_user['last_name']);
     $dbr_user->setEmailAddress($a_user['email_address']);
     $dbr_user->setUsername($a_user['username']);
     $dbr_user->setPassword($a_user['password']);
+    $dbr_user->setCity($a_user['city']);
+    $dbr_user->setProvince($a_user['province']);
+    $dbr_user->setCountry($a_user['country']);
+    $dbr_user->setBirthday($a_user['birthday']);
+    $dbr_user->setGender($a_user['gender']);
     $dbr_user->save();
     $this->getUser()->signIn($dbr_user);
 

@@ -7,6 +7,11 @@
  * 
  * @property string $first_name
  * @property string $last_name
+ * @property string $city
+ * @property string $province
+ * @property string $country
+ * @property string $gender
+ * @property date $birthday
  * @property string $email_address
  * @property string $username
  * @property string $algorithm
@@ -21,12 +26,16 @@
  * @property Doctrine_Collection $sfGuardUserGroup
  * @property sfGuardRememberKey $RememberKeys
  * @property sfGuardForgotPassword $ForgotPassword
- * @property sfGuardUserProfile $Profile
  * @property Doctrine_Collection $Phrases
  * @property Doctrine_Collection $MfComments
  * 
  * @method string                getFirstName()             Returns the current record's "first_name" value
  * @method string                getLastName()              Returns the current record's "last_name" value
+ * @method string                getCity()                  Returns the current record's "city" value
+ * @method string                getProvince()              Returns the current record's "province" value
+ * @method string                getCountry()               Returns the current record's "country" value
+ * @method string                getGender()                Returns the current record's "gender" value
+ * @method date                  getBirthday()              Returns the current record's "birthday" value
  * @method string                getEmailAddress()          Returns the current record's "email_address" value
  * @method string                getUsername()              Returns the current record's "username" value
  * @method string                getAlgorithm()             Returns the current record's "algorithm" value
@@ -41,11 +50,15 @@
  * @method Doctrine_Collection   getSfGuardUserGroup()      Returns the current record's "sfGuardUserGroup" collection
  * @method sfGuardRememberKey    getRememberKeys()          Returns the current record's "RememberKeys" value
  * @method sfGuardForgotPassword getForgotPassword()        Returns the current record's "ForgotPassword" value
- * @method sfGuardUserProfile    getProfile()               Returns the current record's "Profile" value
  * @method Doctrine_Collection   getPhrases()               Returns the current record's "Phrases" collection
  * @method Doctrine_Collection   getMfComments()            Returns the current record's "MfComments" collection
  * @method sfGuardUser           setFirstName()             Sets the current record's "first_name" value
  * @method sfGuardUser           setLastName()              Sets the current record's "last_name" value
+ * @method sfGuardUser           setCity()                  Sets the current record's "city" value
+ * @method sfGuardUser           setProvince()              Sets the current record's "province" value
+ * @method sfGuardUser           setCountry()               Sets the current record's "country" value
+ * @method sfGuardUser           setGender()                Sets the current record's "gender" value
+ * @method sfGuardUser           setBirthday()              Sets the current record's "birthday" value
  * @method sfGuardUser           setEmailAddress()          Sets the current record's "email_address" value
  * @method sfGuardUser           setUsername()              Sets the current record's "username" value
  * @method sfGuardUser           setAlgorithm()             Sets the current record's "algorithm" value
@@ -60,7 +73,6 @@
  * @method sfGuardUser           setSfGuardUserGroup()      Sets the current record's "sfGuardUserGroup" collection
  * @method sfGuardUser           setRememberKeys()          Sets the current record's "RememberKeys" value
  * @method sfGuardUser           setForgotPassword()        Sets the current record's "ForgotPassword" value
- * @method sfGuardUser           setProfile()               Sets the current record's "Profile" value
  * @method sfGuardUser           setPhrases()               Sets the current record's "Phrases" collection
  * @method sfGuardUser           setMfComments()            Sets the current record's "MfComments" collection
  * 
@@ -81,6 +93,27 @@ abstract class BasesfGuardUser extends sfDoctrineRecord
         $this->hasColumn('last_name', 'string', 255, array(
              'type' => 'string',
              'length' => 255,
+             ));
+        $this->hasColumn('city', 'string', 100, array(
+             'type' => 'string',
+             'length' => 100,
+             ));
+        $this->hasColumn('province', 'string', 100, array(
+             'type' => 'string',
+             'length' => 100,
+             ));
+        $this->hasColumn('country', 'string', 150, array(
+             'type' => 'string',
+             'notnull' => true,
+             'length' => 150,
+             ));
+        $this->hasColumn('gender', 'string', 1, array(
+             'type' => 'string',
+             'notnull' => true,
+             'length' => 1,
+             ));
+        $this->hasColumn('birthday', 'date', null, array(
+             'type' => 'date',
              ));
         $this->hasColumn('email_address', 'string', 255, array(
              'type' => 'string',
@@ -155,10 +188,6 @@ abstract class BasesfGuardUser extends sfDoctrineRecord
              'foreign' => 'user_id'));
 
         $this->hasOne('sfGuardForgotPassword as ForgotPassword', array(
-             'local' => 'id',
-             'foreign' => 'user_id'));
-
-        $this->hasOne('sfGuardUserProfile as Profile', array(
              'local' => 'id',
              'foreign' => 'user_id'));
 

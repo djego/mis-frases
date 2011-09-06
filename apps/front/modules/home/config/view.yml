@@ -1,2 +1,6 @@
 all:
-  stylesheets:    [modulos.css]
+#  stylesheets:    [modulos.css]
+userSendFriendSuccess:
+  stylesheets: [estilo-form.css]
+userReadCommentSuccess:
+  stylesheets: [estilo-form.css]

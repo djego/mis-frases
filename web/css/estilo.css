@@ -61,6 +61,8 @@ margin:0px;
 	background-image:url(../images/f-cont.jpg);
 	background-repeat:repeat-y;
 }
+
+#frm_register div{ float: left; width: 400px}
 /* ---------- header ---------- */
 .header{
 	float:left;
@@ -107,6 +109,14 @@ margin:0px;
 	color:#FFFFFF;
 	text-align:justify;
 }
+
+.header-entrado{
+	float:left;
+	width:500px;
+	height:20px;
+	color:#FFFFFF;
+	text-align:justify;
+}
 .header-registrate{
 	float:left;
 	width:90px;
@@ -122,17 +132,15 @@ margin:0px;
 	color:#FFFFFF;
 	text-align:justify;
 }
-.header-acceso form{ float: left; }
-.header-acceso div{ float: left; }
 .header-acceso1{
 	margin-top:20px;
-	width:220px;
+	width:200px;
 	height:30px;
 	color:#FFFFFF;
 	text-align:right;
 }
 .header-acceso2{
-	width:220px;
+	width:200px;
 	height:30px;
 	color:#FFFFFF;
 	text-align:right;
@@ -142,20 +150,6 @@ margin:0px;
 	height:18px;
 	color:#FFFFFF;
 	text-align:justify;
-}
-.header-acceso3 input{ 
-    background-image: url("../images/ingresar.png");
-    color: #FFFFFF;
-    display: block;
-    font-size: 12px;
-    height: 18px;
-    padding: 0;
-    text-align: center;
-    text-decoration: none;
-    width: 191px;
-        margin-left: 30px;
-
-
 }
 .header-acceso4{
 	margin-left:70px;
@@ -502,13 +496,13 @@ margin:0px;
 	margin:10px;
 }
 .caja-frase-stat-02{
-	float:right;
-	margin:10px 10px 10px 40px;
+	float:left;
+	margin:10px 10px 10px 70px;
 }
 .caja-frase-stat-valoracion{
 	float:left;
 	width:180px;
-	margin:10px 0px 0px 10px;
+	margin:10px 0px 0px 80px;
 }
 /*comentarios*/
 .caja-frase-stat-coment-cont{

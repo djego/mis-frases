@@ -24,7 +24,7 @@ test:
 
 all:
   .settings:
-    enabled_modules:      [default, recaptcha]
+    enabled_modules:      [default, recaptcha, sfGuardForgotPassword]
     # Form security secret (CSRF protection)
     csrf_secret:            ab474489c11457bcad33537cc6fdf08b90489cf9
 

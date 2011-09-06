@@ -1,16 +1,38 @@
-<?php use_helper('I18N') ?>
-<h2><?php echo __('Forgot your password?', null, 'sf_guard') ?></h2>
+<?php slot('subtitle', sprintf('Reenviar Contraseña.')); ?>
 
-<p>
-  <?php echo __('Do not worry, we can help you get back in to your account safely!', null, 'sf_guard') ?>
-  <?php echo __('Fill out the form below to request an e-mail with information on how to reset your password.', null, 'sf_guard') ?>
-</p>
+<div class="body-colum2-centro2">
 
-<form action="<?php echo url_for('@sf_guard_forgot_password') ?>" method="post">
-  <table>
-    <tbody>
-      <?php echo $form ?>
-    </tbody>
-    <tfoot><tr><td><input type="submit" name="change" value="<?php echo __('Request', null, 'sf_guard') ?>" /></td></tr></tfoot>
-  </table>
-</form>
+  <div id="link-color" class="login-tx"></div>
+
+  <div class="login">  
+    <form name="login" action="<?php echo url_for('@sf_guard_forgot_password') ?>" method="post">
+      <div class="login-acceso1"></div>
+      <div class="login-acceso2">Email<?php echo $form['email_address'] ?></div>
+
+      <?php if ($form->isCSRFProtected()) : ?>
+        <?php echo $form['_csrf_token']->render(); ?>
+      <?php endif; ?>   
+
+      <div id="navi" class="header-acceso3">
+        <input type="submit" name="change" value="Enviar" />
+      </div>
+
+    </form>
+
+  </div>
+  <div class="login-tx2"></div>
+
+</div>
+
+<div class="body-colum3">
+
+  <!-- panel derecha --><!-- FIN panel derecha -->
+
+  <!-- panel derecha --><!-- FIN panel derecha -->
+  <!-- panel derecha --><!-- FIN panel derecha -->
+
+
+
+</div>
+
+

@@ -1,3 +1,4 @@
+ <?php slot('subtitle', sprintf('Necesitar logearte para publicar. ')); ?>
 <div class="body-colum2-centro2">
 
 <div id="link-color" class="login-tx">
@@ -8,19 +9,20 @@ Después de rellenar el <a href="#">formulario de registro</a> y aceptar los té
 
 Si ya estás registrado, para publicar sólo debes logarte con nombre de usuario y contraseña en la tabla de login: 
 
-
-
-
-
-
 </div>
-
+<?php if($sf_user->hasFlash('notice')):?>
+  <h3><?php echo $sf_user->getFlash('notice'); ?></h3>
+<?php endif; ?>
 <div class="login">
     <form name="login" method="post" action="">
+      <?php echo $form['username']->renderError(); ?>
     	<div class="login-acceso1">
-          Usuario: <?php echo $form['username']->render(array('class' => 'user')) ?>     
+          Usuario: <?php echo $form['username']->render(array('class' => 'user','size' => 15)) ?>
+          
         </div>
-    	<div class="login-acceso2">Contraseña <?php echo $form['password']->render(array('class' => 'pass')) ?></div>
+    	<div class="login-acceso2">Contraseña <?php echo $form['password']->render(array('class' => 'pass','size' => 15)) ?>
+         
+        </div>
             <?php if ($form->isCSRFProtected()) : ?>
               <?php echo $form['_csrf_token']->render(); ?>
             <?php endif; ?>
@@ -29,7 +31,7 @@ Si ya estás registrado, para publicar sólo debes logarte con nombre de usuario
     	<div id="navi" class="header-acceso3">
         
         <ul>
-        <li><a href="#"> <input type="submit" class="btn_login" value="Ingresar" /></a></li>
+        <li> <input type="submit" class="btn_login" value="Ingresar" />/li>
         </ul>
         
         </div>
@@ -38,8 +40,8 @@ Si ya estás registrado, para publicar sólo debes logarte con nombre de usuario
   
    	  <div class="header-acceso4">
         <ul>
-        <li><a href="#">Quiero registrarme</a></li>
-        <li><a href="#">Olvide mi contraseña</a></li>
+        <li><a href="<?php echo url_for('register'); ?>">Quiero registrarme</a></li>
+        <li><a href="<?php echo url_for('recovery_pass'); ?>">Olvide mi contraseña</a></li>
         </ul>
       </div>
       

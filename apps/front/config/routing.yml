@@ -17,32 +17,42 @@ user_book_ph:
 
 
 users_list:
-  url: /nuestros-usuarios.html
+  url: /usuarios.html
   param: { module: home, action: users }
 news:
   url: /novedades.html
   param: { module: home, action: news }
   
 category_list:
-  url: /categoria/:slug
+  url: /categoria/:slug.html
   param: { module: home, action: categoryList }
 category:
-  url: /categorias
+  url: /categorias.html
   param: { module: home, action: category }
+user_send_friend:
+  url: /:id/usuario-enviar-amigo.html
+  param: { module: home, action: userSendFriend }
+user_read_comment:
+  url: /:id/usuario-leer-comentar-frase.html
+  param: { module: home, action: userReadComment }
 
 
 login:
-  url: /iniciar-sesion
+  url: /login.html
   param: { module: signin, action: signin }
   
 logout:
-  url: /cerrar-sesion
+  url: /logout.html
   param: { module: signin, action: signout }
   
   
 register:
-  url: /registro
+  url: /registrar_usuario.html
   param: { module: sfGuardRegister, action: index }
+
+recovery_pass:
+  url: /recuperacion-contrasena.html
+  param: { module: sfGuardForgotPassword, action: index }
   
 homepage:
   url:   /

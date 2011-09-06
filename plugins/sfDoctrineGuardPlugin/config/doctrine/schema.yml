@@ -55,6 +55,15 @@ sfGuardUser:
   columns:
     first_name: string(255)
     last_name: string(255)
+    city: string(100)
+    province: string(100)
+    country: 
+      type: string(150)
+      notnull: true
+    gender:
+      type: string(1)
+      notnull: true
+    birthday: date
     email_address:
       type: string(255)
       notnull: true
@@ -181,19 +190,3 @@ sfGuardForgotPassword:
       foreignAlias: ForgotPassword
       onDelete: CASCADE
       
-      
-sfGuardUserProfile:
-  actAs: [Timestampable]
-  columns:
-    user_id:
-      type: integer
-      notnull: true
-    gender: string(1)
-  relations:
-    User:
-      class: sfGuardUser
-      local: user_id
-      type: one
-      foreignType: one
-      foreignAlias: Profile
-      onDelete: CASCADE

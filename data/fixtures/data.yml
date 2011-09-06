@@ -1,0 +1,19 @@
+sfGuardUser:
+  sfGuardUser_1:
+    first_name: Diego
+    last_name: Machaca
+    city: comas
+    province: lima
+    country: Peru
+    gender: M
+    birthday: '1978-09-02'
+    email_address: diego.machaca@gmail.com
+    username: djegood
+    algorithm: sha1
+    salt: a3983d8181fb1686921e0a589f992dea
+    password: a47e639d0f79cbe0bc41d60b539f151a3410b2f7
+    is_active: true
+    is_super_admin: false
+    last_login: '2011-09-04 20:48:47'
+    created_at: '2011-09-04 20:48:47'
+    updated_at: '2011-09-04 20:48:47'

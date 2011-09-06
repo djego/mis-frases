@@ -19,7 +19,7 @@ html, body {
 	color:#003366;
 }
 #ul-link-color{
-	list-style:url(/images/icon/icon-ul.png);
+	list-style:url(../images/icon/icon-ul.png);
 	padding-left:50px;
 }
 #ul-link-color a{
@@ -33,7 +33,7 @@ html, body {
 .login{
 	margin:0 auto;
 	padding:10px;
-	width:260px;
+	width:240px;
 	height:130px;
 	color:#666666;
 	text-align:justify;
@@ -41,23 +41,25 @@ html, body {
 }
 .login-acceso1{
 	margin:10px 0 0 0;
-        color: #333333;
-        height: 30px;
-        text-align: left;
-        width: 260px;
-}
-.login-acceso2{
-        width: 260px;
+	width:200px;
 	height:30px;
 	color:#333333;
-        text-align: left;
+	text-align:right;
+}
+.login-acceso2{
+	width:200px;
+	height:30px;
+	color:#333333;
+	text-align:right;
 }
 .login-tx{
 	padding:25px;
 	text-align:justify;
 }
 .login-tx2{
+	float:left;
 	padding:10px;
+	/*width:480px;*/
 	text-align:center;
 }
 .login a{
@@ -125,7 +127,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(/images/modulo-usuarios-01.jpg);
+	background-image:url(../images/modulo-usuarios-01.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -133,7 +135,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(/images/modulo-usuarios-02.jpg);
+	background-image:url(../images/modulo-usuarios-02.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -141,7 +143,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(/images/modulo-usuarios-03.jpg);
+	background-image:url(../images/modulo-usuarios-03.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -149,7 +151,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(/images/modulo-usuarios-04.jpg);
+	background-image:url(../images/modulo-usuarios-04.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -157,7 +159,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(/images/modulo-usuarios-05.jpg);
+	background-image:url(../images/modulo-usuarios-05.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -165,7 +167,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(/images/modulo-usuarios-06.jpg);
+	background-image:url(../images/modulo-usuarios-06.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -173,7 +175,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(/images/modulo-usuarios-07.jpg);
+	background-image:url(../images/modulo-usuarios-07.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -227,7 +229,7 @@ html, body {
 	float:left;
 	width:236px;
 	height:16px;
-	background-image:url(/images/modulo-usuarios-03.png);
+	background-image:url(../images/modulo-usuarios-03.png);
 	background-repeat:no-repeat;
 }
 
@@ -239,7 +241,7 @@ html, body {
 	margin-right:20px;
 	width:236px;
 	height:100%;
-	background-image:url(/images/icon/libro-mis-frases-fondo.png);
+	background-image:url(../images/icon/libro-mis-frases-fondo.png);
 	background-repeat:no-repeat;
 }
 .panel-libro-01{
@@ -273,7 +275,7 @@ html, body {
 	height:30px;
 	padding:12px 0 0 20px;
 	margin-bottom:20px;
-	background-image:url(/images/icon/usuario-titulo.png);
+	background-image:url(../images/icon/usuario-titulo.png);
 	background-repeat:no-repeat;
 	color:#004364;
 	font-size:16px;
@@ -306,7 +308,7 @@ html, body {
 	width:236px;
 	height:30px;
 	padding-bottom:5px;
-	background-image:url(/images/modulo-usuarios-03.jpg);
+	background-image:url(../images/modulo-usuarios-03.jpg);
 	background-repeat:no-repeat;
 	background-color:#eae8da;
 }
@@ -383,8 +385,8 @@ html, body {
 /* usuario libro de frases */
 
 .usuario-libro-frases-pag-cont{
-	width:480px;
-	height:550px;
+	width:500px;
+	/*height:550px;*/
 	margin:0 auto;
 	padding:40px 0 0 0;
 }
@@ -401,7 +403,7 @@ html, body {
 	text-align:center;
 	font-weight:bold;
 	color:#653C34;
-	background-image:url(/images/usuario-libro-frases-f.png);
+	background-image:url(../images/usuario-libro-frases-f.png);
 	background-repeat:no-repeat;
 }
 .usuario-libro-frases-02{
@@ -415,6 +417,198 @@ html, body {
 
 /* FIN usuario libro de frases */
 
+/* usuario hoja diaria */
+
+.usuario-hoja-diaria-cont{
+	float:left;
+	/*width:450px;*/
+	/*height:100px;*/
+	margin:10px;
+}
+.usuario-hoja-diaria-01{
+	width:450px;
+	/*height:45px;*/
+	padding:10px;
+	font-weight:bold;
+	color:#653C34;
+	background-repeat:no-repeat;
+}
+.usuario-hoja-diaria-02{
+	/*width:450px;*/
+	padding:5px 5px 5px 30px;
+}
+
+/* usuario comentarios */
+
+.usuario-comentarios-pag-cont{
+	width:495px;
+	/*height:550px;*/
+	margin:0 auto;
+	padding:40px 0 0 0;
+}
+.usuario-comentarios-cont{
+	float:left;
+	width:475px;
+	/*height:100px;*/
+	margin:10px 10px 20px 10px;
+}
+.usuario-comentarios-01{
+	width:450px;
+	/*height:45px;*/
+	padding:10px;
+	font-weight:bold;
+	color:#653C34;
+}
+.usuario-comentarios-02{
+	/*width:450px;*/
+	padding:5px 5px 5px 30px;
+}
+.usuario-comentarios-03-cont{
+	float:left;
+	margin:0 0 20px 0;
+	background-color:#DFFBFD;
+}
+.usuario-comentarios-03{
+	float:left;
+	padding:15px 5px 15px 30px;
+}
+.usuario-comentarios-04{
+	float:left;
+	width:200px;
+	padding:5px 5px 5px 30px;
+	background-color:#E6E7E2;
+}
+.usuario-comentarios-05{
+	float:right;
+	width:200px;
+	padding:5px 5px 5px 30px;
+	background-color:#E6E7E2;
+}
+/* FIN usuario comentarios */
+
+/* usuario amigos */
+
+.usuario-amigos-cont{
+	float:left;
+	width:480px;
+	/*height:100px;*/
+	margin:10px;
+}
+.usuario-amigos-01{
+	width:450px;
+	/*height:45px;*/
+	padding:10px;
+	font-weight:bold;
+	color:#653C34;
+	background-repeat:no-repeat;
+}
+.usuario-amigos-02{
+	float:left;
+	width:130px;
+	padding:5px 0px 5px 20px;
+}
+.usuario-amigos-03{
+	float:left;
+	width:140px;
+	padding:35px 0px 5px 20px;
+}
+/* FIN usuario amigos */
+
+/* usuario escritos */
+.usuario-escritos-01{
+	/*width:450px;*/
+	/*height:45px;*/
+	padding:10px 10px 10px 30px;
+	font-weight:bold;
+	color:#653C34;
+	background-repeat:no-repeat;
+}
+/* FIN usuario escritos */
+
 /* FIN panel de usuario */
+
+/* panel de usuario */
+
+.usuarios-panel-datos-cont{
+	float:left;
+	width:230px;
+	margin:40px 0 10px 0px;
+}
+.usuarios-panel-datos-color-03{
+	width:236px;
+	height:30px;
+	padding-bottom:5px;
+	background-image:url(../images/modulo-usuarios-03.jpg);
+	background-repeat:no-repeat;
+	background-color:#eae8da;
+}
+/* menu-comentar-frase */
+.menu-comentar-frase-cont{
+	float:left;
+	width:230px;
+	margin:40px 0 10px 0px;
+}
+.menu-comentar-frase-color-03{
+	width:236px;
+	height:30px;
+	padding-bottom:5px;
+	background-image:url(../images/modulo-usuarios-01.jpg);
+	background-repeat:no-repeat;
+	background-color:#eae8da;
+}
+.menu-comentar-frase-tx{
+	float:left;
+	width:236px;
+	height:17px;
+	margin-top:7px;
+	text-align:center;
+	font-size:12px;
+	color:#FFF;
+	font-weight:600;
+}
+.menu-comentar-frase-caja-cont-01{
+	float:left;
+	width:236px;
+	/*height:800px;*/
+	background-color:#eae8da;
+}
+.menu-comentar-frase-caja-cont-02{
+	float:left;
+	/*width:225px;*/
+	/*height:204px;*/
+	margin:0 0 5px 7px;
+	background-color:#fffdee;
+}
+
+.menu-comentar-frase-caja-cont-03{
+	float:left;
+	width:215px;
+	/*height:44px;*/
+	margin:5px 0 5px 7px;
+	background-color:#fffdee;
+}
+
+.menu-comentar-frase-caja-01{
+	float:left;
+	width:45px;
+	height:45px;
+}
+.menu-comentar-frase-caja-02{
+	float:left;
+	padding:5px 0 5px 10px;
+	width:155px;
+	/*border:1px solid;*/
+	/*height:34px;*/
+}
+.menu-comentar-frase-caja-03{
+	float:left;
+	padding:5px 5px 5px 5px;
+	/*width:185px;*/
+	/*border:1px solid;*/
+	/*height:34px;*/
+}
+/* FIN menu-comentar-frase */
+
+
 
 /* FIN usuario */

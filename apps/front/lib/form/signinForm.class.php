@@ -13,8 +13,8 @@ class signinForm extends sfForm
     ));
 
     $this->setValidators(array(
-      'email' => new sfValidatorString(),
-      'password' => new sfValidatorString(),
+      'email' => new sfValidatorString(array('required' =>true),array('required' =>'Ingrese Email')),
+      'password' => new sfValidatorString(array('required' =>true),array('required' =>'Ingrese contraseña')),
     ));
 
     if (sfConfig::get('app_sf_guard_plugin_allow_login_with_email', true))

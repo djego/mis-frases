@@ -15,5 +15,8 @@ class mfPhraseForm extends BasemfPhraseForm
     unset(
             $this['updated_at'], $this['created_at']
     );
-  }
+    $this->widgetSchema['category_id'] = new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Category'), 'add_empty' => '-------'));
+//    $this->widgetSchema['title'] = new sfWidgetFormTextarea();
+    
+   }
 }

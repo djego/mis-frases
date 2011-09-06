@@ -16,7 +16,10 @@ class homeActions extends sfActions {
    * @param sfRequest $request A request object
    */
   public function executeIndex(sfWebRequest $request) {
-    $this->lst_phrase = Doctrine::getTable('mfPhrase')->createQuery()->orderBy('created_at')->limit(10)->execute();
+
+
+    $query = Doctrine::getTable('mfPhrase')->getPhrases($request->getParameter('q'));
+    $this->lst_phrase = $query;
   }
 
   public function executeCategory(sfWebRequest $request) {
@@ -26,11 +29,11 @@ class homeActions extends sfActions {
   public function executeCategoryList(sfWebRequest $request) {
     $rs_category = Doctrine::getTable('mfCategory')->findOneBySlug($request->getParameter('slug'));
     $this->forward404Unless($rs_category);
+    $this->rs_category = $rs_category;
     $this->lst_phrase = Doctrine::getTable('mfPhrase')
-            ->createQuery()
-            ->where('category_id =?',$rs_category->id)
-            ->orderBy('created_at')->execute();
-    
+                    ->createQuery()
+                    ->where('category_id =?', $rs_category->id)
+                    ->orderBy('created_at')->execute();
   }
 
   public function executeNews(sfWebRequest $request) {
@@ -38,7 +41,15 @@ class homeActions extends sfActions {
   }
 
   public function executeUsers(sfWebRequest $request) {
-    
+    $this->lst_user_active = Doctrine::getTable('sfGuardUser')->getUsersActive(10);
+  }
+
+  public function executeUserSendFriend(sfWebRequest $request) {
+    $this->forward404Unless($this->phrase = Doctrine::getTable('mfPhrase')->find($request->getParameter('id')));
+  }
+
+  public function executeUserReadComment(sfWebRequest $request) {
+    $this->forward404Unless($this->phrase = Doctrine::getTable('mfPhrase')->find($request->getParameter('id')));
   }
 
 }

@@ -46,8 +46,8 @@ abstract class BasesfGuardForgotPasswordActions extends sfActions
 
         $this->getMailer()->send($message);
 
-        $this->getUser()->setFlash('notice', 'Check your e-mail! You should receive something shortly!');
-        $this->redirect('@sf_guard_signin');
+        $this->getUser()->setFlash('notice', 'Revise su Correo electronico! Usted debe recibir algo en breve!');
+        $this->redirect('login');
       } else {
         $this->getUser()->setFlash('error', 'Invalid e-mail address!');
       }
@@ -78,8 +78,8 @@ abstract class BasesfGuardForgotPasswordActions extends sfActions
 
         $this->getMailer()->send($message);
 
-        $this->getUser()->setFlash('notice', 'Password updated successfully!');
-        $this->redirect('@sf_guard_signin');
+        $this->getUser()->setFlash('notice', 'Contraseña Actualizada con exito!');
+        $this->redirect('login');
       }
     }
   }

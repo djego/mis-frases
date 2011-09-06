@@ -1,3 +1,4 @@
+ <?php slot('subtitle', sprintf('%s', $rs_category->name)); ?>
 <!-- columna 02 centro -->
 
 <div class="body-colum2-centro2">
@@ -15,7 +16,7 @@
           Publicado por <a href="usuario.html"><?php echo $phrase->User->username; ?></a> hace 1 hora
         </div>
         <div class="caja-frase-stat-02">
-          Categoría: <a href="categoria-amor.html"><?php echo $phrase->Category->name; ?></a><br />
+          Categoría: <a href="<?php echo $sf_request->getUri(); ?>"><?php echo $phrase->Category->name; ?></a><br />
           Autor: usuario
         </div>
         <div class="caja-frase-stat-valoracion">
@@ -52,7 +53,7 @@
             <img src="/images/icon/coment02.png" width="18" height="17" border="0" />
           </div>
           <div class="caja-frase-stat-leer02">
-            <a href="usuario-leer-comentar-frase.html">Leer y comentar la frase</a></div>
+            <a href="<?php echo url_for('user_read_comment',array('id' => $phrase->id))?>">Leer y comentar la frase</a></div>
         </div>
 
         <div class="caja-frase-stat-leer-cont">
@@ -60,7 +61,7 @@
             <img src="/images/icon/coment02.png" width="18" height="17" border="0" />
           </div>
           <div class="caja-frase-stat-leer02">
-            <a href="usuario-enviar-amigo.html">Enviar a un amigo</a></div>
+            <a href="<?php echo url_for('user_send_friend',array('id' => $phrase->id))?>">Enviar a un amigo</a></div>
         </div>
 
       </div>

@@ -1,3 +1,4 @@
+ <?php slot('subtitle', sprintf('Novedades')); ?>
 <div id="link-color" class="novedades-cont">
 
   <div class="novedades">

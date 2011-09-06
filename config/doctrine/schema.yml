@@ -20,13 +20,15 @@ mfPhrase:
   actAs: { Timestampable: ~ }
   columns:
     title:
-      type: string(100)
+      type: string(50000)
     content:
       type: string(50000)
       notnull: true
     category_id:
       type: integer
       notnull: true
+    author:
+      type: string(50000)
     user_id:
       type: integer
       notnull: true

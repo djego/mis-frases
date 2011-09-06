@@ -1,3 +1,4 @@
+ <?php slot('subtitle', sprintf('Categoria de frases')); ?>
 <!-- columna 02 centro -->
 
 <div class="body-colum2-centro2">
