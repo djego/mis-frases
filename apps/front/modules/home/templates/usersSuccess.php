@@ -22,10 +22,10 @@
         <!--caja usuario-->
         <div class="panel-usuarios-02-caja-cont">
           <div class="panel-usuarios-02-caja-01">
-            <a href="#"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
           </div>
           <div class="panel-usuarios-02-caja-02">
-            <a href="#"><?php echo $user['username']; ?></a></div>
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><?php echo $user['username']; ?></a></div>
         </div>
       <?php endforeach; ?>
       <!-- FIN caja usuario-->
@@ -51,13 +51,13 @@
           }
           ?>
           <!--caja usuario-->
-          <div class="panel-usuarios-02-caja-cont">
-            <div class="panel-usuarios-02-caja-01">
-              <a href="#"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
-            </div>
-            <div class="panel-usuarios-02-caja-02">
-              <a href="#"><?php echo $user['username']; ?></a></div>
+        <div class="panel-usuarios-02-caja-cont">
+          <div class="panel-usuarios-02-caja-01">
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
           </div>
+          <div class="panel-usuarios-02-caja-02">
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><?php echo $user['username']; ?></a></div>
+        </div>
         <?php endforeach; ?>
         <!-- FIN caja usuario-->
       </div>
@@ -82,13 +82,13 @@
           }
           ?>
           <!--caja usuario-->
-          <div class="panel-usuarios-02-caja-cont">
-            <div class="panel-usuarios-02-caja-01">
-              <a href="#"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
-            </div>
-            <div class="panel-usuarios-02-caja-02">
-              <a href="#"><?php echo $user['username']; ?></a></div>
+        <div class="panel-usuarios-02-caja-cont">
+          <div class="panel-usuarios-02-caja-01">
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
           </div>
+          <div class="panel-usuarios-02-caja-02">
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><?php echo $user['username']; ?></a></div>
+        </div>
         <?php endforeach; ?>
 
 
@@ -114,13 +114,13 @@
           }
           ?>
           <!--caja usuario-->
-          <div class="panel-usuarios-02-caja-cont">
-            <div class="panel-usuarios-02-caja-01">
-              <a href="#"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
-            </div>
-            <div class="panel-usuarios-02-caja-02">
-              <a href="#"><?php echo $user['username']; ?></a></div>
+        <div class="panel-usuarios-02-caja-cont">
+          <div class="panel-usuarios-02-caja-01">
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
           </div>
+          <div class="panel-usuarios-02-caja-02">
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><?php echo $user['username']; ?></a></div>
+        </div>
         <?php endforeach; ?>
       </div>
     </div>
@@ -144,13 +144,13 @@
           }
           ?>
           <!--caja usuario-->
-          <div class="panel-usuarios-02-caja-cont">
-            <div class="panel-usuarios-02-caja-01">
-              <a href="#"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
-            </div>
-            <div class="panel-usuarios-02-caja-02">
-              <a href="#"><?php echo $user['username']; ?></a></div>
+        <div class="panel-usuarios-02-caja-cont">
+          <div class="panel-usuarios-02-caja-01">
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
           </div>
+          <div class="panel-usuarios-02-caja-02">
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><?php echo $user['username']; ?></a></div>
+        </div>
         <?php endforeach; ?>
       </div>
     </div>
@@ -174,13 +174,13 @@
           }
           ?>
           <!--caja usuario-->
-          <div class="panel-usuarios-02-caja-cont">
-            <div class="panel-usuarios-02-caja-01">
-              <a href="#"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
-            </div>
-            <div class="panel-usuarios-02-caja-02">
-              <a href="#"><?php echo $user['username']; ?></a></div>
+        <div class="panel-usuarios-02-caja-cont">
+          <div class="panel-usuarios-02-caja-01">
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
           </div>
+          <div class="panel-usuarios-02-caja-02">
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><?php echo $user['username']; ?></a></div>
+        </div>
         <?php endforeach; ?>
       </div>
     </div>
@@ -204,13 +204,13 @@
           }
           ?>
           <!--caja usuario-->
-          <div class="panel-usuarios-02-caja-cont">
-            <div class="panel-usuarios-02-caja-01">
-              <a href="#"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
-            </div>
-            <div class="panel-usuarios-02-caja-02">
-              <a href="#"><?php echo $user['username']; ?></a></div>
+        <div class="panel-usuarios-02-caja-cont">
+          <div class="panel-usuarios-02-caja-01">
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><img width="44" height="44" border="0" src="/images/icon/<?php echo $img; ?>" /></a>
           </div>
+          <div class="panel-usuarios-02-caja-02">
+            <a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><?php echo $user['username']; ?></a></div>
+        </div>
         <?php endforeach; ?>
 
       </div>

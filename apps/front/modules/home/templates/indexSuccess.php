@@ -12,7 +12,7 @@
       </div>
       <div class="caja-frases-02">
         <div class="caja-frase-stat-01">
-          Publicado por <a href="usuario.html"><?php echo $phrase->User->username; ?></a> hace 1 hora
+          Publicado por <a href="<?php echo url_for('panel',array('uniq' => $phrase->User->uniq))?>"><?php echo $phrase->User->username; ?></a> hace 1 hora
         </div>
         <div class="caja-frase-stat-02">
           Categoría: <a href="<?php echo url_for('category_list',array('slug' => $phrase->Category->slug)); ?>"><?php echo $phrase->Category->name; ?></a><br />
@@ -71,58 +71,6 @@
 </div>
 <!-- FIN columna 02 centro -->
 
-<!-- columna 03 -->
-<div class="body-colum3">
-
-  <!-- panel derecha -->
-  <div class="body-colum3-panel-cont">
-    <div class="body-colum3-panel-01">
-      <div class="body-colum3-panel-icon">
-        <img src="/images/icon/estad.png" width="20" height="17" />
-      </div>
-      <div class="body-colum3-panel-icon-tx">
-        Frases más visitadas del mes</div>
-    </div>
-    <div class="body-colum3-panel-02">
-      <div class="body-colum3-panel-02-caja">abc</div>
-    </div>
-    <div class="body-colum3-panel-03"></div>
-  </div>
-  <!-- FIN panel derecha -->
-
-  <!-- panel derecha -->
-  <div class="body-colum3-panel-cont">
-    <div class="body-colum3-panel-01">
-      <div class="body-colum3-panel-icon">
-        <img src="/images/icon/star.png" width="17" height="17" />
-      </div>
-      <div class="body-colum3-panel-icon-tx">
-        Frases más votadas</div>
-    </div>
-    <div class="body-colum3-panel-02">
-      <div class="body-colum3-panel-02-caja">abc</div>
-    </div>
-    <div class="body-colum3-panel-03"></div>
-  </div>
-  <!-- FIN panel derecha -->
-  <!-- panel derecha -->
-  <div class="body-colum3-panel-cont">
-    <div class="body-colum3-panel-01">
-      <div class="body-colum3-panel-icon">
-        <img src="/images/icon/coment.png" width="18" height="17" />
-      </div>
-      <div class="body-colum3-panel-icon-tx">
-        Últimos comentarios</div>
-    </div>
-    <div class="body-colum3-panel-02">
-      <div class="body-colum3-panel-02-caja">abc</div>
-    </div>
-    <div class="body-colum3-panel-03"></div>
-  </div>
-  <!-- FIN panel derecha -->
-
-
-
-</div>
+<?php include_partial('global/column_right', $params_right)?>
 
 <!-- FIN columna derecha -->

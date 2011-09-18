@@ -8,10 +8,13 @@ new_phrase:
   url: /nueva-frase
   param: { module: panel, action: createPhrase }
 panel:
-  url: /panel
+  url: /usuario/:uniq
   param: { module: panel, action: index }
 user_book_ph:
-  url: /usuario-libro-frases.html
+  url: /:uniq/usuario-libro-frases.html
+  param: { module: panel, action: userBookPhrase }
+user_book_ph:
+  url: /:uniq/usuario-libro-frases.html
   param: { module: panel, action: userBookPhrase }
 ### FIN PANEL ###
 

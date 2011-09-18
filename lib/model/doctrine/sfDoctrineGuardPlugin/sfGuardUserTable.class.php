@@ -18,7 +18,7 @@ class sfGuardUserTable extends PluginsfGuardUserTable {
 
   public function getUsersActive($limit) {
     $q = $this->createQuery();
-    $q->select('id, gender, username');
+    $q->select('id, gender, username, uniq');
     $q->where('is_active =?', true);
     $q->orderBy('last_login DESC');
     $q->limit($limit);

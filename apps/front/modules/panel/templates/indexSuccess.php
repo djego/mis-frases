@@ -6,12 +6,12 @@
 
 <div id="link-color" class="usuario-cont">
 	<div class="usuario-titulo">
-      <strong>Pagina de <a href="usuario.html">Pepito</a></strong></div>
+      <strong>Pagina de <a href="usuario.html"><?php echo $user->username;?></a></strong></div>
 	<!--caja usuario-->
 	<div class="usuario-caja01-cont">
     	<div class="usuario-caja01-img"><a href="usuario-libro-frases.html"><img width="45" height="45" border="0" src="/images/icon/usuario-libro.jpg"></a></div>
     	<div class="usuario-caja01-tx">
-        <a href="<?php echo url_for('user_book_ph')?>">Mi libro de frases </a></div>
+        <a href="<?php echo url_for('user_book_ph',array('uniq' => $user->uniq))?>">Mi libro de frases </a></div>
     </div>
     
     <div class="usuario-caja01-cont">
@@ -101,14 +101,14 @@
         <!--caja usuario-->
         <div class="usuarios-panel-datos-caja-cont">
           <div class="usuarios-panel-datos-caja-01">
-            <a href="#"><img width="80" height="80" border="0" src="/images/icon/calico-poeta2.png"></a>
+            <a href="#"><img width="80" height="80" border="0" src="/images/icon/male.jpg"></a>
           </div>
           <div class="usuarios-panel-datos-caja-02">
             Nombre verdadero:<br>
-            Pepito<br><br>
+            <?php echo $user->first_name.' '. $user->last_name;?><br><br>
 
             Fecha de nacimiento:<br>
-            01/01/11
+            <?php echo Utils::getFormattedDate($user->birthday,'%d/%m/%Y' )?>
           </div>
         </div>
         <!-- FIN caja usuario-->
@@ -118,23 +118,23 @@
           <div class="usuarios-panel-datos-caja-02">
             <ul>
               <li><strong>Sobre mi:</strong><br>
-                Soy asi como lees, Claro directo al mi hablar y escribir. 
+                Texto sin lugar a edicion
               </li><br>
 
               <li><strong>Porque me agrada mis-frases:</strong><br>
-                Por que me hacen sentir libre
+                Texto sin lugar a edicion
               </li><br>
 
               <li><strong>Qué tipo de frase te gusto mas:</strong><br>
-                no tengo favoriitas, soy inspiracion pura.
+                Texto sin lugar a edicion
               </li><br>
 
               <li><strong>Utilizo mis frases para:</strong><br>
-                Sentirme bien y compartir con amigos
+                Texto sin lugar a edicion
               </li><br>
 
               <li><strong>Te agrada escribir poemas cartas cuentos:</strong><br>
-                Si, poemas de amor
+                Texto sin lugar a edicion
               </li><br>
             </ul>
           </div>

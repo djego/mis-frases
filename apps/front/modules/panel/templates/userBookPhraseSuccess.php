@@ -4,7 +4,7 @@
 
 <div id="usuario-libro-frases" class="usuario-libro-frases-pag-cont">
 	<div class="usuario-titulo">
-      <strong>Libro de frases  de <a href="usuario.html">Pepito</a></strong></div>
+      <strong>Libro de frases  de <a href="<?php echo url_for('panel', array('uniq' => $user->uniq));?>"><?php echo $user->username; ?></a></strong></div>
       
 	<!--libro frases -->
 
@@ -110,16 +110,16 @@
             
             <!--caja usuario-->
         <div class="usuarios-panel-datos-caja-cont">
-        	<div class="usuarios-panel-datos-caja-01">
-            <a href="#"><img width="80" height="80" border="0" src="images/icon/calico-poeta2.png"></a>
-            </div>
-            <div class="usuarios-panel-datos-caja-02">
+          <div class="usuarios-panel-datos-caja-01">
+            <a href="#"><img width="80" height="80" border="0" src="/images/icon/male.jpg"></a>
+          </div>
+          <div class="usuarios-panel-datos-caja-02">
             Nombre verdadero:<br>
-            Pepito<br><br>
-            
+            <?php echo $user->first_name.' '. $user->last_name;?><br><br>
+
             Fecha de nacimiento:<br>
-            01/01/11
-        	</div>
+            <?php echo Utils::getFormattedDate($user->birthday,'%d/%m/%Y' )?>
+          </div>
         </div>
         <!-- FIN caja usuario-->
         

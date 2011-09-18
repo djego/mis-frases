@@ -10,6 +10,10 @@ class BasesfGuardRegisterActions extends sfActions {
 
     $this->form = new registerForm();
    
+    $this->last_phrases = Doctrine::getTable('mfPhrase')->getPhrases();
+    $params_right['last_phrases'] = $this->last_phrases;
+    $this->params_right = $params_right;
+    
     if ($request->isMethod('post')) {
       $requestData = $request->getParameter($this->form->getName());
       if (sfConfig::get('app_recaptcha_active', false)) {
@@ -32,7 +36,7 @@ class BasesfGuardRegisterActions extends sfActions {
     $dbr_user = new sfGuardUser();
     // asignar puntos por registrarse mediante una invitacion
 //    print_r($a_user);die();
-    
+    $dbr_user->setUniq(uniqid(4));
     $dbr_user->setFirstName($a_user['first_name']);
     $dbr_user->setLastName($a_user['last_name']);
     $dbr_user->setEmailAddress($a_user['email_address']);

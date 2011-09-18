@@ -13,6 +13,7 @@ abstract class BasesfGuardUserFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
+      'uniq'             => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'first_name'       => new sfWidgetFormFilterInput(),
       'last_name'        => new sfWidgetFormFilterInput(),
       'city'             => new sfWidgetFormFilterInput(),
@@ -35,6 +36,7 @@ abstract class BasesfGuardUserFormFilter extends BaseFormFilterDoctrine
     ));
 
     $this->setValidators(array(
+      'uniq'             => new sfValidatorPass(array('required' => false)),
       'first_name'       => new sfValidatorPass(array('required' => false)),
       'last_name'        => new sfValidatorPass(array('required' => false)),
       'city'             => new sfValidatorPass(array('required' => false)),
@@ -110,6 +112,7 @@ abstract class BasesfGuardUserFormFilter extends BaseFormFilterDoctrine
   {
     return array(
       'id'               => 'Number',
+      'uniq'             => 'Text',
       'first_name'       => 'Text',
       'last_name'        => 'Text',
       'city'             => 'Text',

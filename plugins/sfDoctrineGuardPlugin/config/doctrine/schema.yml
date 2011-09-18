@@ -53,8 +53,11 @@ sfGuardGroupPermission:
 sfGuardUser:
   actAs: [Timestampable]
   columns:
+    uniq:
+      type: string(14)
+      notnull: true
     first_name: string(255)
-    last_name: string(255)
+    last_name: string(255)    
     city: string(100)
     province: string(100)
     country: 

@@ -17,23 +17,34 @@ class homeActions extends sfActions {
    */
   public function executeIndex(sfWebRequest $request) {
 
-
+    $params_right = array();
     $query = Doctrine::getTable('mfPhrase')->getPhrases($request->getParameter('q'));
     $this->lst_phrase = $query;
+    
+    $this->last_phrases = Doctrine::getTable('mfPhrase')->getPhrases();
+    $params_right['last_phrases'] = $this->last_phrases;
+    $this->params_right = $params_right;
   }
 
   public function executeCategory(sfWebRequest $request) {
     $this->lst_category = Doctrine::getTable('mfCategory')->findAll();
+    
+    $this->last_phrases = Doctrine::getTable('mfPhrase')->getPhrases();
+    $params_right['last_phrases'] = $this->last_phrases;
+    $this->params_right = $params_right;
   }
 
   public function executeCategoryList(sfWebRequest $request) {
     $rs_category = Doctrine::getTable('mfCategory')->findOneBySlug($request->getParameter('slug'));
     $this->forward404Unless($rs_category);
     $this->rs_category = $rs_category;
-    $this->lst_phrase = Doctrine::getTable('mfPhrase')
-                    ->createQuery()
-                    ->where('category_id =?', $rs_category->id)
-                    ->orderBy('created_at')->execute();
+    $this->lst_phrase = Doctrine::getTable('mfPhrase')->getPharsesPerCategory($rs_category->id);
+    
+                    
+    
+    $this->last_phrases = Doctrine::getTable('mfPhrase')->getPhrases();
+    $params_right['last_phrases'] = $this->last_phrases;
+    $this->params_right = $params_right;
   }
 
   public function executeNews(sfWebRequest $request) {
