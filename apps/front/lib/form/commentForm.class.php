@@ -17,14 +17,14 @@ class commentForm extends sfForm {
 
   public function configure() {
     $this->setWidgets(array(
-        'comment' => new sfWidgetFormInputText(),
+        'comment' => new sfWidgetFormTextarea(),
 
         
     ));
 
     $this->setValidators(array(        
         'comment' => new sfValidatorString(
-                array('max_length' => 500, 'required' => true),
+                array('max_length' => 750, 'required' => true),
                 array('required' => 'El \'Nombre\' no puede ser vacio', 'max_length' => 'Limite de %max_length% Caracteres'))
 
         

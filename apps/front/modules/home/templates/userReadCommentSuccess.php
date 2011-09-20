@@ -18,9 +18,52 @@
         <div></div>
         <div></div>
         <hr><p></p>
-        <p>No hay comentarios para esta frase.&nbsp;<br/>
-          <br/>
-        </p>
+        <?php if ($lst_comment): ?>
+          <div class="even">
+            <a name="72505">
+              <table>
+                <tbody>
+                  <?php foreach ($lst_comment as $comment): ?>
+                  <?php 
+                    if($comment->sfGuardUser->gender == 'M'){
+                       $img = 'male.jpg';
+                  } else {
+                    $img = 'female.jpg';
+                  }
+                    
+                  ?>
+                  <tr>
+                    <td class="margenavatarcomen">
+                      <div id="borde_fotos2">
+                        <a href="<?php echo url_for('panel', array('uniq' => $comment->sfGuardUser->username)) ?>" title="smileandamor"><img alt="smileandamor" src="/images/icon/<?php echo $img ?>"></a>
+                      </div>
+                    </td>
+                    <td>
+                      <p><?php echo $comment->comment ?></p>
+                      
+                      <div class="detallescoment">
+                        <div class="linknaranja">
+                          Dijo
+                          <a href="<?php echo url_for('panel', array('uniq' => $comment->sfGuardUser->username)) ?>"><?php echo $comment->sfGuardUser->username ?></a>
+                          el día
+                          <i>
+                            19 Sep 17:48
+                          </i>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <?php endforeach; ?>
+                </tbody>
+              </table>
+            </a>
+          </div>
+        <?php else: ?>
+          <p>No hay comentarios para esta frase.&nbsp;<br/>
+            <br/>
+          </p>
+        <?php endif; ?>
+
 
         <p>&nbsp;</p>
         <p>&nbsp;</p>

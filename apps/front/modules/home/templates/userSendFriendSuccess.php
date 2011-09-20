@@ -1,49 +1,58 @@
 <?php slot('subtitle', sprintf('Página de %s', $phrase->User->username)); ?>
+<?php use_helper('recaptcha') ?>
 <div class="body-colum2-centro2">
 
   <!--usuario-->
   <!--usuario hoja diaria -->
   <div id="link-color" class="usuario-libro-frases-pag-cont">
     <div class="usuario-titulo">
-      <strong>Enviar frase a un amigo<a href="usuario.html"></a></strong></div>
+      <strong>Enviar frase a un amigo</strong></div>
 
     <div class="myform" id="stylized">
-      <form action="index.html" method="post" name="form" id="form">
+      <?php if($sf_user->hasFlash('notice')):?>
+      <h4><?php echo $sf_user->getFlash('notice'); ?></h4>
+      <?php endif;?>
+      <form action="" method="post" name="form" id="form">
         <h1>Formulario</h1>
 
         <label>Nombre 
           <span class="small">del destinatario</span>
         </label>
-        <input type="text" id="name01" name="name01">
+        <?php echo $form['name_to']->render(); ?>
 
         <label>Email 
           <span class="small">del destinatario</span>
         </label>
-        <input type="text" id="email01" name="email01">
+        <?php echo $form['email_to']->render(); ?>
 
         <label>Nombre
           <span class="small">del remitente</span>
         </label>
-        <input type="text" id="name02" name="name02">
+        <?php echo $form['name_from']->render(); ?>
 
         <label>Email
           <span class="small">del remitente</span>
         </label>
-        <input type="text" id="email02" name="email02">
+        <?php echo $form['email_from']->render(); ?>
 
         <label>Mensaje
           <span class="small">del remitente</span>
         </label>
-        <textarea id="comentario" name="comentario"></textarea>
+        <?php echo $form['message']->render(); ?>
 
         <label>Codigo
           <span class="small">de verificacion</span>
         </label>
-        <input type="text" id="email02" name="email02">
+        <?php if (sfConfig::get('app_recaptcha_active', false)): ?>
+            <?php echo recaptcha_get_html(sfConfig::get('app_recaptcha_publickey'), $form['response']->getError()) ?>
+          <?php endif ?>
+          
 
         <button type="submit">Enviar</button>
         <div class="spacer"></div>
-
+        <?php if ($form->isCSRFProtected()) : ?>
+            <?php echo $form['_csrf_token']->render(); ?>
+          <?php endif; ?>  
       </form>
     </div>
   </div>
