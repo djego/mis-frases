@@ -15,6 +15,11 @@ class homeActions extends sfActions {
    *
    * @param sfRequest $request A request object
    */
+  public function preExecute() {
+    if($this->getUser()->isAuthenticated()){
+      $this->user_id = $this->getUser()->getGuardUser()->getId();
+    }
+  }
   public function executeIndex(sfWebRequest $request) {
 
     $params_right = array();
@@ -61,6 +66,18 @@ class homeActions extends sfActions {
 
   public function executeUserReadComment(sfWebRequest $request) {
     $this->forward404Unless($this->phrase = Doctrine::getTable('mfPhrase')->find($request->getParameter('id')));
+    $this->form = new commentForm();
+    if($request->isMethod('post')){
+      $this->form->bind($request->getParameter('comment'));
+      if($this->form->isValid()){
+        $values = $this->form->getValues();
+        $mf_comment = new mfComment();
+        $mf_comment->setPhraseId($this->phrase->id);
+        $mf_comment->setUserId($this->user_id);
+        $mf_comment->setComment($values['comment']);
+        $mf_comment->save();
+      }
+    }
   }
 
 }

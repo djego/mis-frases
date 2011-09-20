@@ -47,9 +47,20 @@ class registerForm extends reCaptchaForm {
         'last_name' => new sfValidatorString(
                 array('max_length' => 150, 'required' => true),
                 array('required' => 'El \'Apellido\' no puede ser vacio')),
-        'username' => new sfValidatorString(
-                array('max_length' => 150, 'min_length' => 3, 'required' => true),
-                array('required' => 'El nombre de usuario no puede ser vacio')),
+        'username'    => new sfValidatorAnd(
+          array( 
+            new sfValidatorRegex(
+              array('pattern' => '/^[a-z][a-z0-9\._-]*$/i'),
+              array('invalid' => 'Debe ingresar caracteres v&aacute;lidos para el nombre de \'Usuario\'')),
+            new sfValidatorString(
+              array('min_length' => 5, 'max_length' => 20),
+              array(
+                'min_length' => 'El nombre de \'Usuario\' debe tener al menos 5 caracteres',
+                'max_length' => 'El nombre de \'Usuario\' debe tener como m&aacute;ximo 20 caracteres',
+                ))
+            ),
+          array('halt_on_error' => false),
+          array('required'   => 'El nombre de \'Usuario\' no puede ser vacio')),
         'email_address' => new sfValidatorEmail(
                 array('required' => true),
                 array(

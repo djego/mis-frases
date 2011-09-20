@@ -13,7 +13,7 @@
       </div>
       <div class="caja-frases-02">
         <div class="caja-frase-stat-01">
-          Publicado por <a href="<?php echo url_for('panel',array('uniq' => $phrase->User->uniq))?>"><?php echo $phrase->User->username; ?></a> hace 1 hora
+          Publicado por <a href="<?php echo url_for('panel',array('uniq' => $phrase->User->username))?>"><?php echo $phrase->User->username; ?></a> hace 1 hora
         </div>
         <div class="caja-frase-stat-02">
           Categoría: <a href="<?php echo $sf_request->getUri(); ?>"><?php echo $phrase->Category->name; ?></a><br />
@@ -77,5 +77,5 @@
 </div>
 <!-- FIN columna 02 centro -->
 
-<?php include_partial('column_right', $params_right)?>
+<?php include_partial('global/column_right', $params_right)?>
 <!-- FIN columna derecha -->

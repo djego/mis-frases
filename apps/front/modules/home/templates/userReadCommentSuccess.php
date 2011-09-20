@@ -10,16 +10,16 @@
 
     <div class="usuario-hoja-diaria-cont">
 
-      <div class="usuario-hoja-diaria-01"><img width="16" height="16" border="0" src="/images/icon/control.png"> Pirata</div>
+      <div class="usuario-hoja-diaria-01"><img width="16" height="16" border="0" src="/images/icon/control.png"><?php echo $phrase->title ?></div>
 
       <div class="usuario-hoja-diaria-02">
-        <p>"Como quisiera ser pirata no por el oro ni la plata si no por ese tesoro ¡que tienes entre las patas!"</p>
-        <p> Autor: guapa(leida en un chat)&nbsp;</p>
+        <p>&quot;<?php echo $phrase->content ?>&quot;</p>
+        <p> Autor: <?php echo $phrase->author ?>&nbsp;</p>
         <div></div>
         <div></div>
         <hr><p></p>
-        <p>No hay comentarios para esta frase.&nbsp;<br>
-          <br>
+        <p>No hay comentarios para esta frase.&nbsp;<br/>
+          <br/>
         </p>
 
         <p>&nbsp;</p>
@@ -29,18 +29,24 @@
           <div id="publicar">
             <div>COMENTA ESTA FRASE:</div>
             <br>
-            <form method="post" action="http://www.mis-frases.org/frases/add_comment">
-              <div></div>
+            <form method="post" action="">             
               <div>
                 <table>
                   <tbody>
                     <tr>
                       <td><div></div></td>
-                      <td></td>
+                      <td><?php if ($form->isCSRFProtected()) : ?>
+                          <?php echo $form['_csrf_token']->render(); ?>
+                        <?php endif; ?>
+                        <?php if ($form['comment']->hasError()) : ?>
+                          <?php echo $form['comment']->getError(); ?>
+                        <?php endif; ?>  
+                      </td>
                     </tr>
                     <tr>
                       <td><div>Comentario:&nbsp;*</div></td>
-                      <td><textarea rows="6" name="comment[comment]" id="comment_comment" cols="36"></textarea>
+                      <td>
+                        <?php echo $form['comment']->render(array('rows' => 6, 'cols' => 36)) ?>
                         <br>
                         <br></td>
                     </tr>
@@ -56,7 +62,7 @@
           </div>
 
         <?php else: ?>
-        <p> Debes de iniciar sesion para comentar <a href="<?php echo url_for('login'); ?>">Iniciar sesion</a> </p>
+          <p> Debes de iniciar sesion para comentar <a href="<?php echo url_for('login'); ?>">Iniciar sesion</a> </p>
         <?php endif; ?>
 
       </div>
@@ -66,10 +72,9 @@
 
       <div class="usuario-hoja-diaria-01">
         <ul>
-          <li><a href="usuario.html"><img width="16" height="16" border="0" src="/images/icon/user.png"> Perfil</a></li>
+          <li><a href="#"><img width="16" height="16" border="0" src="/images/icon/user.png"> Perfil</a></li>
           <li><img width="16" height="16" border="0" src="/images/icon/camera.png"> 0 Imágenes publicadas</li>
-          <li><img width="18" height="17" border="0" src="/images/icon/coment.png"> <a href="usuario-mis-comentarios.html">18 comentarios</a></li>
-          <li><img width="16" height="16" border="0" src="/images/icon/favicon.png"> <a href="#">Ir a Mi-Web de pepito</a></li>
+          <li><img width="18" height="17" border="0" src="/images/icon/coment.png"> <a href="usuario-mis-comentarios.html">0 comentarios</a></li>
 
         </ul>
       </div>

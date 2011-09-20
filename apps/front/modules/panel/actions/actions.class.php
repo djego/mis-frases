@@ -25,14 +25,16 @@ class panelActions extends sfActions {
 
   public function executeIndex(sfWebRequest $request) {
 //    $this->forward('default', 'module');
-    $this->user = Doctrine::getTable('sfGuardUser')->findOneByUniq($request->getParameter('uniq'));
+    $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
   }
 
   public function executeCreatePhrase(sfWebRequest $request) {
 
+     
     if (!$this->getUser()->isAuthenticated()) {
       $this->forward('signin', 'signin');
     }
+    $this->user_id = $this->getUser()->getGuardUser()->getId();
 
     $this->user = Doctrine::getTable('sfGuardUser')->find($this->user_id);
 
@@ -51,7 +53,24 @@ class panelActions extends sfActions {
   }
 
   public function executeUserBookPhrase(sfWebRequest $request) {
-    $this->user = Doctrine::getTable('sfGuardUser')->findOneByUniq($request->getParameter('uniq'));
+    $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
+    $this->user_friends = '';
+    
+  }
+  public function executePhraseSend(sfWebRequest $request) {
+    $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
+  }
+  public function executePhraseFav(sfWebRequest $request) {
+    $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
+  }
+  public function executeMyFriends(sfWebRequest $request) {
+    $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
+  }
+  public function executeMyComments(sfWebRequest $request) {
+    $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
+  }
+  public function executeMyToday(sfWebRequest $request) {
+    $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
   }
 
 }

@@ -44,7 +44,7 @@
               </ul>
             </div>
           <?php else: ?>
-            <form name="login" method="post" action="ingresar.php">
+            <form name="login" method="post" action="">
               <div class="header-acceso1"></div>
               <div id="navi" class="header-acceso3"> </div>
             </form>
@@ -77,7 +77,7 @@
             <div class="header-caja" id="header-link-color">
 
               <div class="header-entrado">
-                <img width="16" height="16" border="0" src="/images/icon/entrar.png"><em>Bienvenido(a)&nbsp; <?php echo $sf_user->getGuardUser()->getUsername(); ?>&nbsp;<a href="<?php echo url_for('panel',array('uniq' =>$sf_user->getGuardUser()->getUniq())) ?>">Mi panel</a> | <a href="<?php echo url_for('logout') ?>">Salir </a>|</em>
+                <img width="16" height="16" border="0" src="/images/icon/entrar.png"><em>Bienvenido(a)&nbsp; <?php echo $sf_user->getGuardUser()->getUsername(); ?>&nbsp;<a href="<?php echo url_for('panel',array('uniq' =>$sf_user->getGuardUser()->getUsername())) ?>">Mi panel</a> | <a href="<?php echo url_for('logout') ?>">Salir </a>|</em>
               </div>
             </div>
 
@@ -139,7 +139,7 @@
                     $img = 'female.jpg';
                   }
                   ?>
-                  <li><a href="<?php echo url_for('panel', array('uniq' => $user['uniq']))?>"><img src="/images/icon/<?php echo $img; ?>" width="44" height="44" border="1" /></a></li>
+                  <li><a href="<?php echo url_for('panel', array('uniq' => $user['username']))?>"><img src="/images/icon/<?php echo $img; ?>" width="44" height="44" border="1" /></a></li>
                 <?php endforeach; ?>
 
 

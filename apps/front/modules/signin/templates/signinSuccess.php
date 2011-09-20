@@ -5,7 +5,7 @@
 
 Para publicar en mis-frases es necesario primero registrarse o, si ya estás registrado, estar logado. El registro es gratis, rápido y sencillo. Una vez registrado podrás publicar frases, construir tu propia página con todas las frases publicadas por tí, tus frases favoritas de otros usuarios, tus comentarios y las fotos e imágenes publicadas por tí. Recibirás un aviso por correo electrónico cada vez que alguien comente una frase publicada por tí o cuando otros usuarios comentan tu perfil. Podrás hacer amigos y seguir la actividad de los autores de tus frases favoritas. <br><br>
 
-Después de rellenar el <a href="#">formulario de registro</a> y aceptar los términos y condiciones, solo tienes que activar tu cuenta haciendo clic en el enlace que enviamos al correo elecrónico que nos has facilitado y a partir de este momento podrás empezar a rellenar tu página y publicar tus frases. <br><br>
+Después de rellenar el <a href="<?php echo url_for('register')?>">formulario de registro</a> y aceptar los términos y condiciones, solo tienes que activar tu cuenta haciendo clic en el enlace que enviamos al correo elecrónico que nos has facilitado y a partir de este momento podrás empezar a rellenar tu página y publicar tus frases. <br><br>
 
 Si ya estás registrado, para publicar sólo debes logarte con nombre de usuario y contraseña en la tabla de login: 
 

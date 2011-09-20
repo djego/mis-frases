@@ -16,5 +16,5 @@
 
 </div>
 <!-- FIN columna 02 centro -->
-<?php include_partial('column_right', $params_right)?>
+<?php include_partial('global/column_right', $params_right)?>
 <!-- FIN columna derecha -->

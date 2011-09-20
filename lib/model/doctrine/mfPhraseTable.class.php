@@ -22,7 +22,7 @@ class mfPhraseTable extends Doctrine_Table {
     if ($criteria) {
       $query->where('title  like "%' . $criteria . '%" OR content like "%' . $criteria . '%"');
     }
-    $query->orderBy('created_at');
+    $query->orderBy('created_at DESC');
     $query->limit(10);
     return $query->execute();
   }

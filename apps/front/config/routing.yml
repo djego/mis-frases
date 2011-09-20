@@ -13,9 +13,22 @@ panel:
 user_book_ph:
   url: /:uniq/usuario-libro-frases.html
   param: { module: panel, action: userBookPhrase }
-user_book_ph:
-  url: /:uniq/usuario-libro-frases.html
-  param: { module: panel, action: userBookPhrase }
+user_phrase_send:
+  url: /:uniq/frases-enviadas.html
+  param: { module: panel, action: phraseSend }
+user_phrase_fav:
+  url: /:uniq/frases-favoritas.html
+  param: { module: panel, action: phraseFav }
+
+user_my_friends:
+  url: /:uniq/mis-amigos.html
+  param: { module: panel, action: myFriends }
+user_my_comments:
+  url: /:uniq/mis-comentarios.html
+  param: { module: panel, action: myComments }
+user_my_today:
+  url: /:uniq/mi-dia-hoy.html
+  param: { module: panel, action: myToday }
 ### FIN PANEL ###
 
 

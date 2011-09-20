@@ -13,7 +13,7 @@
     <div class="body-colum3-panel-02">
       <div class="body-colum3-panel-02-caja">
         <?php foreach($last_phrases as $phrase):?>
-        <?php echo substr($phrase->content,0,15).'...'; ?><a href="">Ver completo</a><br/>
+        <?php echo substr($phrase->content,0,30).'...'; ?><a style="color: blue" href="<?php echo url_for('user_read_comment',array('id' => $phrase->id))?>">Ver completo</a><br/>
         <span><?php echo $phrase->User->username;?></span>&nbsp;&nbsp;<span><?php echo $phrase->created_at ?></span>
         <?php endforeach;?>
         
@@ -35,7 +35,7 @@
     <div class="body-colum3-panel-02">
       <div class="body-colum3-panel-02-caja">
         <?php foreach($last_phrases as $phrase):?>
-        <?php echo substr($phrase->content,0,15).'...'; ?><a href="">Ver completo</a><br/>
+        <?php echo substr($phrase->content,0,25).'...'; ?><a style="color: blue" href="<?php echo url_for('user_read_comment',array('id' => $phrase->id))?>">Ver completo</a><br/>
         <span><?php echo $phrase->User->username;?></span>&nbsp;&nbsp;<span><?php echo $phrase->created_at ?></span>
         <?php endforeach;?>
         

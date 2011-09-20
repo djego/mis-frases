@@ -12,7 +12,7 @@
       </div>
       <div class="caja-frases-02">
         <div class="caja-frase-stat-01">
-          Publicado por <a href="<?php echo url_for('panel',array('uniq' => $phrase->User->uniq))?>"><?php echo $phrase->User->username; ?></a> hace 1 hora
+          Publicado por <a href="<?php echo url_for('panel',array('uniq' => $phrase->User->username))?>"><?php echo $phrase->User->username; ?></a> hace 1 hora
         </div>
         <div class="caja-frase-stat-02">
           Categoría: <a href="<?php echo url_for('category_list',array('slug' => $phrase->Category->slug)); ?>"><?php echo $phrase->Category->name; ?></a><br />
