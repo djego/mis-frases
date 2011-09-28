@@ -4,3 +4,6 @@ userSendFriendSuccess:
   stylesheets: [estilo-form.css]
 userReadCommentSuccess:
   stylesheets: [estilo-form.css]
+indexSuccess:
+  stylesheets: [starrating.css]
+  javascripts: [jquery.min.js,  starrating.js]

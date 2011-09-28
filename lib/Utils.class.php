@@ -61,7 +61,7 @@ class Utils
   {
     $day_names = array('Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado');   
     $month_names = array('', 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo','Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
-  
+    $month_abrev = array('', 'Ene', 'Febr', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic');
     if (!$date) return false;
     extract(getdate(strtotime($date)));
     
@@ -74,6 +74,7 @@ class Utils
     $options['%l'] = $day_names[(int)$wday];
     $options['%D'] = substr($day_names[(int)$wday], 0, 3);
     $options['%F'] = $month_names[(int)$mon];
+    $options['%f'] = $month_abrev[(int) $mon];
     $options['%M'] = substr($month_names[(int)$mon], 0, 3);
   
 
@@ -464,6 +465,91 @@ class Utils
   {
   	$datos = GetImageSize($url) OR die("Imagen no válida");
   	return $datos;
+  }
+  
+  
+  
+  static public function getTimePublic($datefrom, $dateto = -1)
+  {
+    // valores predeterminados y asumir si es 0 se pasa en ese
+    // su error en lugar de la fecha
+    $datefrom = strtotime($datefrom);
+    if ($datefrom <= 0) {
+      return " mucho tiempo";
+    }
+
+    if ($dateto == -1) {
+      $dateto = time();
+    }
+
+    $difference = $dateto - $datefrom;
+
+    if ($difference < 60) {
+      $interval = "s";
+    } elseif ($difference >= 60 && $difference < 60 * 60) {
+      $interval = "n";
+    } elseif ($difference >= 60 * 60 && $difference < 60 * 60 * 24) {
+      $interval = "h";
+    } elseif ($difference >= 60 * 60 * 24 && $difference < 60 * 60 * 24 * 7) {
+      $interval = "d";
+    } elseif ($difference >= 60 * 60 * 24 * 7 && $difference < 60 * 60 * 24 * 30) {
+      $interval = "ww";
+    } elseif ($difference >= 60 * 60 * 24 * 30 && $difference < 60 * 60 * 24 * 365) {
+      $interval = "m";
+    } elseif ($difference >= 60 * 60 * 24 * 365) {
+      $interval = "y";
+    }
+
+    switch ($interval) {
+      case "m":
+        $months_difference = floor($difference / 60 / 60 / 24 / 29);
+        while (mktime(date("H", $datefrom), date("i", $datefrom), date("s", $datefrom), date("n", $datefrom) + ($months_difference), date("j", $dateto), date("Y", $datefrom)) < $dateto) {
+
+          $months_difference++;
+        }
+        $datediff = $months_difference;
+
+        if ($datediff == 12) {
+          $datediff--;
+        }
+
+        $message = ($datediff == 1) ? "$datediff mes" : "$datediff meses";
+        break;
+
+      case "y":
+        $datediff = floor($difference / 60 / 60 / 24 / 365);
+        $message = ($datediff == 1) ? "$datediff hace un año" : "$datediff años";
+        break;
+
+      case "d":
+        $datediff = floor($difference / 60 / 60 / 24);
+        $message = ($datediff == 1) ? "$datediff hace días" : "$datediff la semana pasada";
+        break;
+
+      case "ww":
+        $datediff = floor($difference / 60 / 60 / 24 / 7);
+        $message = ($datediff == 1) ? "$datediff semana" : "$datediff semanas";
+        break;
+
+      case "h":
+        $datediff = floor($difference / 60 / 60);
+        $message = ($datediff == 1) ? "$datediff hora" : "$datediff horas";
+        break;
+
+      case "n":
+        $datediff = floor($difference / 60);
+        $message = ($datediff == 1) ? "$datediff minuto" : "$datediff minutos";
+        break;
+
+      case "s":
+        $datediff = $difference;
+        $message = ($datediff == 1) ? "$datediff segundo" : "$datediff segundos";
+        break;
+    }
+
+    $message = "hace $message";
+
+    return $message;
   }
   
 }

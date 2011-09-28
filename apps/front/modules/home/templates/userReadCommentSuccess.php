@@ -5,16 +5,27 @@
   <!--usuario-->
   <!--usuario hoja diaria -->
   <div id="link-color" class="usuario-libro-frases-pag-cont">
-    <div class="usuario-titulo">
-      <strong>Categoría:   Frases y Citas célebres</strong> </div>
+    <div class="usuario-titulo">      
+      <strong>Categoría:   <?php echo $phrase->Category->name ?></strong> </div>
 
     <div class="usuario-hoja-diaria-cont">
+      <?php if($sf_user->hasFlash('error')):?>
+      <h3 style="color: red"><?php echo $sf_user->getFlash('error'); ?></h3>
+      <?php endif;?>
+      <?php if($sf_user->hasFlash('notice')):?>
+      <h3 style="color: green"><?php echo $sf_user->getFlash('notice'); ?></h3>
+      <?php endif;?>
+      <?php if($phrase->title):?>
+      <div class="usuario-hoja-diaria-01">
+        <img width="16" height="16" border="0" src="/images/icon/control.png">
+              <?php echo $phrase->title ?>
+      </div>
+      <?php endif;?>
 
-      <div class="usuario-hoja-diaria-01"><img width="16" height="16" border="0" src="/images/icon/control.png"><?php echo $phrase->title ?></div>
-
+      
       <div class="usuario-hoja-diaria-02">
         <p>&quot;<?php echo $phrase->content ?>&quot;</p>
-        <p> Autor: <?php echo $phrase->author ?>&nbsp;</p>
+        <p> Autor: <?php echo ($phrase->author)?$phrase->author:$phrase->User->username; ?>&nbsp;</p>
         <div></div>
         <div></div>
         <hr><p></p>
@@ -47,7 +58,7 @@
                           <a href="<?php echo url_for('panel', array('uniq' => $comment->sfGuardUser->username)) ?>"><?php echo $comment->sfGuardUser->username ?></a>
                           el día
                           <i>
-                            19 Sep 17:48
+                            <?php echo Utils::getFormattedDate($comment->created_at,'%d %f %H:%i') ?>
                           </i>
                         </div>
                       </div>
@@ -115,8 +126,7 @@
 
       <div class="usuario-hoja-diaria-01">
         <ul>
-          <li><a href="#"><img width="16" height="16" border="0" src="/images/icon/user.png"> Perfil</a></li>
-          <li><img width="16" height="16" border="0" src="/images/icon/camera.png"> 0 Imágenes publicadas</li>
+          <li><a href="<?php echo url_for('panel', array('uniq' => $phrase->User->username))?>"><img width="16" height="16" border="0" src="/images/icon/user.png"> Perfil de <?php echo $phrase->User->username?></a></li>
           <li><img width="18" height="17" border="0" src="/images/icon/coment.png"> <a href="usuario-mis-comentarios.html">0 comentarios</a></li>
 
         </ul>
@@ -135,25 +145,12 @@
   <div id="link-color" class="menu-comentar-frase-cont">
     <div class="menu-comentar-frase-color-03">
       <div class="menu-comentar-frase-tx">
-        Sobre usuario</div>
+        Sobre <?php echo $phrase->User->username?></div>
     </div>
     <div class="menu-comentar-frase-caja-cont-01">
       <div class="menu-comentar-frase-caja-cont-02">
 
-        <!--caja usuario-->
-        <div class="menu-comentar-frase-caja-cont-03">
-          <div class="menu-comentar-frase-caja-01"><a href="login.html"><img width="45" height="45" border="0" src="/images/icon/usuario-imagenes.jpg"></a></div>
-          <div class="menu-comentar-frase-caja-02">
-            <a href="login.html">Enviar una imagen para esta frase</a><br>
-          </div>
-        </div>
-
-        <div class="menu-comentar-frase-caja-cont-03">
-          <div class="menu-comentar-frase-caja-03">
-            <a href="login.html"><img width="16" height="16" border="0" src="/images/icon/camera.png"> Incluir imagen para la frase</a><br>
-          </div>
-        </div>
-
+       
         <div class="menu-comentar-frase-caja-cont-03">
           Votación
           <div class="menu-comentar-frase-caja-03">
@@ -169,10 +166,10 @@
             </ul><br>
 
             <ul id="link-color">
-              <li><img width="16" height="16" border="0" src="/images/icon/calendar.gif"> Publicado hace una hora</li>
-              <li><img width="16" height="16" border="0" src="/images/icon/comment.gif"> <a href="usuario-leer-comentar-frase.html">Añadir a mis frases favoritas&nbsp;</a></li>
-              <li><img width="16" height="16" border="0" src="/images/icon/arrow-transition.png"> <a href="usuario-enviar-amigo.html">Enviar a un amigo</a></li>
-              <li><img width="16" height="16" border="0" src="/images/icon/book--plus.png"> <a href="usuario-mas-frases.html">Más frases de usuario</a></li>
+              <li><img width="16" height="16" border="0" src="/images/icon/calendar.gif"> Publicado <?php echo Utils::getTimePublic($phrase->created_at)?></li>
+              <li><img width="16" height="16" border="0" src="/images/icon/comment.gif"> <a href="<?php echo url_for('add_phrase_favority',array('id' => $phrase->id))?>">Añadir a mis frases favoritas&nbsp;</a></li>
+              <li><img width="16" height="16" border="0" src="/images/icon/arrow-transition.png"> <a href="<?php echo url_for('user_send_friend',array('id' => $phrase->id))?>">Enviar a un amigo</a></li>
+              <li><img width="16" height="16" border="0" src="/images/icon/book--plus.png"> <a href="<?php echo url_for('user_phrases_send',array('user_id' => $phrase->user_id))?>">Más frases de <?php echo $phrase->User->username?></a></li>
             </ul>
           </div>
         </div>

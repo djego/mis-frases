@@ -29,6 +29,7 @@
  * @property sfGuardForgotPassword $ForgotPassword
  * @property Doctrine_Collection $Phrases
  * @property Doctrine_Collection $MfComments
+ * @property Doctrine_Collection $Favorities
  * 
  * @method string                getUniq()                  Returns the current record's "uniq" value
  * @method string                getFirstName()             Returns the current record's "first_name" value
@@ -54,6 +55,7 @@
  * @method sfGuardForgotPassword getForgotPassword()        Returns the current record's "ForgotPassword" value
  * @method Doctrine_Collection   getPhrases()               Returns the current record's "Phrases" collection
  * @method Doctrine_Collection   getMfComments()            Returns the current record's "MfComments" collection
+ * @method Doctrine_Collection   getFavorities()            Returns the current record's "Favorities" collection
  * @method sfGuardUser           setUniq()                  Sets the current record's "uniq" value
  * @method sfGuardUser           setFirstName()             Sets the current record's "first_name" value
  * @method sfGuardUser           setLastName()              Sets the current record's "last_name" value
@@ -78,6 +80,7 @@
  * @method sfGuardUser           setForgotPassword()        Sets the current record's "ForgotPassword" value
  * @method sfGuardUser           setPhrases()               Sets the current record's "Phrases" collection
  * @method sfGuardUser           setMfComments()            Sets the current record's "MfComments" collection
+ * @method sfGuardUser           setFavorities()            Sets the current record's "Favorities" collection
  * 
  * @package    frases
  * @subpackage model
@@ -204,6 +207,10 @@ abstract class BasesfGuardUser extends sfDoctrineRecord
              'foreign' => 'user_id'));
 
         $this->hasMany('mfComment as MfComments', array(
+             'local' => 'id',
+             'foreign' => 'user_id'));
+
+        $this->hasMany('mfPhrasesFavority as Favorities', array(
              'local' => 'id',
              'foreign' => 'user_id'));
 

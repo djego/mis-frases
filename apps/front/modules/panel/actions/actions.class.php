@@ -30,7 +30,7 @@ class panelActions extends sfActions {
 
   public function executeCreatePhrase(sfWebRequest $request) {
 
-     
+
     if (!$this->getUser()->isAuthenticated()) {
       $this->forward('signin', 'signin');
     }
@@ -55,20 +55,30 @@ class panelActions extends sfActions {
   public function executeUserBookPhrase(sfWebRequest $request) {
     $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
     $this->user_friends = '';
+  }
+
+  public function executePhraseSend(sfWebRequest $request) {
+    $this->forward404Unless($this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq')));
+    $this->lst_phrase = Doctrine::getTable('mfPhrase')->findByUserId($this->user->id);
+    
     
   }
-  public function executePhraseSend(sfWebRequest $request) {
-    $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
-  }
+
   public function executePhraseFav(sfWebRequest $request) {
     $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
+    
+    $lst_phrases = Doctrine::getTable('mfPhrasesFavority')->getFrasesFavoritas($this->user->id);
+    $this->lst_phrase = $lst_phrases;
   }
+
   public function executeMyFriends(sfWebRequest $request) {
     $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
   }
+
   public function executeMyComments(sfWebRequest $request) {
     $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
   }
+
   public function executeMyToday(sfWebRequest $request) {
     $this->user = Doctrine::getTable('sfGuardUser')->findOneByUsername($request->getParameter('uniq'));
   }

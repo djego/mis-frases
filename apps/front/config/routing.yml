@@ -51,7 +51,13 @@ user_send_friend:
 user_read_comment:
   url: /:id/usuario-leer-comentar-frase.html
   param: { module: home, action: userReadComment }
+user_phrases_send:
+  url: /:user_id/mas-frase.html
+  param: { module: home, action: userPhrasesSend }
 
+add_phrase_favority:
+  url: /frase-favorita/:id
+  param: { module: home, action: addFavority }
 
 login:
   url: /login.html

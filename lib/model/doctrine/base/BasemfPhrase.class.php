@@ -17,6 +17,7 @@ Doctrine_Manager::getInstance()->bindComponent('mfPhrase', 'doctrine');
  * @property mfCategory $Category
  * @property sfGuardUser $User
  * @property Doctrine_Collection $MfComments
+ * @property Doctrine_Collection $Favorities
  * 
  * @method string              getTitle()       Returns the current record's "title" value
  * @method string              getContent()     Returns the current record's "content" value
@@ -28,6 +29,7 @@ Doctrine_Manager::getInstance()->bindComponent('mfPhrase', 'doctrine');
  * @method mfCategory          getCategory()    Returns the current record's "Category" value
  * @method sfGuardUser         getUser()        Returns the current record's "User" value
  * @method Doctrine_Collection getMfComments()  Returns the current record's "MfComments" collection
+ * @method Doctrine_Collection getFavorities()  Returns the current record's "Favorities" collection
  * @method mfPhrase            setTitle()       Sets the current record's "title" value
  * @method mfPhrase            setContent()     Sets the current record's "content" value
  * @method mfPhrase            setCategoryId()  Sets the current record's "category_id" value
@@ -38,6 +40,7 @@ Doctrine_Manager::getInstance()->bindComponent('mfPhrase', 'doctrine');
  * @method mfPhrase            setCategory()    Sets the current record's "Category" value
  * @method mfPhrase            setUser()        Sets the current record's "User" value
  * @method mfPhrase            setMfComments()  Sets the current record's "MfComments" collection
+ * @method mfPhrase            setFavorities()  Sets the current record's "Favorities" collection
  * 
  * @package    frases
  * @subpackage model
@@ -98,6 +101,10 @@ abstract class BasemfPhrase extends sfDoctrineRecord
              'foreign' => 'id'));
 
         $this->hasMany('mfComment as MfComments', array(
+             'local' => 'id',
+             'foreign' => 'phrase_id'));
+
+        $this->hasMany('mfPhrasesFavority as Favorities', array(
              'local' => 'id',
              'foreign' => 'phrase_id'));
 

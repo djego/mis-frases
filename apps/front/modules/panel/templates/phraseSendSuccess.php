@@ -7,40 +7,31 @@
   <div class="usuario-libro-frases-pag-cont" id="link-color">
     <div class="usuario-titulo">
       <strong>Frases enviadas de <a href="<?php echo url_for('panel', array('uniq' => $user->username)); ?>"><?php echo $user->username;?></a></strong></div>
-
+    
+    <?php if(count($lst_phrase)):?>
+    <?php foreach($lst_phrase as $phrase):?>
     <div class="usuario-hoja-diaria-cont">
 
-      <div class="usuario-hoja-diaria-01"><img src="images/icon/control.png" width="16" height="16" border="0"> En esta noche tan fria</div>
+      <div class="usuario-hoja-diaria-01"><img src="/images/icon/control.png" width="16" height="16" border="0"> <?php echo ($phrase->title)?$phrase->title:'(Sin titulo)'?></div>
 
-      <div class="usuario-hoja-diaria-02">
-        En esta noche tan fria, yo te ofresco mi estufa, no tiene pilas ni cables pero igualmente te enchufa.. XD</div>
-
-    </div>
-
-    <div class="usuario-hoja-diaria-cont">
-
-      <div class="usuario-hoja-diaria-01"><img src="images/icon/control.png" width="16" height="16" border="0"> Luceros</div>
-
-      <div class="usuario-hoja-diaria-02">
-        Tus ojos son dos luceros, tus mejillas dos manzanas, que linda ensalada de frutas hariamos con mi banana !!</div>
-
-    </div>
-
-    <div class="usuario-hoja-diaria-cont">
+      <div class="usuario-hoja-diaria-02"><?php echo $phrase->content; ?></div>
 
       <div class="usuario-hoja-diaria-01">
         <ul>
-          <li><a href="usuario.html"><img src="images/icon/user.png" width="16" height="16" border="0"> Perfil</a></li>
-          <li><img src="images/icon/camera.png" width="16" height="16" border="0"> 0 Imágenes publicadas</li>
-          <li><img src="images/icon/coment.png" width="18" height="17" border="0"> <a href="usuario-mis-comentarios.html">18 comentarios</a></li>
-          <li><img src="images/icon/favicon.png" width="16" height="16" border="0"> <a href="#">Ir a Mi-Web de pepito</a></li>
+          <li><a href="<?php echo url_for('panel',array('uniq' => $user->username))?>"><img src="/images/icon/user.png" width="16" height="16" border="0"> Perfil de <?php echo $user->username; ?></a></li>
+          <li><img src="/images/icon/coment.png" width="18" height="17" border="0"> <a href="usuario-mis-comentarios.html">0 comentarios</a></li>
 
         </ul>
       </div>
 
-
-
     </div>
+    <?php endforeach;?>
+    <?php else:?>
+    <div class="usuerio-hoja-diaria-cont">
+      No tiene mensajes enviados
+    </div>
+    <?php endif;?>
+
   </div>
 
   <!--FIN usuario hoja diaria -->

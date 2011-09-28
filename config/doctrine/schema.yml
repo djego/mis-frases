@@ -69,3 +69,19 @@ mfComment:
   relations:
     sfGuardUser: { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: MfComments } 
     mfPhrase: { onDelete: CASCADE, local: phrase_id, foreign: id, foreignAlias: MfComments } 
+    
+    
+    
+mfPhrasesFavority:
+  tableName: mf_phrases_favority
+  actAs: { Timestampable: ~ }
+  columns:
+    user_id:
+      type: integer
+      notnull: true
+    phrase_id:
+      type: integer
+      notnull: true
+  relations:
+    sfGuardUser: { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: Favorities } 
+    mfPhrase: { onDelete: CASCADE, local: phrase_id, foreign: id, foreignAlias: Favorities } 

@@ -104,6 +104,38 @@ class homeActions extends sfActions {
       }
     }
   }
+  
+  public function executeUserPhrasesSend(sfWebRequest $request){
+    $this->forward404Unless($this->dbr_user = Doctrine::getTable('sfGuardUser')->find($request->getParameter('user_id')));
+    $this->lst_phrase = Doctrine::getTable('mfPhrase')->findByUserId($request->getParameter('user_id'));
 
+
+
+    $this->last_phrases = Doctrine::getTable('mfPhrase')->getPhrases();
+    $params_right['last_phrases'] = $this->last_phrases;
+    $this->params_right = $params_right;
+  }
+  
+  
+  public function executeAddFavority(sfWebRequest $request)
+  {
+    if(!$this->getUser()->isAuthenticated()){
+      $this->redirect('login');
+    }
+    $this->forward404Unless($rs_phrase = Doctrine::getTable('mfPhrase')->find($request->getParameter('id')));
+    
+    if(Doctrine::getTable('mfPhrasesFavority')->findOneByPhraseIdAndUserId($request->getParameter('id'),$this->user_id)){
+    
+      $this->getUser()->setFlash('error', 'Ya añadio esta frase como favorita');
+      $this->redirect($this->generateUrl('user_read_comment', array('id' => $rs_phrase->id)));
+    }
+    
+    $phrase_favority = new mfPhrasesFavority();
+    $phrase_favority->setUserId($this->user_id);
+    $phrase_favority->setPhraseId($rs_phrase->id);
+    $phrase_favority->save();
+    $this->getUser()->setFlash('notice', 'Frase guardada en tus Frases Favoritas');
+    $this->redirect($this->generateUrl('user_read_comment', array('id' => $rs_phrase->id)));
+  }
 }
 
