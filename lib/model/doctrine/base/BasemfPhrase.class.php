@@ -14,33 +14,39 @@ Doctrine_Manager::getInstance()->bindComponent('mfPhrase', 'doctrine');
  * @property integer $user_id
  * @property integer $visits
  * @property integer $comments
+ * @property integer $counter_rate
+ * @property integer $value_rate
  * @property mfCategory $Category
  * @property sfGuardUser $User
  * @property Doctrine_Collection $MfComments
  * @property Doctrine_Collection $Favorities
  * 
- * @method string              getTitle()       Returns the current record's "title" value
- * @method string              getContent()     Returns the current record's "content" value
- * @method integer             getCategoryId()  Returns the current record's "category_id" value
- * @method string              getAuthor()      Returns the current record's "author" value
- * @method integer             getUserId()      Returns the current record's "user_id" value
- * @method integer             getVisits()      Returns the current record's "visits" value
- * @method integer             getComments()    Returns the current record's "comments" value
- * @method mfCategory          getCategory()    Returns the current record's "Category" value
- * @method sfGuardUser         getUser()        Returns the current record's "User" value
- * @method Doctrine_Collection getMfComments()  Returns the current record's "MfComments" collection
- * @method Doctrine_Collection getFavorities()  Returns the current record's "Favorities" collection
- * @method mfPhrase            setTitle()       Sets the current record's "title" value
- * @method mfPhrase            setContent()     Sets the current record's "content" value
- * @method mfPhrase            setCategoryId()  Sets the current record's "category_id" value
- * @method mfPhrase            setAuthor()      Sets the current record's "author" value
- * @method mfPhrase            setUserId()      Sets the current record's "user_id" value
- * @method mfPhrase            setVisits()      Sets the current record's "visits" value
- * @method mfPhrase            setComments()    Sets the current record's "comments" value
- * @method mfPhrase            setCategory()    Sets the current record's "Category" value
- * @method mfPhrase            setUser()        Sets the current record's "User" value
- * @method mfPhrase            setMfComments()  Sets the current record's "MfComments" collection
- * @method mfPhrase            setFavorities()  Sets the current record's "Favorities" collection
+ * @method string              getTitle()        Returns the current record's "title" value
+ * @method string              getContent()      Returns the current record's "content" value
+ * @method integer             getCategoryId()   Returns the current record's "category_id" value
+ * @method string              getAuthor()       Returns the current record's "author" value
+ * @method integer             getUserId()       Returns the current record's "user_id" value
+ * @method integer             getVisits()       Returns the current record's "visits" value
+ * @method integer             getComments()     Returns the current record's "comments" value
+ * @method integer             getCounterRate()  Returns the current record's "counter_rate" value
+ * @method integer             getValueRate()    Returns the current record's "value_rate" value
+ * @method mfCategory          getCategory()     Returns the current record's "Category" value
+ * @method sfGuardUser         getUser()         Returns the current record's "User" value
+ * @method Doctrine_Collection getMfComments()   Returns the current record's "MfComments" collection
+ * @method Doctrine_Collection getFavorities()   Returns the current record's "Favorities" collection
+ * @method mfPhrase            setTitle()        Sets the current record's "title" value
+ * @method mfPhrase            setContent()      Sets the current record's "content" value
+ * @method mfPhrase            setCategoryId()   Sets the current record's "category_id" value
+ * @method mfPhrase            setAuthor()       Sets the current record's "author" value
+ * @method mfPhrase            setUserId()       Sets the current record's "user_id" value
+ * @method mfPhrase            setVisits()       Sets the current record's "visits" value
+ * @method mfPhrase            setComments()     Sets the current record's "comments" value
+ * @method mfPhrase            setCounterRate()  Sets the current record's "counter_rate" value
+ * @method mfPhrase            setValueRate()    Sets the current record's "value_rate" value
+ * @method mfPhrase            setCategory()     Sets the current record's "Category" value
+ * @method mfPhrase            setUser()         Sets the current record's "User" value
+ * @method mfPhrase            setMfComments()   Sets the current record's "MfComments" collection
+ * @method mfPhrase            setFavorities()   Sets the current record's "Favorities" collection
  * 
  * @package    frases
  * @subpackage model
@@ -81,6 +87,14 @@ abstract class BasemfPhrase extends sfDoctrineRecord
         $this->hasColumn('comments', 'integer', null, array(
              'type' => 'integer',
              'notnull' => true,
+             'default' => 0,
+             ));
+        $this->hasColumn('counter_rate', 'integer', null, array(
+             'type' => 'integer',
+             'default' => 0,
+             ));
+        $this->hasColumn('value_rate', 'integer', null, array(
+             'type' => 'integer',
              'default' => 0,
              ));
 

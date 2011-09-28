@@ -40,6 +40,12 @@ mfPhrase:
       type: integer
       notnull: true
       default: 0
+    counter_rate:
+      type: integer
+      default: 0
+    value_rate:
+      type: integer
+      default: 0
   relations:
     Category:
       class: mfCategory
